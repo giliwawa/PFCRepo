@@ -299,12 +299,17 @@ i.mdi-communication-live-help{
 	color: #ad1457;
 }
 
+div.promo:hover{
+     border-top: 1px solid #ad1457;
+}
+
 p.icone-titre{
 	color: white;
 }
 
 p.icone-texte{
 	color: white;
+    border-bottom: 1px solid #ad1457;
 }
 
 footer.page-footer{
