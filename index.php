@@ -32,13 +32,17 @@
 		    </div>
 	  	</nav>
   	</div>
+
+
   	<!-- Modal Structure -->
   	<div id="modal1" class="modal modal-fixed-footer">
   		<div class="modal-content">
-  			<h4>Modal Header</h4>
-  			<p>A bunch of text</p>
+  			<h4>Sign In</h4>
+  			<p></p>
   		</div>
   	</div>
+  	<!--END Modal Structure-->
+
   	<section id="home">
   		<!-- <div class="container">
   			<h1>
