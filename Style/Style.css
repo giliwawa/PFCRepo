@@ -21,6 +21,13 @@ body{
 i.ion-log-in.small{
 	font-size: 18px;
 }
+i.ion-social-twitter.large{
+	font-size: 32px;
+}
+i.ion-social-facebook.large{
+	font-size: 32px;
+}
+
 
 #home{
 	height: 22cm;

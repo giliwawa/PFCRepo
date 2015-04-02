@@ -169,7 +169,7 @@
   	<section id="about">
 
   	</section>
-  	<footer class="page-footer">
+  	<footer class="page-footer blue-grey darken-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -179,10 +179,8 @@
             	<div class="col l4 offset-l2 s12">
                 	<h5 class="white-text">Links</h5>
                 	<ul>
-                  		<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    	<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  		<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  		<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  		<li><div class="col l1"><i class="ion-social-twitter large"></div></i><div class="col l1"><i class="ion-social-facebook large"></i></div></li>
+                    	
                 	</ul>
             	</div>
             </div>
