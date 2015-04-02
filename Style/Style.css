@@ -187,6 +187,7 @@ i.ion-social-facebook.large{
 
 .modal{
 	width: 25%;
+	max-height: 450px;
 }
 
    /* label focus color */
