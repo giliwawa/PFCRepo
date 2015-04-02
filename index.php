@@ -177,35 +177,6 @@
 		</div>
   	</section>
 
-  	<section id="about">
-  		<br><br><br>
-  		<div class="title">
-	  		<h3>ABOUT</h3>
-  		</div>
-	  		<div class="row">
-	  			<div class="col m2 offset-m1">
-	  				<img src="images/bob.png" alt="" class="circle responsive-img">
-				</div>
-	  			<div class="col m2">
-	  				<img src="images/seif.png" alt="" class="circle responsive-img">
-	  			</div>
-	  			<div class="col m2">
-					<img src="images/bacem.png" alt="" class="circle responsive-img">
-  				</div>
-  				<div class="col m2">
-  					<img src="images/alaa.png" alt="" class="circle responsive-img">
-  				</div>
-  				<div class="col m2">
-  					<img src="images/ilyes.png" alt="" class="circle responsive-img">
-  				</div>
-  			</div>
-  			<div class="container">
-  				<p>This website was conceived under ESPRIT student license. 
-  				It is in no way a commercial site.
-  				This website serves as proof of concept, to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
-  			</div>
-  	</section>
-
   	<section id="services">
   		<br><br><br>
   		<div class="title">
@@ -238,6 +209,37 @@
 	        </div>
   		</div>
   	</section>
+
+  	<section id="about">
+  		<br><br><br>
+  		<div class="title">
+	  		<h3>ABOUT</h3>
+  		</div>
+	  		<div class="row">
+	  			<div class="col m2 offset-m1">
+	  				<img src="images/bob.png" alt="" class="circle responsive-img">
+				</div>
+	  			<div class="col m2">
+	  				<img src="images/seif.png" alt="" class="circle responsive-img">
+	  			</div>
+	  			<div class="col m2">
+					<img src="images/bacem.png" alt="" class="circle responsive-img">
+  				</div>
+  				<div class="col m2">
+  					<img src="images/alaa.png" alt="" class="circle responsive-img">
+  				</div>
+  				<div class="col m2">
+  					<img src="images/ilyes.png" alt="" class="circle responsive-img">
+  				</div>
+  			</div>
+  			<div class="container">
+  				<p>This website was conceived under ESPRIT student license. 
+  				It is in no way a commercial site.
+  				This website serves as proof of concept, to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
+  			</div>
+  	</section>
+
+  	
 
   	<footer class="page-footer blue-grey darken-3">
         <div class="container">
