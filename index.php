@@ -189,6 +189,7 @@
 	  		<h3>About</h3>
 	  		<!-- <h5>Découvrer toutes nos catégories de Produits</h5> -->
   		</div>
+  		<br><br>
 	  			<div class="row">
 	  				<div class="col m2 offset-m1">
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">
