@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/modals.js"></script>
 	
 </head>
 <body>
@@ -26,10 +27,17 @@
 				    <li><a class=" " href="#contact" data="contact">Contact</a></li>
 			    </ul>
 			    <ul id="nav-mobile" class="right hide-on-med-and-down">
-				    <li><a href="#" data="signin"> <i class="ion-log-in small"></i> Sign In</a></li>
+				    <li><a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> <i class="ion-log-in small"></i> Sign In</a></li>
 			    </ul>
 		    </div>
 	  	</nav>
+  	</div>
+  	<!-- Modal Structure -->
+  	<div id="modal1" class="modal modal-fixed-footer">
+  		<div class="modal-content">
+  			<h4>Modal Header</h4>
+  			<p>A bunch of text</p>
+  		</div>
   	</div>
   	<section id="home">
   		<!-- <div class="container">
