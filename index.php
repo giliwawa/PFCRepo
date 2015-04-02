@@ -50,6 +50,19 @@
   						<i class="mdi-action-lock prefix"></i>
   						<input id="icon_password" type="password" class="validate">
   						<label for="icon_password">Mot de Passe</label>
+  						<center>
+  							<a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help meduim"></i></a>
+  						</center>
+  					</div>
+  				</div>
+  				<br>
+  				<br>
+  				<div class="row">
+  					<div class="col s5 offset-s1">
+  						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
+  					</div>
+  					<div class="col s5">
+  						<input id="signup" type="button" class="btn pink darken-2" value="Sign Up">
   					</div>
   				</div>
   			</form>
