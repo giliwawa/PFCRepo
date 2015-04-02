@@ -51,7 +51,7 @@
   						<input id="icon_password" type="password" class="validate">
   						<label for="icon_password">Mot de Passe</label>
   						<center>
-  							<a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help meduim"></i></a>
+  							<a class="tooltipped btn-floating btn-medium" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help"></i></a>
   						</center>
   					</div>
   				</div>
