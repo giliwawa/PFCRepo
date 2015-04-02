@@ -85,6 +85,10 @@ i.ion-social-facebook.large{
 	height: 24cm;
 	background-color: rgba(0, 0, 0, 0.85);
 }
+#services .container{
+	text-align: center;
+
+}
 
 #services .title {
 	padding: 15px;
