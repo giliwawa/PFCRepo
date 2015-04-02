@@ -189,30 +189,28 @@
 	  		<h3>About</h3>
 	  		<!-- <h5>Découvrer toutes nos catégories de Produits</h5> -->
   		</div>
-  		<br><br>
-	  			<div class="row">
-	  				<div class="col m2 offset-m1">
-	  					<img src="images/bob.png" alt="" class="circle responsive-img">
-	  				</div>
-	  				<div class="col m2">
-	  					<img src="images/seif.png" alt="" class="circle responsive-img">
-	  				</div>
-	  				<div class="col m2">
-	  					<img src="images/bacem.png" alt="" class="circle responsive-img">
-	  				</div>
-	  				<div class="col m2">
-	  					<img src="images/alaa.png" alt="" class="circle responsive-img">
-	  				</div>
-	  				<div class="col m2">
-	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">
-	  				</div>
+	  		<div class="row">
+	  			<div class="col m2 offset-m1">
+	  				<img src="images/bob.png" alt="" class="circle responsive-img">
+				</div>
+	  			<div class="col m2">
+	  				<img src="images/seif.png" alt="" class="circle responsive-img">
 	  			</div>
-	  			<div class="container">
-	  				<br>
-	  				<p>This website was conceived under ESPRIT student license.</p> 
-	  				<p>It is in no way a commercial site.</p>
-	  				<p>This website serves as proof of concept ,to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
-	  			</div>
+	  			<div class="col m2">
+					<img src="images/bacem.png" alt="" class="circle responsive-img">
+  				</div>
+  				<div class="col m2">
+  					<img src="images/alaa.png" alt="" class="circle responsive-img">
+  				</div>
+  				<div class="col m2">
+  					<img src="images/ilyes.png" alt="" class="circle responsive-img">
+  				</div>
+  			</div>
+  			<div class="container">
+  				<p>This website was conceived under ESPRIT student license.</p> 
+  				<p>It is in no way a commercial site.</p>
+  				<p>This website serves as proof of concept ,to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
+  			</div>
   	</section>
 
   	<section id="services">
