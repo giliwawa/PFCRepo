@@ -213,6 +213,7 @@ i.ion-social-facebook.large{
    .input-field .prefix.active {
      color: #0097a7;
    }
-   .col.offset-l1{
+   .row .col.l2{
    		text-align: center;
+   		margin-left: 8px;
    }
