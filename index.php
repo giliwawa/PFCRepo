@@ -192,6 +192,10 @@
   	</section>
 
   	<section id="services">
+  		<br><br><br>
+  		<div class="title">
+	  		<h3>Services</h3>
+  		</div>
   	</section>
 
   	<footer class="page-footer blue-grey darken-3">
