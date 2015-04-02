@@ -77,8 +77,24 @@ i.ion-social-facebook.large{
 }
 
 #services{
-	height: 22cm;
-	background-color: rgba(173, 20, 87, 0.2);
+	height: 24cm;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#services .title {
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	background-color: rgba(0, 96, 100, 0.1);
+}
+
+#services h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
+
 }
 
 #produits h3{
