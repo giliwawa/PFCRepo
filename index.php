@@ -196,6 +196,19 @@
   		<div class="title">
 	  		<h3>Services</h3>
   		</div>
+  		<div class="container">
+  			<div class="row">
+	  			<div class="col l4">
+	  					<a href="#"><i class="mdi-action-assignment-late large"></i></a>
+	  			</div>
+	  		</div>
+	  		<div>
+	  			<div class="col l4">
+	  					<a href="#"><i class="mdi-action-assignment-late large"></i></a>
+	  			</div>
+	  		</div>
+  		</div>
+  		
   	</section>
 
   	<footer class="page-footer blue-grey darken-3">
