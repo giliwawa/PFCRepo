@@ -1,4 +1,4 @@
-.view .mask {
+#produits .view .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -9,7 +9,7 @@
    -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
 }
-.view h2 {
+#produits .view h2 {
    -webkit-transform: translateY(-100px);
    -moz-transform: translateY(-100px);
    -o-transform: translateY(-100px);
@@ -24,7 +24,7 @@
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
-.view p {
+#produits .view p {
    -webkit-transform: translateY(100px);
    -moz-transform: translateY(100px);
    -o-transform: translateY(100px);
@@ -40,7 +40,7 @@
    transition: all 0.2s linear;
 }
 
-.view a.info {
+#produits .view a.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -50,14 +50,14 @@
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
-.view:hover .mask {
+#produits .view:hover .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
 }
-.view:hover h2,
-.view:hover p,
-.view:hover a.info {
+#produits .view:hover h2,
+#produits .view:hover p,
+#produits .view:hover a.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
@@ -67,18 +67,63 @@
    -ms-transform: translateY(0px);
    transform: translateY(0px);
 }
-.view:hover p {
+#produits .view:hover p {
    -webkit-transition-delay: 0.1s;
    -moz-transition-delay: 0.1s;
    -o-transition-delay: 0.1s;
    -ms-transition-delay: 0.1s;
    transition-delay: 0.1s;
 }
-.view:hover a.info {
+#produits .view:hover a.info {
    -webkit-transition-delay: 0.2s;
    -moz-transition-delay: 0.2s;
    -o-transition-delay: 0.2s;
    -ms-transition-delay: 0.2s;
    transition-delay: 0.2s;
 }
-				
+
+#about .view img{
+    transition: all 0.5s ease-out;
+   opacity: 1;
+}
+#about .view .mask { 
+   background-color: rgba(0, 151, 167,0.5);
+    transform: rotate(0deg) scale(1);
+   opacity: 0;
+   transition: all 0.3s ease-out;
+    transform: translateY(-200px) rotate(180deg);
+}
+#about .view h2{
+    transform: translateY(-200px);
+   transition: all 0.2s ease-in-out;
+}
+#about .view p { 
+    transform: translateY(-200px);
+   transition: all 0.2s ease-in-out;
+}
+#about .view a.info { 
+    transform: translateY(-200px);
+   transition:  all 0.2s ease-in-out;
+} 
+
+#about .view:hover img{
+    transform: rotate(720deg) scale(0);
+   opacity: 0;
+}
+#about .view:hover .mask { 
+   opacity: 1;  
+    transform: translateY(0px) rotate(0deg);
+    transition-delay: 0.4s;
+}                                                                 
+#about .view:hover h2 { 
+    transform: translateY(0px);
+   transition-delay: 0.7s;
+}
+#about .view:hover p { 
+   transform: translateY(0px);
+   transition-delay: 0.6s;
+}
+#about .view:hover a.info { 
+    transform: translateY(0px);
+   transition-delay: 0.5s;
+}
