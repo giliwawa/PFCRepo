@@ -106,6 +106,15 @@ i.ion-social-facebook.large{
 
 }
 
+#services h5{
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	opacity: 0.5;
+	font-style: bold;
+	font-size: 14px;
+}
+
 #produits h3{
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -305,6 +314,7 @@ div.promo:hover{
 
 p.icone-titre{
 	color: white;
+	font-size: 22px;
 }
 
 p.icone-texte{

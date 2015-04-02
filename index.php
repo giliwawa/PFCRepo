@@ -210,28 +210,29 @@
   		<br><br><br>
   		<div class="title">
 	  		<h3>Services</h3>
+	  		<h5>Check here for any help and more.</h5>
   		</div>
 	  		<div class="container">
 	  			<div class="row">
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
 	                <i class="mdi-action-assignment-late"></i>
-	                <p class="icone-titre">         Reclamation</p>
-	                <p class="icone-texte">Pour nous soumettre vous reclamation consulter cette page.</p>
+	                <p class="icone-titre">Claim</p>
+	                <p class="icone-texte">Check this page to submit your claim.</p>
 	              </div>
 	            </div>
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
 	                <i class="mdi-action-question-answer"></i>
-	                <p class="icone-titre">         Forum</p>
-	                <p class="icone-texte">Contacter d'autre visiteur de notre site pour vos questions et conseilles.</p>
+	                <p class="icone-titre">Forum</p>
+	                <p class="icone-texte">Get in touch with others customers and share your experience.</p>
 	              </div>
 	            </div>
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
 	                <i class="mdi-communication-live-help"></i>
-	                <p class="icone-titre">         FAQ</p>
-	                <p class="icone-texte">Retrouver ici les questions les plus frequentes.</p>
+	                <p class="icone-titre">FAQ</p>
+	                <p class="icone-texte">Find here the most frequently asked questions.</p>
 	              </div>
 	            </div>
 	        </div>
