@@ -187,6 +187,7 @@
 	  				<div class="view">
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">
 	  					<div class="mask">  
+	  						<h2>Mohamed El Fadhel</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
