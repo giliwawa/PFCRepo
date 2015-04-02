@@ -207,9 +207,11 @@
   				</div>
   			</div>
   			<div class="container">
+  				<b>
   				<p>This website was conceived under ESPRIT student license.</p> 
   				<p>It is in no way a commercial site.</p>
   				<p>This website serves as proof of concept ,to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
+  				</b>
   			</div>
   	</section>
 

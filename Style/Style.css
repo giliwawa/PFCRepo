@@ -1,6 +1,6 @@
 @font-face{
-	font-family: Ultra;
-	src:url(../fonts/Ultra.ttf);
+	font-family: Sixcaps;
+	src:url(../fonts/SixCaps.ttf);
 }
 
 nav ul li a.active{
@@ -154,8 +154,14 @@ i.ion-social-facebook.large{
 }
 
 #about .container{
-	margin-top: 70px;
+	margin-top: 40px;
 	margin-bottom: 0px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Sixcaps;
+	color: white;
+	text-shadow: 0px 0px 7px #37474f;
+	letter-spacing: 0px;
 }
 
 #about .row{
@@ -300,15 +306,6 @@ p.icone-titre{
 
 p.icone-texte{
 	color: white;
-}
-
-
-#about .container{
-	text-align: center;
-	font-size: 22px;
-	font-family: Ultra;
-	color: white;
-	text-shadow: 0 0 7px #37474f;
 }
 
 footer.page-footer{
