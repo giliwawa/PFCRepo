@@ -24,6 +24,7 @@
 				    <li><a class=" active" href="#home" data="home">Home</a></li>
 				    <li><a class="" href="#produits" data ="produits">Produits</a></li>
 				    <li><a class=" " href="#about" data="about">About</a></li>
+				    <li><a href="#services" data="services">Service</a></li>
 				    <li><a class=" " href="#contact" data="contact">Contact</a></li>
 			    </ul>
 			    <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -189,6 +190,10 @@
 	  		<!-- <h5>Découvrer toutes nos catégories de Produits</h5> -->
   		</div>
   	</section>
+
+  	<section id="services">
+  	</section>
+
   	<footer class="page-footer blue-grey darken-3">
         <div class="container">
             <div class="row">
