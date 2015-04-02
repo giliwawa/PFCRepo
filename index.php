@@ -74,12 +74,6 @@
   	<!--END Modal Structure-->
 
   	<section id="home">
-  		<!-- <div class="container">
-  			<h1>
-  				Bienvenu sur notre Site
-  			</h1>
-  		</div> -->
-  		
   		<div id="slideshow" class="container">
   			
   			<div>
@@ -101,8 +95,8 @@
   	<section id="produits">
   		<br><br><br>
   		<div class="title">
-	  		<h3>Produits</h3>
-	  		<h5>Découvrer toutes nos catégories de Produits</h5>
+	  		<h3>PRODUCTS</h3>
+	  		<h4>Browse all our products</h4>
   		</div>
   		<div class="container">
 
@@ -111,7 +105,7 @@
 					<div class="center guitar blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>Instruments a cordes</h2>  
+							    <h2>string instruments</h2>  
 							    <p> Retrouvez notre selection de guitares, pianos, violons,
 							    	luth...
 							    </p>  
@@ -142,7 +136,7 @@
 					<div class="center saxo blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>Instrument a vent</h2>  
+							    <h2>Wind instruments</h2>  
 							    <p> Retrouvez notre selection de Trempettes, Clarinettes, 
 							    	Saxo...
 							    </p>  
@@ -186,8 +180,7 @@
   	<section id="about">
   		<br><br><br>
   		<div class="title">
-	  		<h3>About</h3>
-	  		<!-- <h5>Découvrer toutes nos catégories de Produits</h5> -->
+	  		<h3>ABOUT</h3>
   		</div>
 	  		<div class="row">
 	  			<div class="col m2 offset-m1">
