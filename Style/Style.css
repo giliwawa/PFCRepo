@@ -1,3 +1,8 @@
+@font-face{
+	font-family: Ultra;
+	src:url(../fonts/Ultra.ttf);
+}
+
 nav ul li a.active{
 	background-color: rgba(173, 20, 87, 0.7);
 }
@@ -233,33 +238,42 @@ i.ion-social-facebook.large{
 }
 
    /* label focus color */
-   .input-field input:focus + label {
+.input-field input:focus + label {
      color: #0097a7;
-   }
+}
    /* label underline focus color */
-   .input-field input:focus {
+.input-field input:focus {
      border-bottom: 1px solid #0097a7;
      box-shadow: 0 1px 0 0 #0097a7;
-   }
+}
    /* valid color */
-   .input-field input.valid {
+.input-field input.valid {
      border-bottom: 1px solid #0097a7;
      box-shadow: 0 1px 0 0 #0097a7;
-   }
+}
    /* invalid color */
-   .input-field input.invalid {
+.input-field input.invalid {
      border-bottom: 1px solid #ad1457;
      box-shadow: 0 1px 0 0 #ad1457;
-   }
+}
    /* icon prefix focus color */
-   .input-field .prefix.active {
+.input-field .prefix.active {
      color: #0097a7;
-   }
-   .row .col.l2{
+}
+.row .col.l2{
    		text-align: center;
    		margin-left: 8px;
-   }
+}
   
-   footer.page-footer{
+footer.page-footer{
    	margin-top: 0px;
-   }
+}
+
+#about .container{
+	text-align: center;
+	font-size: 22px;
+	font-family: Ultra;
+	color: white;
+	text-shadow: 0 0 7px #37474f;
+
+}
