@@ -1,0 +1,179 @@
+nav ul li a.active{
+	background-color: rgba(173, 20, 87, 0.7);
+}
+nav ul li a:hover{
+
+	color:#f06292;
+}
+
+
+/*code couleur gris #37474f blue-grey darken-3
+			   pink #ad1457 pink darken-3
+			   Cyan #0097a7 cyan darken-2
+*/
+body{
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+i.ion-log-in.small{
+	font-size: 18px;
+}
+
+#home{
+	height: 22cm;
+	padding-top: 100px;
+	background-color: rgba(173, 20, 87, 0.2);
+}
+#home .container{
+	padding-top: 200px;
+}
+#home h1{
+	text-align: center;
+	color: white;
+	opacity: 0.6;
+}
+#slideshow { 
+	
+    position: relative;
+    width: 1020px;
+    height: 655px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div { 
+    position: absolute;
+    top: 25px; 
+
+}
+.image_slide{
+	width: auto;
+	height: auto;
+	max-width: 977px;
+	max-height: 611px;	
+}
+.container{
+	width:977px;
+	padding-top: 0px;
+}
+
+
+#produits{
+	height: 24cm;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+#about{
+	height: 22cm;
+	background-color: rgba(173, 20, 87, 0.2);
+}
+#produits h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
+
+}
+
+#produits h5{
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	opacity: 0.5;
+	font-style: bold;
+	font-size: 14px;
+
+}
+
+
+#produits .container{
+	padding-top: 100px;
+}
+#produits .title{
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	background-color: rgba(0, 96, 100, 0.1);
+}
+.center{
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+/*transition starts here*/
+.view{
+	position: relative;
+}
+.view .mask {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.view h2 {
+	height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    /*padding: 2px;*/
+    background: rgba(0, 0, 0, 0.8);
+    /*margin: 4px 0 0 0*/
+}
+.view p {
+    
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.guitar .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/guitarthion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+.perc .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/percuthion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+.saxo .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/naf5ethion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+
+.electronic .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/moogothion.png) no-repeat center center ;
+	background-size: cover;
+}
+
+.accessoires .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/accesoirs.png) no-repeat center center ;
+	background-size: cover;
+}
