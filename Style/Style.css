@@ -87,7 +87,6 @@ i.ion-social-facebook.large{
 }
 #services .container{
 	text-align: center;
-
 }
 
 #services .title {
@@ -95,6 +94,7 @@ i.ion-social-facebook.large{
 	width:100%;
 	box-shadow: 0 0 10px rgba(255,255,255,0.4);
 	background-color: rgba(0, 96, 100, 0.1);
+	margin-bottom: 140px;
 }
 
 #services h3{

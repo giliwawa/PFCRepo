@@ -218,8 +218,6 @@
   		<div class="title">
 	  		<h3>Services</h3>
   		</div>
-  		<br><br><br>
-  		<br><br>
 	  		<div class="container">
 	  			<div class="row">
 	            <div class="col s4">
