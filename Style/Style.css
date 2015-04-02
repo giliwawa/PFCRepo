@@ -189,6 +189,9 @@ i.ion-social-facebook.large{
 	width: 25%;
 	max-height: 450px;
 }
+.modal.modal-fixed-footer .modal-content{
+	padding-bottom: 20px;
+}
 
    /* label focus color */
    .input-field input:focus + label {
