@@ -260,6 +260,28 @@ i.ion-social-facebook.large{
    		margin-left: 8px;
    }
 
+   i.mdi-action-assignment-late{
+   	font-size: 12rem;
+   	color: #ad1457;
+   }
+
+   i.mdi-action-question-answer{
+   	font-size: 12rem;
+   	color: #ad1457;
+   }
+
+   i.mdi-communication-live-help{
+   	font-size: 12rem;
+   	color: #ad1457;
+   }
+
+   p.icone-titre{
+   	color: white;
+   }
+
+   p.icone-texte{
+   	color: white;
+   }
 <<<<<<< HEAD
   
 =======

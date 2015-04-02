@@ -213,19 +213,31 @@
   		<div class="title">
 	  		<h3>Services</h3>
   		</div>
-  		<div class="container">
-  			<div class="row">
-	  			<div class="col l4">
-	  					<a href="#"><i class="mdi-action-assignment-late large"></i></a>
-	  			</div>
-	  		</div>
-	  		<div>
-	  			<div class="col l4">
-	  					<a href="#"><i class="mdi-action-assignment-late large"></i></a>
-	  			</div>
-	  		</div>
+	  		<div class="container">
+	  			<div class="row">
+	            <div class="col s4">
+	              <div class="promo promo-example">
+	                <i class="mdi-action-assignment-late"></i>
+	                <p class="icone-titre">Reclamation</p>
+	                <p class="icone-texte">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+	              </div>
+	            </div>
+	            <div class="col s4">
+	              <div class="promo promo-example">
+	                <i class="mdi-action-question-answer"></i>
+	                <p class="icone-titre">Forum</p>
+	                <p class="icone-texte">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+	              </div>
+	            </div>
+	            <div class="col s4">
+	              <div class="promo promo-example">
+	                <i class="mdi-communication-live-help"></i>
+	                <p class="icone-titre">FAQ</p>
+	                <p class="icone-texte">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+	              </div>
+	            </div>
+	        </div>
   		</div>
-  		
   	</section>
 
   	<footer class="page-footer blue-grey darken-3">
