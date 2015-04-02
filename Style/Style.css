@@ -196,20 +196,20 @@ i.ion-social-facebook.large{
    }
    /* label underline focus color */
    .input-field input[type=text]:focus {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
+     border-bottom: 1px solid #0097a7;
+     box-shadow: 0 1px 0 0 #0097a7;
    }
    /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
+   .input-field input.valid {
+     border-bottom: 1px solid #0097a7;
+     box-shadow: 0 1px 0 0 #0097a7;
    }
    /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
+   .input-field input.invalid {
+     border-bottom: 1px solid #ad1457;
+     box-shadow: 0 1px 0 0 #ad1457;
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
-     color: #000;
+     color: #0097a7;
    }
