@@ -61,7 +61,7 @@
   					<div class="col s5 offset-s1">
   						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
   					</div>
-  					<div class="col s5">
+  					<div class="col s5 offset-s1">
   						<input id="signup" type="button" class="btn pink darken-2" value="Sign Up">
   					</div>
   				</div>
