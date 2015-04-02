@@ -63,7 +63,7 @@
   						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
   					</div>
   					<div class="col s6">
-  						<input id="signup" type="button" class="btn pink darken-2" value="Sign Up">
+  						<input id="signup" type="button" class="btn pink darken-3" value="Sign Up">
   					</div>
   					</center>
   				</div>
@@ -183,7 +183,11 @@
   	</section>
 
   	<section id="about">
-
+  		<br><br><br>
+  		<div class="title">
+	  		<h3>About</h3>
+	  		<!-- <h5>Découvrer toutes nos catégories de Produits</h5> -->
+  		</div>
   	</section>
   	<footer class="page-footer blue-grey darken-3">
         <div class="container">

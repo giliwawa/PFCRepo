@@ -98,12 +98,29 @@ i.ion-social-facebook.large{
 #produits .container{
 	padding-top: 100px;
 }
-#produits .title{
+
+#about h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
+
+}
+#produits .title {
 	padding: 15px;
 	width:100%;
 	box-shadow: 0 0 10px rgba(255,255,255,0.4);
 	background-color: rgba(0, 96, 100, 0.1);
 }
+
+#about .title{
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	background-color: rgba(173, 20, 87, 0.1);
+}
+
 .center{
 	text-align: center;
 	vertical-align: middle;
