@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/modals.js"></script>
 	
 </head>
