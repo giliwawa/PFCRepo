@@ -226,22 +226,22 @@
 	            <div class="col s4">
 	              <div class="promo promo-example">
 	                <i class="mdi-action-assignment-late"></i>
-	                <p class="icone-titre">Reclamation</p>
-	                <p class="icone-texte">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+	                <p class="icone-titre">         Reclamation</p>
+	                <p class="icone-texte">Pour nous soumettre vous reclamation consulter cette page.</p>
 	              </div>
 	            </div>
 	            <div class="col s4">
 	              <div class="promo promo-example">
 	                <i class="mdi-action-question-answer"></i>
-	                <p class="icone-titre">Forum</p>
-	                <p class="icone-texte">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+	                <p class="icone-titre">         Forum</p>
+	                <p class="icone-texte">Contacter d'autre visiteur de notre site pour vos questions et conseilles.</p>
 	              </div>
 	            </div>
 	            <div class="col s4">
 	              <div class="promo promo-example">
 	                <i class="mdi-communication-live-help"></i>
-	                <p class="icone-titre">FAQ</p>
-	                <p class="icone-texte">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+	                <p class="icone-titre">         FAQ</p>
+	                <p class="icone-texte">Retrouver ici les questions les plus frequentes.</p>
 	              </div>
 	            </div>
 	        </div>
