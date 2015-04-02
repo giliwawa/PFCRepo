@@ -38,7 +38,20 @@
   	<div id="modal1" class="modal modal-fixed-footer">
   		<div class="modal-content">
   			<h4>Sign In</h4>
-  			<p></p>
+  			<form>
+  				<div class="row">
+  					<div class="input-field col s12">
+  						<i class="mdi-action-account-circle prefix"></i>
+  						<input id="icon_prefix" type="text" class="validate">
+  						<label for="icon_prefix">Pseudo</label>
+  					</div>
+  					<div class="input-field col s12">
+  						<i class="mdi-action-lock prefix"></i>
+  						<input id="icon_password" type="password" class="validate">
+  						<label for="icon_password">Mot de Passe</label>
+  					</div>
+  				</div>
+  			</form>
   		</div>
   	</div>
   	<!--END Modal Structure-->
