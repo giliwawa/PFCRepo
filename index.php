@@ -180,16 +180,14 @@
             	<div class="col l4 offset-l2 s12">
                 	<h5 class="white-text">Links</h5>
                 	
-                  		<div class="row">
-                  			<div class="col s1 offset s1 pink darken-3">
+                  	<div class="row social">
+                  		<div class="col l2 offset-l1 s12 pink darken-3">
                   			<i class="ion-social-twitter large"></i>
-                  			</div>
-                  			<div class="col s1 offset s1 pink darken-3">
-                  				<i class="ion-social-facebook large"></i>
-                  			</div>
                   		</div>
-                    	
-                	
+                  		<div class="col l2 offset-l1 s12 pink darken-3">
+                  			<i class="ion-social-facebook large"></i>
+                  		</div>
+                  	</div>
             	</div>
             </div>
          </div>
