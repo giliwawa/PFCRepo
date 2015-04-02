@@ -38,6 +38,7 @@
   	<div id="modal1" class="modal modal-fixed-footer">
   		<div class="modal-content">
   			<h4>Sign In</h4>
+  			<br>
   			<form>
   				<div class="row">
   					<div class="input-field col s12">
