@@ -284,8 +284,9 @@
 	  	</div>
 	  	<div class="container">
 	  		<br>
+	  		<form>
 	  			<div class="row">
-				     <form class="col s12">
+				     <div class="col s12">
 					        <div class="input-field col s4 offset-s1">
 					          <i class="mdi-action-account-circle prefix"></i>
 					          <input id="icon_prefix" type="text" class="validate">
@@ -296,11 +297,11 @@
 					          <input id="icon_prefix" type="email" class="validate">
 					          <label for="icon_prefix">Mail</label>
 					        </div>
-				    </form>
+				    </div>
 				</div>
 				<br>
 				<div class="row">
-				    <form class="col s12">
+				    <div class="col s12">
 				      <div class="row">
 				        <div class="input-field col s12">
 				        	<i class="mdi-editor-mode-edit prefix"></i>
@@ -308,11 +309,12 @@
 				          	<label for="textarea1">Textarea</label>
 				        </div>
 				      </div>
-				    </form>
+				    </div>
 				    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
 					    <i class="mdi-content-send right"></i>
 					 </button>
 			  	</div>
+			</form>
 	  	</div>
   	</section>
 
