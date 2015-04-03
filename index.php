@@ -182,53 +182,53 @@
   		<div class="title">
 	  		<h3>ABOUT</h3>
   		</div>
-  		<div class="container1">
+  		<div class="container">
 	  		<div class="row">
-	  			<div class="col s2 offset-s1">
+	  			<div class="col m2 offset-m1">
 	  				<div class="view">  
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
-	  						<h2>Title</h2>  
+	  						<h2>Mohamed El Fadhel El Hachemi</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
 	  				</div>  
 				</div>
-	  			<div class="col s2">
+	  			<div class="col m2">
 	  				<div class="view">  
 	  					<img src="images/seif.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
-	  						<h2>Title</h2>  
+	  						<h2>Seif Oueslati</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
 	  				</div>
 	  			</div>
-	  			<div class="col s2">
+	  			<div class="col m2">
 	  				<div class="view">  
 	  					<img src="images/bacem.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
-	  						<h2>Title</h2>  
+	  						<h2>Bacem Ben Achour</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
 	  				</div>
   				</div>
-  				<div class="col s2">
+  				<div class="col m2">
   					<div class="view">  
 	  					<img src="images/alaa.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
-	  						<h2>Title</h2>  
+	  						<h2>Alaa Ksontini</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
 	  				</div>
   				</div>
-  				<div class="col s2">
+  				<div class="col m2">
   					<div class="view">  
 	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
-	  						<h2>Title</h2>  
+	  						<h2>Ilyes Lefi</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
 	  					</div>  
@@ -236,7 +236,7 @@
   				</div>
   			</div>
   		</div>
-  			<div class="container">
+  			<div class="container text">
   				<p>This website was conceived under ESPRIT student license. 
   				It is in no way a commercial site.
   				This website serves as proof of concept, to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
