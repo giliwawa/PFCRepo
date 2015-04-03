@@ -277,6 +277,12 @@
   			</div>
   	</section>
 
+  	<section id="contact">
+  		<br><br><br>
+  		<div class="title">
+	  		<h3>CONTACT</h3>
+  	</section>
+
   	<footer class="page-footer blue-grey darken-3">
         <div class="container">
             <div class="row">
