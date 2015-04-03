@@ -1,4 +1,4 @@
-.view .mask {
+#produits .view .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -9,7 +9,7 @@
    -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
 }
-.view h2 {
+#produits .view h2 {
    -webkit-transform: translateY(-100px);
    -moz-transform: translateY(-100px);
    -o-transform: translateY(-100px);
@@ -24,7 +24,7 @@
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
-.view p {
+#produits .view p {
    -webkit-transform: translateY(100px);
    -moz-transform: translateY(100px);
    -o-transform: translateY(100px);
@@ -40,7 +40,7 @@
    transition: all 0.2s linear;
 }
 
-.view a.info {
+#produits .view a.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
    opacity: 0;
@@ -50,14 +50,14 @@
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
-.view:hover .mask {
+#produits .view:hover .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
 }
-.view:hover h2,
-.view:hover p,
-.view:hover a.info {
+#produits .view:hover h2,
+#produits .view:hover p,
+#produits .view:hover a.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);
    opacity: 1;
@@ -67,14 +67,14 @@
    -ms-transform: translateY(0px);
    transform: translateY(0px);
 }
-.view:hover p {
+#produits .view:hover p {
    -webkit-transition-delay: 0.1s;
    -moz-transition-delay: 0.1s;
    -o-transition-delay: 0.1s;
    -ms-transition-delay: 0.1s;
    transition-delay: 0.1s;
 }
-.view:hover a.info {
+#produits .view:hover a.info {
    -webkit-transition-delay: 0.2s;
    -moz-transition-delay: 0.2s;
    -o-transition-delay: 0.2s;
@@ -126,4 +126,88 @@
 #about .view:hover a.info { 
     transform: translateY(0px);
    transition-delay: 0.5s;
+}
+
+#services .view .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(173, 20, 87, 0.7);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+#services .view h2 {
+   -webkit-transform: translateY(-100px);
+   -moz-transform: translateY(-100px);
+   -o-transform: translateY(-100px);
+   -ms-transform: translateY(-100px);
+   transform: translateY(-100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+#services .view p {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+
+#services .view a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+#services .view:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+#services .view:hover h2,
+#services .view:hover p,
+#services .view:hover a.info {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+#services .view:hover p {
+   -webkit-transition-delay: 0.1s;
+   -moz-transition-delay: 0.1s;
+   -o-transition-delay: 0.1s;
+   -ms-transition-delay: 0.1s;
+   transition-delay: 0.1s;
+}
+#services .view:hover a.info {
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
 }
