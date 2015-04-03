@@ -435,6 +435,7 @@ p.icone-titre{
 p.icone-texte{
 	color: white;
     border-bottom: 2px solid #ad1457;
+    text-shadow: 1px 1px 10px #0097a7;
 }
 
 footer.page-footer{
