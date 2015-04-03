@@ -124,6 +124,32 @@ i.ion-social-facebook.large{
 	font-size: 14px;
 }
 
+#contact .title {
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	background-color: rgba(173, 20, 87, 0.1);
+	margin-bottom: 70px;
+}
+
+#contact h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
+
+}
+
+#contact{
+	height: 11cm;
+	background-color: rgba(173, 20, 87, 0.2);
+}
+
+#contact .container{
+	text-align: center;
+}
+
 #produits h3{
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -331,44 +357,6 @@ i.ion-social-facebook.large{
 }
 #about .view a.info:hover {
     box-shadow: 0 0 5px #000
-}
-
-#contact .view{
-	position: relative;
-}
-#contact .view .mask {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-#contact .view h2 {
-	height: 50px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    /*padding: 2px;*/
-    background: rgba(0, 0, 0, 0.8);
-    /*margin: 4px 0 0 0*/
-}
-#contact .view p {
-    
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-#contact .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
 }
 
 .guitar .featured-image{
