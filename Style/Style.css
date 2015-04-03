@@ -157,7 +157,7 @@ i.ion-social-facebook.large{
 #about .title{
 	padding: 15px;
 	width:100%;
-	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	background-color: rgba(173, 20, 87, 0.1);
 	margin-bottom: 70px;
 }
