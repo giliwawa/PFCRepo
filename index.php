@@ -184,19 +184,54 @@
   		</div>
 	  		<div class="row">
 	  			<div class="col m2 offset-m1">
-	  				<img src="images/bob.png" alt="" class="circle responsive-img">
+	  				<div class="view">  
+	  					<img src="images/bob.png" alt="" class="circle responsive-img">  
+	  					<div class="mask">  
+	  						<h2>Title</h2>  
+	  						<p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  
+	  					</div>  
+	  				</div>  
 				</div>
 	  			<div class="col m2">
-	  				<img src="images/seif.png" alt="" class="circle responsive-img">
+	  				<div class="view">  
+	  					<img src="images/seif.png" alt="" class="circle responsive-img">  
+	  					<div class="mask">  
+	  						<h2>Title</h2>  
+	  						<p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  
+	  					</div>  
+	  				</div>
 	  			</div>
 	  			<div class="col m2">
-					<img src="images/bacem.png" alt="" class="circle responsive-img">
+	  				<div class="view">  
+	  					<img src="images/bacem.png" alt="" class="circle responsive-img">  
+	  					<div class="mask">  
+	  						<h2>Title</h2>  
+	  						<p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  
+	  					</div>  
+	  				</div>
   				</div>
   				<div class="col m2">
-  					<img src="images/alaa.png" alt="" class="circle responsive-img">
+  					<div class="view">  
+	  					<img src="images/alaa.png" alt="" class="circle responsive-img">  
+	  					<div class="mask">  
+	  						<h2>Title</h2>  
+	  						<p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  
+	  					</div>  
+	  				</div>
   				</div>
   				<div class="col m2">
-  					<img src="images/ilyes.png" alt="" class="circle responsive-img">
+  					<div class="view">  
+	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">  
+	  					<div class="mask">  
+	  						<h2>Title</h2>  
+	  						<p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  
+	  					</div>  
+	  				</div>
   				</div>
   			</div>
   			<div class="container">

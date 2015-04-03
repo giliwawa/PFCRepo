@@ -224,6 +224,64 @@ i.ion-social-facebook.large{
 .view a.info:hover {
     box-shadow: 0 0 5px #000
 }
+
+/*OnHover Mask #about*/
+#about .view {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+#about .view .mask, .view .content {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 0;
+    left: 0
+}
+#about .view img {
+    display: block;
+    position: relative
+}
+#about .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+#about .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+#about .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+#about .view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
 .guitar .featured-image{
 	height: 250px;
 	width: 100%;
