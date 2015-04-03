@@ -152,9 +152,32 @@ i.ion-social-facebook.large{
 	background-color: rgba(173, 20, 87, 0.1);
 }
 
-#contact.input-field.invalid{
-	border-bottom: 1px solid #ad1457;
+/*Contact Form*/
+   /* label focus color */
+#contact .input-field input:focus + label {
+     color: #0097a7;
 }
+   /* label underline focus color */
+#contact .input-field input:focus {
+     border-bottom: 1px solid #0097a7;
+     box-shadow: 0 1px 0 0 #0097a7;
+}
+   /* valid color */
+#contact .input-field input.valid {
+     border-bottom: 1px solid #0097a7;
+     box-shadow: 0 1px 0 0 #0097a7;
+}
+   /* invalid color */
+#contact .input-field input.invalid {
+     border-bottom: 1px solid #ad1457;
+     box-shadow: 0 1px 0 0 #ad1457;
+}
+   /* icon prefix focus color */
+#contact .input-field .prefix.active {
+     color: #0097a7;
+}
+
+/*END CONTACT FORM*/
 
 #produits h3{
 	margin-top: 0px;

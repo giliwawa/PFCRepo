@@ -285,12 +285,12 @@
 	  	<div class="container">
 	  			<div class="row">
 				     <form class="col s12">
-					        <div class="input-field col s4">
+					        <div class="input-field col s4 offset-s1">
 					          <i class="mdi-action-account-circle prefix"></i>
 					          <input id="icon_prefix" type="text" class="validate">
 					          <label for="icon_prefix">Name</label>
 					        </div>
-					        <div class="input-field col s6">
+					        <div class="input-field col s6 offset-s1">
 					          <i class="mdi-communication-email prefix"></i>
 					          <input id="icon_prefix" type="text" class="validate">
 					          <label for="icon_prefix">Mail</label>
