@@ -182,6 +182,7 @@
   		<div class="title">
 	  		<h3>ABOUT</h3>
   		</div>
+  		<div class="container1">
 	  		<div class="row">
 	  			<div class="col s2 offset-s1">
 	  				<div class="view">  
@@ -234,6 +235,7 @@
 	  				</div>
   				</div>
   			</div>
+  		</div>
   			<div class="container">
   				<p>This website was conceived under ESPRIT student license. 
   				It is in no way a commercial site.
