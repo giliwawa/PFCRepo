@@ -176,6 +176,40 @@
 			</div>
 		</div>
   	</section>
+  	
+  	<section id="services">
+  		<br><br><br>
+  		<div class="title">
+	  		<h3>Services</h3>
+	  		<h5>Check here for any help and more.</h5>
+  		</div>
+	  		<div class="container">
+	  			<div class="row">
+	            <div class="col s4 view">
+	              <div class="promo promo-example">
+	                <i class="mdi-action-assignment-late"></i>
+	                <p class="icone-titre">Claim</p>
+	                <p class="icone-texte">Check this page to submit your claim.</p>
+	              </div>
+	            </div>
+	            <div class="col s4 view">
+	              <div class="promo promo-example">
+	                <i class="mdi-action-question-answer"></i>
+	                <p class="icone-titre">Forum</p>
+	                <p class="icone-texte">Get in touch with other customers and share your experience.</p>
+	              </div>
+	            </div>
+	            <div class="col s4 view">
+	              <div class="promo promo-example">
+	                <i class="mdi-communication-live-help"></i>
+	                <p class="icone-titre">FAQ</p>
+	                <p class="icone-texte">Frequently asked questions.</p>
+	              </div>
+	            </div>
+	        </div>
+  		</div>
+  	</section>
+
 
   	<section id="about">
   		<br><br><br>
@@ -241,39 +275,6 @@
   				It is in no way a commercial site.
   				This website serves as proof of concept, to showcase HTML, CSS, JavaScript and PHP learned skills.</p>
   			</div>
-  	</section>
-
-  	<section id="services">
-  		<br><br><br>
-  		<div class="title">
-	  		<h3>Services</h3>
-	  		<h5>Check here for any help and more.</h5>
-  		</div>
-	  		<div class="container">
-	  			<div class="row">
-	            <div class="col s4 view">
-	              <div class="promo promo-example">
-	                <i class="mdi-action-assignment-late"></i>
-	                <p class="icone-titre">Claim</p>
-	                <p class="icone-texte">Check this page to submit your claim.</p>
-	              </div>
-	            </div>
-	            <div class="col s4 view">
-	              <div class="promo promo-example">
-	                <i class="mdi-action-question-answer"></i>
-	                <p class="icone-titre">Forum</p>
-	                <p class="icone-texte">Get in touch with other customers and share your experience.</p>
-	              </div>
-	            </div>
-	            <div class="col s4 view">
-	              <div class="promo promo-example">
-	                <i class="mdi-communication-live-help"></i>
-	                <p class="icone-titre">FAQ</p>
-	                <p class="icone-texte">Frequently asked questions.</p>
-	              </div>
-	            </div>
-	        </div>
-  		</div>
   	</section>
 
   	<footer class="page-footer blue-grey darken-3">
