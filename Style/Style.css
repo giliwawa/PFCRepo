@@ -90,7 +90,6 @@ i.ion-social-facebook.large{
 }
 
 #services .title {
-	text-transform: uppercase;
 	padding: 15px;
 	width:100%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -259,7 +258,6 @@ i.ion-social-facebook.large{
 }
 #services .view p {
     
-    font-size: 14px;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
@@ -430,7 +428,8 @@ div.promo:hover{
 
 p.icone-titre{
 	color: white;
-	font-size: 22px;
+	font-size: 1.7rem;
+	font-weight: 500;
 }
 
 p.icone-texte{
