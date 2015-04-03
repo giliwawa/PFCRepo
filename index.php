@@ -281,6 +281,37 @@
   		<br><br><br>
   		<div class="title">
 	  		<h3>CONTACT</h3>
+	  	</div>
+	  	<div class="container">
+	  			<div class="row">
+				     <form class="col s12">
+					        <div class="input-field col s4">
+					          <i class="mdi-action-account-circle prefix"></i>
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Name</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <i class="mdi-communication-email prefix"></i>
+					          <input id="icon_prefix" type="text" class="validate">
+					          <label for="icon_prefix">Mail</label>
+					        </div>
+				    </form>
+				</div>
+				<br>
+				<div class="row">
+				    <form class="col s12">
+				      <div class="row">
+				        <div class="input-field col s12">
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				          <label for="textarea1">Textarea</label>
+				        </div>
+				      </div>
+				    </form>
+				    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+					    <i class="mdi-content-send right"></i>
+					 </button>
+			  	</div>
+	  	</div>
   	</section>
 
   	<footer class="page-footer blue-grey darken-3">
