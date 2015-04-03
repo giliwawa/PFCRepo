@@ -163,10 +163,7 @@ i.ion-social-facebook.large{
 }
 #about .container1{
 	vertical-align: middle;
-	/*width: 1366px;*/
 	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
 
 }
 
@@ -279,12 +276,13 @@ i.ion-social-facebook.large{
 #about .view {
     width: 250px;
     height: 250px;
-    margin: 10px;
-    float: left;
+    /*margin: 10px;*/
     overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
+    margin-right: auto;
+    margin-left: auto;
 }
 #about .view .mask, .view .content {
 	width: 100%;
@@ -292,7 +290,7 @@ i.ion-social-facebook.large{
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 0
+    left: 0;
 }
 #about .view img {
     display: block;

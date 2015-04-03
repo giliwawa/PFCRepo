@@ -184,7 +184,7 @@
   		</div>
   		<div class="container1">
 	  		<div class="row">
-	  			<div class="col m2 offset-m1">
+	  			<div class="col s2 offset-s1">
 	  				<div class="view">  
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
@@ -194,7 +194,7 @@
 	  					</div>  
 	  				</div>  
 				</div>
-	  			<div class="col m2">
+	  			<div class="col s2">
 	  				<div class="view">  
 	  					<img src="images/seif.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
@@ -204,7 +204,7 @@
 	  					</div>  
 	  				</div>
 	  			</div>
-	  			<div class="col m2">
+	  			<div class="col s2">
 	  				<div class="view">  
 	  					<img src="images/bacem.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
@@ -214,7 +214,7 @@
 	  					</div>  
 	  				</div>
   				</div>
-  				<div class="col m2">
+  				<div class="col s2">
   					<div class="view">  
 	  					<img src="images/alaa.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
@@ -224,7 +224,7 @@
 	  					</div>  
 	  				</div>
   				</div>
-  				<div class="col m2">
+  				<div class="col s2">
   					<div class="view">  
 	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
