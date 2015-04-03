@@ -186,7 +186,7 @@
 	  			<div class="col s2 offset-s1">
 	  				<div class="view">  
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">  
-	  					<div class="mask">  
+	  					<div class="mask circle">  
 	  						<h2>Title</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
@@ -196,7 +196,7 @@
 	  			<div class="col s2">
 	  				<div class="view">  
 	  					<img src="images/seif.png" alt="" class="circle responsive-img">  
-	  					<div class="mask">  
+	  					<div class="mask circle">  
 	  						<h2>Title</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
@@ -206,7 +206,7 @@
 	  			<div class="col s2">
 	  				<div class="view">  
 	  					<img src="images/bacem.png" alt="" class="circle responsive-img">  
-	  					<div class="mask">  
+	  					<div class="mask circle">  
 	  						<h2>Title</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
@@ -216,7 +216,7 @@
   				<div class="col s2">
   					<div class="view">  
 	  					<img src="images/alaa.png" alt="" class="circle responsive-img">  
-	  					<div class="mask">  
+	  					<div class="mask circle">  
 	  						<h2>Title</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
@@ -226,7 +226,7 @@
   				<div class="col s2">
   					<div class="view">  
 	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">  
-	  					<div class="mask">  
+	  					<div class="mask circle">  
 	  						<h2>Title</h2>  
 	  						<p>Your Text</p>  
 	  						<a href="#" class="info">Read More</a>  
