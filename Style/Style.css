@@ -90,6 +90,7 @@ i.ion-social-facebook.large{
 }
 
 #services .title {
+	text-transform: uppercase;
 	padding: 15px;
 	width:100%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -106,6 +107,15 @@ i.ion-social-facebook.large{
 
 }
 
+#services h4{
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	opacity: 0.5;
+	font-style: bold;
+	font-size: 25px;
+
+}
 #services h5{
 	text-align: center;
 	margin-top: 0px;
@@ -155,6 +165,7 @@ i.ion-social-facebook.large{
 }
 
 #about .title{
+	text-transform: uppercase;
 	padding: 15px;
 	width:100%;
 	box-shadow: 0 0 10px rgba(255,255,255,0.4);
@@ -409,8 +420,12 @@ i.mdi-communication-live-help{
 	color: #ad1457;
 }
 
+#services i:hover{
+	text-shadow: 2px 0 10px #000000;
+}
+
 div.promo:hover{
-     border-top: 1px solid #ad1457;
+     border-top: 3px solid #ad1457;
 }
 
 p.icone-titre{
@@ -420,7 +435,7 @@ p.icone-titre{
 
 p.icone-texte{
 	color: white;
-    border-bottom: 1px solid #ad1457;
+    border-bottom: 2px solid #ad1457;
 }
 
 footer.page-footer{
