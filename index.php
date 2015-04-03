@@ -180,7 +180,7 @@
   	<section id="services">
   		<br><br><br>
   		<div class="title">
-	  		<h3>Services</h3>
+	  		<h3>SERVICES</h3>
 	  		<h4>Check here for any help and more.</h4>
   		</div>
 	  		<div class="container">
