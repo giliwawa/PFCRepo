@@ -148,6 +148,12 @@ i.ion-social-facebook.large{
 
 #contact .container{
 	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	background-color: rgba(173, 20, 87, 0.1);
+}
+
+#contact.input-field.invalid{
+	border-bottom: 1px solid #ad1457;
 }
 
 #produits h3{
