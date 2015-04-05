@@ -26,3 +26,21 @@ $(window).scroll(function() {
 	});
 
 
+$(document).ready(function(){
+		$('footer-nav a').click(function(){
+			if($(this).attr('data') != "signin"){
+				var scrollAncre = $(this).attr('data');
+				var navHeight = $('footer-nav').outerHeight();
+				var scrollTo = $('section[id="'+scrollAncre+'"]').offset().top ;
+				$('body ,html').animate( {scrollTop: scrollTo} , 500) ;
+				$(this).addClass('active');
+
+			}
+			
+
+		});
+
+
+
+
+
