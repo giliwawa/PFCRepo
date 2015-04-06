@@ -295,7 +295,7 @@
 					        <div class="input-field col s6 offset-s1">
 					          <i class="mdi-communication-email prefix"></i>
 					          <input id="icon_prefix" type="email" class="validate">
-					          <label for="icon_prefix">Mail</label>
+					          <label for="icon_prefix">E-Mail</label>
 					        </div>
 				    </div>
 				</div>
@@ -305,8 +305,8 @@
 				      <div class="row">
 				        <div class="input-field col s12">
 				        	<i class="mdi-editor-mode-edit prefix"></i>
-				          	<textarea id="textarea1" class="materialize-textarea"></textarea>
-				          	<label for="textarea1">Textarea</label>
+				          	<textarea id="message" class="materialize-textarea"></textarea>
+				          	<label for="message">Message</label>
 				        </div>
 				      </div>
 				    </div>
