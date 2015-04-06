@@ -150,15 +150,15 @@ i.ion-social-rss.large{
 .input-field label{
 	color:white;
 }
-#contact.input-field input[type=text]:focus + label,
-#contact.input-field input[type=password]:focus + label,
-#contact.input-field input[type=email]:focus + label,
-#contact.input-field input[type=url]:focus + label,
-#contact.input-field input[type=date]:focus + label,
-#contact.input-field input[type=tel]:focus + label,
-#contact.input-field input[type=number]:focus + label,
-#contact.input-field input[type=search]:focus + label,
-#contact.input-field textarea:focus.materialize-textarea + label {
+.input-field input[type=text]:focus + label,
+.input-field input[type=password]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=url]:focus + label,
+.input-field input[type=date]:focus + label,
+.input-field input[type=tel]:focus + label,
+.input-field input[type=number]:focus + label,
+.input-field input[type=search]:focus + label,
+.input-field textarea:focus.materialize-textarea + label {
    	color: #0097a7;
    	font-size: 16px;
    }
