@@ -84,7 +84,7 @@ i.ion-social-rss.large{
 }
 
 #services{
-	height: 24cm;
+	height: 22cm;
 	background-color: rgba(173, 20, 87, 0.2);
 }
 #services .container{
@@ -96,7 +96,7 @@ i.ion-social-rss.large{
 	width:100%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	background-color: rgba(173, 20, 87, 0.1);
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 
 #services h3{
@@ -147,16 +147,8 @@ i.ion-social-rss.large{
 	height: 19cm;
 	background-color: rgba(173, 20, 87, 0.2);
 }
-#contact button,
-#contact input,
-#contact optgroup,
-#contact select,
-#contact textarea {
-	color: white;
-}
-#contact .input-field label{
-	color:white;
-}
+
+
 .input-field input[type=text]:focus + label,
 .input-field input[type=password]:focus + label,
 .input-field input[type=email]:focus + label,
@@ -172,8 +164,9 @@ i.ion-social-rss.large{
 #contact .container{
 	text-align: center;
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 1);
 	height: 10cm;
+	border-radius: 5px;
 }
 
 /*Contact Form*/
@@ -203,11 +196,6 @@ i.ion-social-rss.large{
 #contact .input-field .prefix.active {
      color: #0097a7;
 }
-
-#contact i{
-	color: white;
-}
-
 
 #contact button{
 	background-color: #0097a7;
@@ -259,7 +247,7 @@ i.ion-social-rss.large{
 	width:100%;
 	box-shadow: 0 0 10px rgba(255,255,255,0.4);
 	background-color: rgba(0, 96, 100, 0.1);
-	margin-bottom: 140px;
+	margin-bottom: 70px;
 }
 
 #about .container.text{
@@ -493,17 +481,17 @@ i.ion-social-rss.large{
    }
 
 i.mdi-action-assignment-late{
-	font-size: 12rem;
+	font-size: 10rem;
 	color: #ad1457;
 }
 
 i.mdi-action-question-answer{
-	font-size: 12rem;
+	font-size: 10rem;
 	color: #ad1457;
 }
 
 i.mdi-communication-live-help{
-	font-size: 12rem;
+	font-size: 10rem;
 	color: #ad1457;
 }
 
