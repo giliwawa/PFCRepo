@@ -147,10 +147,14 @@ i.ion-social-rss.large{
 	height: 19cm;
 	background-color: rgba(173, 20, 87, 0.2);
 }
-button, input, optgroup, select, textarea {
+#contact button,
+#contact input,
+#contact optgroup,
+#contact select,
+#contact textarea {
 	color: white;
 }
-.input-field label{
+#contact .input-field label{
 	color:white;
 }
 .input-field input[type=text]:focus + label,
