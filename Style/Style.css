@@ -2,7 +2,9 @@
 	font-family: Sixcaps;
 	src:url(../fonts/SixCaps.ttf);
 }
-
+nav ul li a[data = signin]{
+	margin-right: 20px;
+}
 nav ul li a.active{
 	background-color: rgba(173, 20, 87, 0.7);
 }
@@ -10,6 +12,7 @@ nav ul li a:hover{
 
 	color:#f06292;
 }
+
 
 
 /*code couleur gris #37474f blue-grey darken-3
