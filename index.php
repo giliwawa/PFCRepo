@@ -1,4 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/td/html4/strict.">
+<?php
+require 'phpmailer/PHPMailerAutoload.php';
+?>
+
 <html>
 <head>
 	<title>Title!</title>
@@ -288,17 +292,17 @@
 	  	</div>
 	  	<div class="container">
 	  		<br>
-	  		<form>
+                        <form action="index.php" method="POST">
 	  			<div class="row">
 				     <div class="col s12">
 					        <div class="input-field col s4 offset-s1">
 					          <i class="mdi-action-account-circle prefix"></i>
-					          <input id="icon_prefix" type="text" class="validate">
+					          <input id="icon_prefix" type="text" class="validate" name="nom">
 					          <label for="icon_prefix">Name</label>
 					        </div>
 					        <div class="input-field col s6 offset-s1">
 					          <i class="mdi-communication-email prefix"></i>
-					          <input id="icon_prefix" type="email" class="validate">
+					          <input id="icon_prefix" type="email" class="validate" name="mail">
 					          <label for="icon_prefix">E-Mail</label>
 					        </div>
 				    </div>
@@ -309,7 +313,7 @@
 				      <div class="row">
 				        <div class="input-field col s12">
 				        	<i class="mdi-editor-mode-edit prefix"></i>
-				          	<textarea id="message" class="materialize-textarea"></textarea>
+				          	<textarea id="message" class="materialize-textarea" name="msg"></textarea>
 				          	<label for="message">Message</label>
 				        </div>
 				      </div>
@@ -319,6 +323,14 @@
 					 </button>
 			  	</div>
 			</form>
+                        <?php
+                            if(isset($_POST['nom']) && isset($_POST['mail']) && isset($_POST['msg']))
+                            {
+                                
+                                sendMail($_POST['nom'], $_POST['mail'], $_POST['msg']);
+                                
+                            }
+                        ?>
 	  	</div>
   	</section>
 
@@ -368,6 +380,39 @@
             </div>
         </div>
     </footer>
+    <?php
+        function sendMail($name,$maill,$message)
+        {
+            $mail = new PHPMailer;
+            $msg = wordwrap($message,70);
+            //$mail->SMTPDebug = 2; 
+            $mail->Debugoutput = 'html';
+// Enable verbose debug output
 
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'unicornsesprit@gmail.com';                 // SMTP username
+            $mail->Password = 'unicorns_esprit';                           // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                    // TCP port to connect to
+
+            $mail->From = $maill;
+            $mail->FromName = $name;    
+            $mail->addAddress('unicornsesprit@gmail.com');               // Name is optional
+                                 // Set email format to HTML
+
+            $mail->Subject = 'Contact form';
+            $mail->Body    = $message;
+            if(!$mail->send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                echo 'Message has been sent';
+            }
+            
+
+        }
+    ?> 
 </body>
 </html>
