@@ -69,11 +69,11 @@ require 'phpmailer/PHPMailerAutoload.php';
   				<div class="row">
   					<center>
   					<div class="col s6">
-  						<input id="login" type="submit" class="btn cyan darken-2" name="login" value="Sign In">
+  						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
   					</div>
   					<div class="col s6">
   						<a href="#modal2" data="signup" class="modal-trigger waves-effect waves-light modal-trigger"> 
-				    		<input id="signup" type="button" class="btn pink darken-3" name="signup" value="Sign Up">
+				    		<input id="signup" type="button" class="btn pink darken-3" value="Sign Up">
 				    	</a>
   					</div>
   					</center>
@@ -87,7 +87,28 @@ require 'phpmailer/PHPMailerAutoload.php';
   		<div class="modal-content">
   			<h4>Sign Up</h4>
   			<br>
-  			
+  			<form >
+  				<div class="row">
+  					<div class="input-field col s12">
+  						<i class="mdi-action-account-circle prefix"></i>
+  						<input id="icon_prefix" type="text" class="validate">
+  						<label for="icon_prefix">Username</label>
+  					</div>
+  					<div class="input-field col s12">
+  						<i class="mdi-communication-email prefix"></i>
+  						<input id="icon_prefix" type="email" class="validate">
+  						<label for="icon_prefix">E-mail</label>
+  					</div>
+  					<div class="input-field col s12">
+  						<i class="mdi-action-lock prefix"></i>
+  						<input id="icon_password" type="password" class="validate">
+  						<label for="icon_password">Password</label>
+  					</div>
+  					<div>
+  						<center><input id="signup" type="submit" class="btn pink darken-3" value="Sign Up"></center>
+					</div>
+  				</div>
+  			</form>
   		</div>
   	</div>
 
