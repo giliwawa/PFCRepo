@@ -48,7 +48,7 @@ require 'phpmailer/PHPMailerAutoload.php';
   		<div class="modal-content">
   			<h4>Sign In</h4>
   			<br>
-  			<form>
+  			<form >
   				<div class="row">
   					<div class="input-field col s12">
   						<i class="mdi-action-account-circle prefix"></i>
@@ -69,10 +69,12 @@ require 'phpmailer/PHPMailerAutoload.php';
   				<div class="row">
   					<center>
   					<div class="col s6">
-  						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
+  						<input id="login" type="submit" class="btn cyan darken-2" name="login" value="Sign In">
   					</div>
   					<div class="col s6">
-  						<input id="signup" type="button" class="btn pink darken-3" value="Sign Up">
+  						<a href="#modal2" data="signup" class="modal-trigger waves-effect waves-light modal-trigger"> 
+				    		<input id="signup" type="button" class="btn pink darken-3" name="signup" value="Sign Up">
+				    	</a>
   					</div>
   					</center>
   				</div>
@@ -80,6 +82,14 @@ require 'phpmailer/PHPMailerAutoload.php';
   		</div>
   	</div>
   	<!--END Modal Structure-->
+
+  	<div id="modal2" class="modal modal-fixed-footer">
+  		<div class="modal-content">
+  			<h4>Sign Up</h4>
+  			<br>
+  			
+  		</div>
+  	</div>
 
   	<section id="home">
   		<div id="slideshow" class="container">
