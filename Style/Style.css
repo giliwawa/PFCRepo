@@ -524,3 +524,13 @@ footer.page-footer{
 footer ul li a{
 	color:white;
 }
+
+#a_signin .container{
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	background-color: rgba(255, 255, 255, 1);
+	height: 8cm;
+	width: 8cm;
+	border-radius: 5px;
+	margin-top: 200px;
+}
