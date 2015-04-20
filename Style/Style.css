@@ -14,7 +14,6 @@ nav ul li a:hover{
 }
 
 
-
 /*code couleur gris #37474f blue-grey darken-3
 			   pink #ad1457 pink darken-3
 			   Cyan #0097a7 cyan darken-2
@@ -534,3 +533,56 @@ footer ul li a{
 	border-radius: 5px;
 	margin-top: 200px;
 }
+
+
+div#vmenu { 
+   padding: .10em 0em .10em 0em; 
+   border: solid 1px #37474f; 
+   background-color: #37474f; 
+   width: 15em; 
+   height: relative;
+}
+
+/*div#vmenu ul a:link { 
+   margin: 0; 
+   padding: .2em 0em .2em .4em; 
+   text-decoration: none; 
+   font-size:17pt;   
+   background-color: #37474f; 
+   color: #37474f; 
+   display: block; 
+
+} */
+
+div#vmenu ul a:active { 
+   margin: 0; 
+   padding: .25em .5em .25em .5em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size:17pt;
+   background: #37474f; 
+   color: #37474f; 
+   display: block; 
+} 
+
+div#vmenu ul a:visited { 
+   margin: 0; 
+
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size:17pt; 
+   background: #37474f; 
+   color: #ffffff; 
+   display: block; 
+} 
+
+div#vmenu ul li a:hover { 
+   margin: 0; 
+   padding: .2em 0em .2em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size:17pt;
+   background-color: #ad1457; 
+   color: #ffffff; 
+   display: block; 
+} 
