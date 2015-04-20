@@ -20,10 +20,10 @@
 
 		<div id="vmenu"> 
             <ul> 
-              <li><a href="">Users</a></li> 
-              <li><a href="">Products</a></li> 
-              <li><a href="">Ticket</a></li> 
-              <li><a href="">Forum</a></li>
+              <li><a href="admin_index.php">Users</a></li> 
+              <li><a href="admin_product.php">Products</a></li> 
+              <li><a href="admin_ticket.php">Ticket</a></li> 
+              <li><a href="admin_forum.php">Forum</a></li>
             </ul>   
         </div>
 	
