@@ -18,15 +18,33 @@
 </head>
 <body>
 
-		<div id="vmenu"> 
-            <ul> 
-              <li><a href="admin_index.php">Users</a></li> 
-              <li><a href="admin_product.php">Products</a></li> 
-              <li><a href="admin_ticket.php">Ticket</a></li> 
-              <li><a href="admin_forum.php">Forum</a></li>
-            </ul>   
-        </div>
-	
+<section id="admin">
+		<div class="container">
+			<h4>administration interface</h4>
+			<center><h6>Forum</h6></center>
+			<ul class="collapsible" data-collapsible="accordion">
+			    <li>
+			      <div class="collapsible-header"><i class="mdi-action-account-child"></i><a href="admin_index.php">Users</a></div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="mdi-action-shopping-cart"></i>Products</div>
+			      <div class="collapsible-body">
+			      	<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Guitar</div>
+			      	<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Percution</div>
+			      	<div class="collapsible-header"><i class="mdi-social-whatshot"></i>A vent</div>
+			      	<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Electronique</div>
+			      	<div class="collapsible-header"><i class="mdi-social-whatshot"></i>accessoir</div>
+			      </div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="mdi-action-description"></i><a href="admin_ticket.php">Ticket</a></div>
+			    </li>
+			    <li>
+			      <div class="collapsible-header"><i class="mdi-communication-forum"></i><a href="admin_forum.php">Forum</a></div>
+			    </li>
+	  		</ul>
+		</div>
+	</section>
 
 </body>
 </html>

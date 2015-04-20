@@ -534,55 +534,16 @@ footer ul li a{
 	margin-top: 200px;
 }
 
-
-div#vmenu { 
-   padding: .10em 0em .10em 0em; 
-   border: solid 1px #37474f; 
-   background-color: #37474f; 
-   width: 15em; 
-   height: relative;
+#admin .container{
+  margin: 0; 
+  padding: .25em 0em .25em 0em;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background-color: rgba(255, 255, 255, 1);
+  width: 6.5cm;
+  height: 22cm;
 }
 
-/*div#vmenu ul a:link { 
-   margin: 0; 
-   padding: .2em 0em .2em .4em; 
-   text-decoration: none; 
-   font-size:17pt;   
-   background-color: #37474f; 
-   color: #37474f; 
-   display: block; 
-
-} */
-
-div#vmenu ul a:active { 
-   margin: 0; 
-   padding: .25em .5em .25em .5em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size:17pt;
-   background: #37474f; 
-   color: #37474f; 
-   display: block; 
-} 
-
-div#vmenu ul a:visited { 
-   margin: 0; 
-
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size:17pt; 
-   background: #37474f; 
-   color: #ffffff; 
-   display: block; 
-} 
-
-div#vmenu ul li a:hover { 
-   margin: 0; 
-   padding: .2em 0em .2em .4em; 
-   text-decoration: none; 
-   font-weight: bold; 
-   font-size:17pt;
-   background-color: #ad1457; 
-   color: #ffffff; 
-   display: block; 
-} 
+#admin ul{
+  margin-top: 100px;
+}
