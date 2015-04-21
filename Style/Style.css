@@ -547,3 +547,17 @@ footer ul li a{
 #admin ul{
   margin-top: 100px;
 }
+
+#modal_sign .container{
+  height: 700px;
+}
+
+#user_signup .container{
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background-color: rgba(255, 255, 255, 1);
+  height: 23cm;
+  border-radius: 5px;
+  margin-bottom: 110px;
+  margin-top: 50px;
+}
