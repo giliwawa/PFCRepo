@@ -15,7 +15,7 @@
   <script src="../js/materialize.min.js"></script>
   <script type="text/javascript" src="../js/modals.js"></script>	
 </head>
-<body>
+<body id="bg_admin">
 
 <section id="admin">
 		<div class="container">

@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="../js/modals.js"></script>
 	
 </head>
-<body>
+<body id="bg_admin">
 	<section id="admin">
 		<div class="container">
 			<h4>administration interface</h4>

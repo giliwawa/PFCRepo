@@ -11,6 +11,10 @@ body{
 	background-size: cover;
 }
 
+#bg_admin{
+  background: #37474f;
+}
+
 /*code couleur gris #37474f blue-grey darken-3
 			   pink #ad1457 pink darken-3
 			   Cyan #0097a7 cyan darken-2
