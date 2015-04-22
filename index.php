@@ -1,46 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/td/html4/strict.">
+<?php include '/view/header.php' ?>
+        <link rel="stylesheet" type="text/css" href="Style/Animation.css">
+        <script type="text/javascript" src="js/Smooth_scroll.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+        <title>Title!</title>
+        
+	
+</head>
 <?php
 require 'phpmailer/PHPMailerAutoload.php';
 ?>
-
-<html>
-<head>
-	<title>Title!</title>
-	<meta charset="utf-8">
-	
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="Style/Style.css">
-	<link rel="stylesheet" type="text/css" href="Style/Animation.css">
-	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/Smooth_scroll.js"></script>
-	<script type="text/javascript" src="js/slideshow.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/modals.js"></script>
-	
-</head>
 <body>
 	
-	<div class="navbar-fixed">
-		<nav>
-		    <div class="nav-wrapper blue-grey darken-3">
-			    <ul id="nav-mobile" class="left hide-on-med-and-down">
-				    <li><a class="active" href="#home" data="home">Home</a></li>
-				    <li><a class="" href="#produits" data ="produits">Produits</a></li>
-				    <li><a class="" href="#services" data="services">Service</a></li>
-				    <li><a class="" href="#about" data="about">About</a></li>
-				    <li><a class="" href="#contact" data="contact">Contact</a></li>
-			    </ul>
-			    <ul id="nav-mobile" class="right hide-on-med-and-down">
-				    <li>
-				    	<a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
-				    		<i class="ion-log-in small"></i> Sign In
-				    	</a>
-				    </li>
-			    </ul>
-		    </div>
-	  	</nav>
-  	</div>
+	<?php include 'view/navbar.php' ?>
 
 
   	<!-- Modal Structure -->
