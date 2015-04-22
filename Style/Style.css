@@ -2,6 +2,21 @@
 	font-family: Sixcaps;
 	src:url(../fonts/SixCaps.ttf);
 }
+
+body{
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*code couleur gris #37474f blue-grey darken-3
+			   pink #ad1457 pink darken-3
+			   Cyan #0097a7 cyan darken-2
+*/
+
+/*--------------------------------------navigation bar BEGIN----------------------------------------------------*/
 nav ul li a[data = signin]{
 	margin-right: 20px;
 }
@@ -12,19 +27,9 @@ nav ul li a:hover{
 
 	color:#f06292;
 }
+/*--------------------------------------navigation bar END------------------------------------------------------*/
 
-
-/*code couleur gris #37474f blue-grey darken-3
-			   pink #ad1457 pink darken-3
-			   Cyan #0097a7 cyan darken-2
-*/
-body{
-	background: url(../images/background.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+/*-----------------------------------------icons BEGIN----------------------------------------------------------*/
 i.ion-log-in.small{
 	font-size: 18px;
 }
@@ -37,6 +42,24 @@ i.ion-social-facebook.large{
 i.ion-social-rss.large{
 	font-size: 32px;
 }
+
+i.mdi-action-assignment-late{
+	font-size: 10rem;
+	color: #ad1457;
+}
+
+i.mdi-action-question-answer{
+	font-size: 10rem;
+	color: #ad1457;
+}
+
+i.mdi-communication-live-help{
+	font-size: 10rem;
+	color: #ad1457;
+}
+/*-----------------------------------------icons END---------------------------------------------------------------*/
+
+/*----------------------------------------------------home BEGIN---------------------------------------------------*/
 
 #home{
 	height: 22cm;
@@ -75,16 +98,222 @@ i.ion-social-rss.large{
 	padding-top: 0px;
 }
 
+/*----------------------------------------------------home END---------------------------------------------------*/
+
+/*---------------------------------------------------produit BEGIN---------------------------------------------------*/
 
 #produits{
 	height: 24cm;
 	background-color: rgba(0, 0, 0, 0.85);
 }
+
+#produits h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
+
+}
+
+#produits h4{
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	opacity: 0.5;
+	font-style: bold;
+	font-size: 25px;
+
+}
+
+
+#produits .container{
+	padding-top: 100px;
+}
+
+#produits .title {
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	background-color: rgba(0, 96, 100, 0.1);
+}
+
+#produits .view{
+	position: relative;
+}
+#produits .view .mask {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+#produits .view h2 {
+	height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    /*padding: 2px;*/
+    background: rgba(0, 0, 0, 0.8);
+    /*margin: 4px 0 0 0*/
+}
+#produits .view p {
+    
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+#produits .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+#produits .view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
+.guitar .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/guitarthion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+.perc .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/percuthion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+.saxo .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/naf5ethion.jpg) no-repeat center center ;
+	background-size: cover;
+}
+
+.electronic .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/moogothion.png) no-repeat center center ;
+	background-size: cover;
+}
+
+.accessoires .featured-image{
+	height: 250px;
+	width: 100%;
+	background: url(../images/accesoirs.png) no-repeat center center ;
+	background-size: cover;
+}
+
+
+
+/*---------------------------------------------------produit END---------------------------------------------------*/
+
+/*--------------------------------------------------about BEGIN----------------------------------------------------*/
 #about{
 	height: 22cm;
 	background-color: rgba(0, 0, 0, 0.85);
 }
+#about h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	opacity: 0.7;
 
+}
+
+#about .title{
+	text-transform: uppercase;
+	padding: 15px;
+	width:100%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.4);
+	background-color: rgba(0, 96, 100, 0.1);
+	margin-bottom: 70px;
+}
+
+#about .container.text{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 33px;
+	color: white;
+	text-shadow: 0px 0px 7px #37474f;
+	letter-spacing: 0px;
+}
+
+#about .row{
+	margin-bottom: 0px;
+}
+
+#about .view {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    margin-right: auto;
+    margin-left: auto;
+}
+#about .view .mask, .view .content {
+	width: 200px;
+	height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+#about .view img {
+    display: block;
+    position: relative
+}
+#about .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 40px 0 0 0;
+    line-height: 10px;
+}
+#about .view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+#about .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+#about .view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+/*--------------------------------------------------about END----------------------------------------------------*/
+
+/*--------------------------------------------------services BEGIN---------------------------------------------------*/
 #services{
 	height: 22cm;
 	background-color: rgba(173, 20, 87, 0.2);
@@ -127,6 +356,55 @@ i.ion-social-rss.large{
 	font-style: bold;
 	font-size: 14px;
 }
+
+#services .view{
+	position: relative;
+}
+#services .view .mask {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+#services .view h2 {
+	height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    /*padding: 2px;*/
+    background: rgba(0, 0, 0, 0.8);
+    /*margin: 4px 0 0 0*/
+}
+#services .view p {
+    
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+#services .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+#services .view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+#services i:hover{
+	text-shadow: 2px 0 10px #000000;
+}
+
+/*---------------------------------------------------services END--------------------------------------------------------*/
+
+/*---------------------------------------------------contact BEGIN--------------------------------------------------------*/
 
 #contact .title {
 	padding: 15px;
@@ -204,67 +482,9 @@ i.ion-social-rss.large{
 }
 
 
-#produits h3{
-	margin-top: 0px;
-	margin-bottom: 20px;
-	text-align: center;
-	color: white;
-	opacity: 0.7;
 
-}
+/*---------------------------------------------------contact END--------------------------------------------------------*/
 
-#produits h4{
-	text-align: center;
-	margin-top: 0px;
-	color: white;
-	opacity: 0.5;
-	font-style: bold;
-	font-size: 25px;
-
-}
-
-
-#produits .container{
-	padding-top: 100px;
-}
-
-#about h3{
-	margin-top: 0px;
-	margin-bottom: 20px;
-	text-align: center;
-	color: white;
-	opacity: 0.7;
-
-}
-#produits .title {
-	padding: 15px;
-	width:100%;
-	box-shadow: 0 0 10px rgba(255,255,255,0.4);
-	background-color: rgba(0, 96, 100, 0.1);
-}
-
-#about .title{
-	text-transform: uppercase;
-	padding: 15px;
-	width:100%;
-	box-shadow: 0 0 10px rgba(255,255,255,0.4);
-	background-color: rgba(0, 96, 100, 0.1);
-	margin-bottom: 70px;
-}
-
-#about .container.text{
-	margin-top: 40px;
-	margin-bottom: 0px;
-	text-align: center;
-	font-size: 33px;
-	color: white;
-	text-shadow: 0px 0px 7px #37474f;
-	letter-spacing: 0px;
-}
-
-#about .row{
-	margin-bottom: 0px;
-}
 
 .center{
 	text-align: center;
@@ -272,179 +492,7 @@ i.ion-social-rss.large{
 	box-shadow: 0 0 5px rgba(255,255,255,0.4);
 }
 
-/*transition starts here*/
-#produits .view{
-	position: relative;
-}
-#produits .view .mask {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-#produits .view h2 {
-	height: 50px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    /*padding: 2px;*/
-    background: rgba(0, 0, 0, 0.8);
-    /*margin: 4px 0 0 0*/
-}
-#produits .view p {
-    
-    font-size: 14px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-#produits .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-#produits .view a.info:hover {
-    box-shadow: 0 0 5px #000
-}
-
-#services .view{
-	position: relative;
-}
-#services .view .mask {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-#services .view h2 {
-	height: 50px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    /*padding: 2px;*/
-    background: rgba(0, 0, 0, 0.8);
-    /*margin: 4px 0 0 0*/
-}
-#services .view p {
-    
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-#services .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-#services .view a.info:hover {
-    box-shadow: 0 0 5px #000
-}
-
-/*OnHover Mask #about*/
-#about .view {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-    margin-right: auto;
-    margin-left: auto;
-}
-#about .view .mask, .view .content {
-	width: 200px;
-	height: 200px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-#about .view img {
-    display: block;
-    position: relative
-}
-#about .view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 10px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 40px 0 0 0;
-    line-height: 10px;
-}
-#about .view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-#about .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-#about .view a.info:hover {
-    box-shadow: 0 0 5px #000
-}
-
-.guitar .featured-image{
-	height: 250px;
-	width: 100%;
-	background: url(../images/guitarthion.jpg) no-repeat center center ;
-	background-size: cover;
-}
-.perc .featured-image{
-	height: 250px;
-	width: 100%;
-	background: url(../images/percuthion.jpg) no-repeat center center ;
-	background-size: cover;
-}
-.saxo .featured-image{
-	height: 250px;
-	width: 100%;
-	background: url(../images/naf5ethion.jpg) no-repeat center center ;
-	background-size: cover;
-}
-
-.electronic .featured-image{
-	height: 250px;
-	width: 100%;
-	background: url(../images/moogothion.png) no-repeat center center ;
-	background-size: cover;
-}
-
-.accessoires .featured-image{
-	height: 250px;
-	width: 100%;
-	background: url(../images/accesoirs.png) no-repeat center center ;
-	background-size: cover;
-}
+/*---------------------------------------------------Sign in BEGIN--------------------------------------------------------*/
 
 .modal{
 	width: 25%;
@@ -480,26 +528,9 @@ i.ion-social-rss.large{
 .row .col.l2{
    		text-align: center;
    		margin-left: 8px;
-   }
-
-i.mdi-action-assignment-late{
-	font-size: 10rem;
-	color: #ad1457;
 }
 
-i.mdi-action-question-answer{
-	font-size: 10rem;
-	color: #ad1457;
-}
-
-i.mdi-communication-live-help{
-	font-size: 10rem;
-	color: #ad1457;
-}
-
-#services i:hover{
-	text-shadow: 2px 0 10px #000000;
-}
+/*-------------------------------------------------Sign in END-----------------------------------------------------------*/
 
 div.promo:hover{
      border-top: 3px solid #ad1457;
@@ -517,6 +548,8 @@ p.icone-texte{
     text-shadow: 1px 1px 10px #0097a7;
 }
 
+/*------------------------------------------------footer BEGIN------------------------------------------------------*/
+
 footer.page-footer{
 	margin-top: 0px;
 }
@@ -533,6 +566,10 @@ footer ul li a{
 	border-radius: 5px;
 	margin-top: 200px;
 }
+
+/*------------------------------------------------footer END------------------------------------------------------*/
+
+/*------------------------------------------------admin BEGIN------------------------------------------------------*/
 
 #admin .container{
   margin: 0; 
@@ -561,3 +598,6 @@ footer ul li a{
   margin-bottom: 110px;
   margin-top: 50px;
 }
+
+
+/*------------------------------------------------admin END------------------------------------------------------*/
