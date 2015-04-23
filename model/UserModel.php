@@ -28,7 +28,21 @@
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$adresse."','".$CIN."','".$num_tel."','".$username."','".$password."')";
         
         $bdd->QueryExecute($sql);
-    }        
+    }     
+
+    public function afficherUser(){
+            $tableau = array();
+            $query = "SELECT * FROM users";
+            $resultat = mysql_query($query) or die("Ereur ".mysql_error()) ;
+            $i = 0;
+            while($data = mysql_fetch_array($result))
+            {
+                $Pr = new produit($data);
+                $tableau[$i] = $Pr ;
+                $i++;   
+            }
+            return $tableau;
+        }    
         
         
     }

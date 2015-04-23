@@ -1,5 +1,4 @@
 <?php
-require 'DBConnect.php';
 
 class user {
 
