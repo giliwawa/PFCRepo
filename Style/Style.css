@@ -217,15 +217,21 @@ i.mdi-communication-live-help{
 	background: url(../images/accesoirs.png) no-repeat center center ;
 	background-size: cover;
 }
-#index_produit .container{
-  margin: 0; 
-  padding: .25em 0em .25em 0em;
-  text-align: center;
-  background-color: rgba(0,0,0,0);
-  width: 6.5cm;
-  height: 22cm;
-  margin-left: 15px;
+#index_produit{
+	
 }
+#index_produit .sidebar-container{
+  
+}
+#index_produit .content-container{
+	padding-left:50px;
+	padding-top: 20px;
+
+}
+#index_produit .content-container p{
+	color:#ffffff;
+}
+
 #index_produit ul{
 	border: 10px;
 	border-color: rgba(0,0,0,0.4)
@@ -250,6 +256,7 @@ i.mdi-communication-live-help{
 #index_produit .collection span{
 	color:#ffffff;
 }
+
 
 
 

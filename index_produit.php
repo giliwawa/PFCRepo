@@ -2,6 +2,7 @@
         <link rel="stylesheet" type="text/css" href="Style/Animation.css">
         <script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
+  <script type="text/javascript" src="js/products_div_gen.js"></script>
         <title>Title!</title>
         
 	
@@ -53,64 +54,73 @@ require 'phpmailer/PHPMailerAutoload.php';
   			</form>
   		</div>
   	</div>
+        <!-- Modal Structure -->
+
 <section id="index_produit">
-<div class="container">
-<ul class="collection ">
-    <li class="collection-item avatar ">
-        <a href="#">
-        <img src="images/guitarthion.jpg" alt="" class="circle">
-      <span class="title">String Instruments</span>
-      <p>guitars <br>
-         violins
-      </p>
-        </a>
-    </li>
-    
-    <li class="collection-item avatar ">
-       <a href="#">
-        <img src="images/percuthion.jpg" alt="" class="circle">
-      <span class="title">Percussions</span>
-      <p>Drums <br>
-         Bongos
-      </p>
-       </a>
-    </li>
-    
-    <li class="collection-item avatar ">
-        <a href="#">
-        <img src="images/naf5ethion.jpg" alt="" class="circle">
-      <span class="title">Wind Instruments</span>
-      <p>Trumpets <br>
-         Saxophones
-      </p>
-        </a>
-    </li>
-    
-    <li class="collection-item avatar ">
-        <a href="#">
-        <img src="images/moogothion.png" alt="" class="circle">
-      <span class="title">Electronic Instruments</span>
-      <p>Moogs <br>
-         Theramines
-      </p>
-        </a>
-    </li>
-    
-    <li class="collection-item avatar ">
-        <a href="#">
-        <img src="images/accesoirs.png" alt="" class="circle">
-      <span class="title">Acceesories</span>
-      <p>Amplifiers <br>
-         Pedals
-      </p>
-        </a>
-    </li>
-   
-    
-    
-  </ul>        
-</div>
-    </section>
+  <div class="row">
+    <div class="col s2 sidebar-container">
+        <ul class="collection ">
+            <li class="collection-item avatar ">
+                <a href="#">
+                <img src="images/guitarthion.jpg" alt="" class="circle">
+                <span class="title">String Instruments</span>
+                <p>guitars <br>
+                   violins
+                </p>
+                </a>
+            </li>
+            
+            <li class="collection-item avatar ">
+               <a href="#">
+                <img src="images/percuthion.jpg" alt="" class="circle">
+                <span class="title">Percussions</span>
+                <p>Drums <br>
+                   Bongos
+                </p>
+               </a>
+            </li>
+            
+            <li class="collection-item avatar ">
+                <a href="#">
+                <img src="images/naf5ethion.jpg" alt="" class="circle">
+                <span class="title">Wind Instruments</span>
+                <p>Trumpets <br>
+                   Saxophones
+                </p>
+                </a>
+            </li>
+            
+            <li class="collection-item avatar ">
+                <a href="#">
+                <img src="images/moogothion.png" alt="" class="circle">
+                <span class="title">Electronic Instruments</span>
+                <p>Moogs <br>
+                   Theramines
+                </p>
+                </a>
+            </li>
+            
+            <li class="collection-item avatar ">
+                <a href="#">
+                <img src="images/accesoirs.png" alt="" class="circle">
+                <span class="title">Acceesories</span>
+                <p>Amplifiers <br>
+                   Pedals
+                </p>
+                </a>
+            </li>
+        </ul>        
+    </div>
+    <div class="col s9 content-container">
+
+        <div class="col s3">dsfgsdfgsdfg</div>
+        <div class="col s3">fgfgfgfgsdfgssssssss</div>
+        <div class="col s3">sdfgsdfg</div>
+        <div class="col s3">sdfgsdfg</div>
+
+    </div>
+  </div>
+</section>
         
    <?php
     include 'view/footer.php';
