@@ -15,7 +15,7 @@
             $query = "SELECT * FROM produit";
             $resultat = mysql_query($query) or die("Ereur ".mysql_error()) ;
             $i = 0;
-            while($data = mysql_fetch_array($result))
+            while($data = mysql_fetch_array($resultat))
             {
                 $Pr = new produit($data);
                 $tableau[$i] = $Pr ;
