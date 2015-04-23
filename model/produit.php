@@ -1,7 +1,5 @@
 <?php
 
-require 'DBConnect.php';
-
 class produit {
 
 	private $id_produit;
@@ -85,15 +83,6 @@ class produit {
     }
     public function setDescription($description){
         $this->description = $description;
-    }
-
-    /*Cruds*/
-    public function consulterProduit()
-    {
-    	$bdd = new DBConnect('localhost', 'pfc', 'root', '');
-    	
-
-    	
     }
 }
 

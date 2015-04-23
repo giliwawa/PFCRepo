@@ -1,0 +1,29 @@
+<?php
+    include_once 'produit.php';
+    require_once '../configuration.php';
+    
+    class ProduitModel {
+        
+        
+        public function __construct() {
+            $bdd = new Configuration() ;
+            $bdd->connexion();
+        }
+        
+        public function afficher(){
+            $tableau = array();
+            $query = "SELECT * FROM produit";
+            $resultat = mysql_query($query) or die("Ereur ".mysql_error()) ;
+            $i = 0;
+            while($data = mysql_fetch_array($result))
+            {
+                $Pr = new produit($data);
+                $tableau[$i] = $Pr ;
+                $i++;   
+            }
+            return $tableau;
+        }        
+        
+        
+    }
+?>
