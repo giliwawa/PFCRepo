@@ -616,6 +616,7 @@ footer ul li a{
   margin-left: 0px;
   width: 100%;
   max-height: 22cm;
+  max-width: 100%;
 }
 #admin .sidebar{
   background-color: white;
