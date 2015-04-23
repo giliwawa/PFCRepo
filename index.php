@@ -7,7 +7,7 @@
 	
 </head>
 <?php
-require 'phpmailer/PHPMailerAutoload.php';
+
 ?>
 <body>
 	
@@ -223,7 +223,7 @@ require 'phpmailer/PHPMailerAutoload.php';
 	  	</div>
 	  	<div class="container">
 	  		<br>
-                        <form action="index.php" method="POST">
+                        <form action="controller/mailController.php" method="POST">
 	  			<div class="row">
 				     <div class="col s12">
 					        <div class="input-field col s4 offset-s1">
@@ -254,51 +254,8 @@ require 'phpmailer/PHPMailerAutoload.php';
 					 </button>
 			  	</div>
 			</form>
-                        <?php
-                            if(isset($_POST['nom']) && isset($_POST['mail']) && isset($_POST['msg']))
-                            {
-                                
-                                sendMail($_POST['nom'], $_POST['mail'], $_POST['msg']);
-                                
-                            }
-                        ?>
 	  	</div>
   	</section>
-<?php
-        function sendMail($name,$maill,$message)
-        {
-            $mail = new PHPMailer;
-            $msg = wordwrap($message,70);
-            //$mail->SMTPDebug = 2; 
-            $mail->Debugoutput = 'html';
-// Enable verbose debug output
-
-            $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
-            $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'unicornsesprit@gmail.com';                 // SMTP username
-            $mail->Password = 'unicorns_esprit';                           // SMTP password
-            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 587;                                    // TCP port to connect to
-
-            $mail->From = $maill;
-            $mail->FromName = $name;    
-            $mail->addAddress('unicornsesprit@gmail.com');               // Name is optional
-                                 // Set email format to HTML
-
-            $mail->Subject = 'Contact form';
-            $mail->Body    = $message;
-            if(!$mail->send()) {
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-            } else {
-                echo 'Message has been sent';
-            }
-            
-
-        }
-    ?> 
-
     <?php
     include 'view/footer.php';
     ?>
