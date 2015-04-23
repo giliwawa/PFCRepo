@@ -6,13 +6,10 @@
         
         
         public function __construct() {
-            $bdd = new Configuration() ;
-            $bdd->connexion();
+            
         }
         
        public function ajouterUser(){
-        $bdd = new DBConnect('localhost', 'pfc', 'root', '');
-        $prenom = $nom = $sexe = $date_naissance = $adresse = $CIN = $num_tel = $username = $password = "";
 
         $prenom = $_POST['prenom'];
         $nom = $_POST['nom'];
@@ -33,17 +30,32 @@
     public function afficherUser(){
             $tableau = array();
             $query = "SELECT * FROM users";
-            $resultat = mysql_query($query) or die("Ereur ".mysql_error()) ;
+            $resultat = $db->query($query) ;
             $i = 0;
-            while($data = mysql_fetch_array($result))
+            while($data = $resultat->fetch_assoc())
             {
-                $Pr = new produit($data);
+                $Pr = new user($data);
                 $tableau[$i] = $Pr ;
                 $i++;   
             }
             return $tableau;
         }    
         
+        public function getlogin($username,$password){
+
+        $db = new Db();
+        $query = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+        $resultat = $db->select($query) ;
+        if($resultat){
+            $Us = new user($resultat);
+            return $Us;
+            
+        }
+        else return 0;
+    }
         
     }
+
+    
+
 ?>

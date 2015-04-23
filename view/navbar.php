@@ -1,3 +1,7 @@
+<?php session_start(); 
+  if(isset($_SESSION['username']))
+    $username = $_SESSION['username'];
+?>
 <div class="navbar-fixed">
 		<nav>
 		    <div class="nav-wrapper blue-grey darken-3">
@@ -9,11 +13,27 @@
 				    <li><a class="" href="index.php#contact" data="contact">Contact</a></li>
 			    </ul>
 			    <ul id="nav-mobile" class="right hide-on-med-and-down">
-				    <li>
-				    	<a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
-				    		<i class="ion-log-in small"></i> Sign In
-				    	</a>
-				    </li>
+				    <?php 
+              if(!isset($username))
+              {
+                echo '
+                <li>
+                  <a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
+                    <i class="ion-log-in small"></i> Sign In
+                  </a>
+                </li>';
+              }
+              else
+              {
+                echo '
+                <li>
+                  <a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
+                    <i class="ion-log-in small"></i> Logout('.$username.')
+                  </a>
+                </li>';
+              }
+
+            ?>
 			    </ul>
 		    </div>
 	  	</nav>
@@ -23,16 +43,16 @@
   		<div class="modal-content">
   			<h4>Sign In</h4>
   			<br>
-  			<form >
+  			<form action="controller/loginController.php" method="POST">
   				<div class="row">
   					<div class="input-field col s12">
   						<i class="mdi-action-account-circle prefix"></i>
-  						<input id="icon_prefix" type="text" class="validate">
+  						<input id="icon_prefix" type="text" name="username" class="validate">
   						<label for="icon_prefix">Pseudo</label>
   					</div>
   					<div class="input-field col s12">
   						<i class="mdi-action-lock prefix"></i>
-  						<input id="icon_password" type="password" class="validate">
+  						<input id="icon_password" type="password" name="password" class="validate">
   						<label for="icon_password">Mot de Passe</label>
   						<center>
   							<a class="tooltipped btn-floating btn-medium" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help"></i></a>
