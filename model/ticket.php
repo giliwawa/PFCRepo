@@ -33,7 +33,7 @@ class ticket {
 	public function getid_ticket(){
 		return $this->id_ticket;
 	}
-	public function getnom(){
+	public function getname(){
 		return $this->nom;
 	}
 	public function getemail(){
@@ -47,23 +47,23 @@ class ticket {
 	}
 
 	/*setters*/
-	public function setid_ticket()
+	public function setid_ticket($id_ticket)
 	{
 		$this->id_ticket = $id_ticket;
 	}
-	public function setnom()
+	public function setname($name)
 	{
-		$this->nom=$nom;
+		$this->nom=$name;
 	}
-	public function setemail()
+	public function setemail($email)
 	{
 		$this->email=$email;
 	}
-	public function settext()
+	public function settext($text)
 	{
 		$this->text=$text;
 	}
-	public function setstate()
+	public function setstate($state)
 	{
 		$this->state=$state;
 	}

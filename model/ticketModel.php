@@ -2,7 +2,7 @@
 	include_once 'ticket.php';
 	require '../configuration.php';
 
-	class TicketModel{
+	class ticketModel{
 		public function __construct()
 		{
 			$bdd = new Configuration();
@@ -30,6 +30,12 @@
 				$i++;
 			}
 			return $tableau;
+		}
+
+		public function ajouterTicket($ticket)
+		{
+			$requete="INSERT INTO ticket (name, email, text, state) VALUES ('".$ticket->getname()."','".$ticket->getemail()."','".$ticket->gettext()."',1)";
+			mysql_query ($requete) or die ("Erreur".mysql_error());
 		}
 	}
 
