@@ -16,7 +16,7 @@ function sendMail($name,$maill,$message)
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
     $mail->From = $maill;   
-    $mail->addAddress('unicornsesprit@gmail.com');               // Name is optional
+    $mail->addAddress($maill);               // Name is optional
     $mail->Subject = 'Contact form';
     $mail->Body    = $message;
     if(!$mail->send()) {
