@@ -2,6 +2,7 @@
         <link rel="stylesheet" type="text/css" href="Style/Animation.css">
         <script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
+        <script type="text/javascript" src="js/Dropdown.js"></script>
         <title>Title!</title>
         
 	
@@ -11,7 +12,7 @@
 ?>
 <body>
 	
-	<?php include 'view/navbar.php' ?>
+	<?php include 'view/navbar_logged.php' ?>
   	<section id="home">
   		<div id="slideshow" class="container">
   			

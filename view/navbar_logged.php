@@ -3,41 +3,30 @@
     $username = $_SESSION['username'];
 ?>
 <div class="navbar-fixed">
-		<nav>
-		    <div class="nav-wrapper blue-grey darken-3">
-			    <ul id="nav-mobile" class="left hide-on-med-and-down">
-				    <li><a class="active" href="#home" data="home">Home</a></li>
-				    <li><a class="" href="index.php#produits" data ="produits">Produits</a></li>
-				    <li><a class="" href="index.php#services" data="services">Service</a></li>
-				    <li><a class="" href="index.php#about" data="about">About</a></li>
-				    <li><a class="" href="index.php#contact" data="contact">Contact</a></li>
-			    </ul>
-			    <ul id="nav-mobile" class="right hide-on-med-and-down">
-				    <?php 
-              if(!isset($username))
-              {
-                echo '
+    <nav>
+        <div class="nav-wrapper blue-grey darken-3">
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="active" href="#home" data="home">Home</a></li>
+                <li><a class="" href="index.php#produits" data ="produits">Produits</a></li>
+                <li><a class="" href="index.php#services" data="services">Service</a></li>
+                <li><a class="" href="index.php#about" data="about">About</a></li>
+                <li><a class="" href="index.php#contact" data="contact">Contact</a></li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
-                  <a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
-                    <i class="ion-log-in small"></i> Sign In
-                  </a>
-                </li>';
-              }
-              else
-              {
-                echo '
-                <li>
-                  <a href="#modal1" data="signin" class="modal-trigger waves-effect waves-light modal-trigger"> 
-                    <i class="ion-log-in small"></i> Logout('.$username.')
-                  </a>
-                </li>';
-              }
-
-            ?>
-			    </ul>
-		    </div>
-	  	</nav>
-  	</div>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button' href='#' data-activates='dropdown1'>Drop Me!</a>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <!-- Modal Structure -->
   	<div id="modal1" class="modal modal-fixed-footer">
   		<div class="modal-content">
