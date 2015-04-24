@@ -15,12 +15,10 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
                     <!-- Dropdown Trigger -->
-                    <a class='dropdown-button' href='#' data-activates='dropdown1'>Drop Me!</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">one</a></li>
-                        <li><a href="#!">two</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">three</a></li>
+                    <a class='dropdown-button' href='#' data-activates='dropdown1' data='user'>Drop Me!</a>
+                    <ul id='dropdown1' class='dropdown-content navigation'>
+                        <li><a href="#!">Profile</a></li>
+                        <li><a href="#!">LogOut</a></li>
                     </ul>
                 </li>
             </ul>
