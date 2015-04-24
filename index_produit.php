@@ -5,8 +5,8 @@ $ListeT = $ProduitModel->afficher();
 ?>
         <link rel="stylesheet" type="text/css" href="Style/Animation.css">
         <script type="text/javascript" src="js/Smooth_scroll.js"></script>
-	<script type="text/javascript" src="js/slideshow.js"></script>
-  <script type="text/javascript" src="js/products_div_gen.js"></script>
+      	<script type="text/javascript" src="js/slideshow.js"></script>
+        <script type="text/javascript" src="js/products_div_gen.js"></script>
         <title>Title!</title>
         
 	
@@ -122,7 +122,7 @@ require 'phpmailer/PHPMailerAutoload.php';
         # code...
 
       ?>
-    <div class="col s3"> <?php echo sizeof($ListeT);?></div>
+    <div class="col s3"> <?php echo count($ListeT);?></div>
 
     <?php 
 

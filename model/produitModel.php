@@ -1,6 +1,6 @@
 <?php
     include_once 'produit.php';
-    require_once 'Configuration.php';
+    require_once '../Configuration.php';
     
     class ProduitModel {
         public function __construct() {
@@ -12,7 +12,7 @@
             $query = "SELECT * FROM produit";
             $resultat = $bdd->query($query);
            $i = 0 ;
-            while ($data = $result -> fetch_assoc()) {
+            while ($data = $resultat -> fetch_assoc()) {
                 $Pr = new produit($data);
                 $tableau[$i] = $Pr;
                 $i++;
@@ -25,7 +25,7 @@
             $query = "SELECT * FROM produit WHERE categorie=".$categorie;
             $resultat = $bdd->query($query);
            $i = 0 ;
-            while ($data = $result -> fetch_assoc()) {
+            while ($data = $resultat -> fetch_assoc()) {
                 $Pr = new produit($data);
                 $tableau[$i] = $Pr;
                 $i++;
