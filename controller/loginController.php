@@ -6,7 +6,8 @@ $username=$_POST['username'];
 $password=$_POST['password'];
 $Us = $usermodel -> getlogin($username,$password);
 if($Us === 0){
-	header('location:'.'http://www.google.com'); //a modifier vers url erreur login
+	//header('location:'.'http://www.google.com'); //a modifier vers url erreur login
+    echo '0';
 }
 else{
 
@@ -15,7 +16,8 @@ else{
 		$_SESSION['password'] = $password;
                 $_SESSION['id_user'] = $Us->getId();
 		$url = $_SERVER['HTTP_REFERER'];
-		header('location:'.$url);
+		//header('location:'.$url);
+                echo '1';
 	}
 }
  ?>

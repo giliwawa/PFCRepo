@@ -11,7 +11,7 @@ class user {
             }
         }
     }
-    public function __construct() {
+    public function __construct($x) {
         $ctp = func_num_args();
         $args = func_get_args();
         if($ctp == 0)
@@ -23,6 +23,7 @@ class user {
         }
         
     }
+    
 
     private $Id;
     private $Prenom;

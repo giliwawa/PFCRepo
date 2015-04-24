@@ -49,6 +49,7 @@
         $resultat = $db->select($query) ;
         if($resultat){
             $Us = new user($resultat);
+            $a = new user();
             return $Us;
             
         }

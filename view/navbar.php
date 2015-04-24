@@ -48,8 +48,9 @@
   				<div class="row">
   					<center>
   					<div class="col s6">
-  						<input id="login" type="submit" class="btn cyan darken-2" value="Sign In">
-  					</div>
+<!--                                            input id="login" type="submit"  class="btn cyan darken-2" value="Sign In">-->
+<a href="#" onclick="testCreds();">CLICK ME</a>
+                                        </div>
   					<div class="col s6">
   						<a href="user_signup.php"> 
 				    		<input id="signup" type="button" class="btn pink darken-3" value="Sign Up">

@@ -12,7 +12,7 @@
 ?>
 <body>
 	
-	<?php include 'view/navbar_logged.php' ?>
+	<?php include 'view/navbar.php' ?>
   	<section id="home">
   		<div id="slideshow" class="container">
   			
