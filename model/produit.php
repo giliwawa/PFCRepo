@@ -29,7 +29,7 @@ class produit {
 	
 		}
 		else{
-			$this->hydrate([0]);
+			$this->hydrate($args[0]);
 		}
 	}
 

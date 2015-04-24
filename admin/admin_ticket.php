@@ -1,7 +1,7 @@
 <?php
 require_once '../model/ticketModel.php';
 $ticketModel=new ticketModel();
-$listeT = $ticketModel->afficherTicket(1);
+$listeT = $ticketModel->displayTicket(1);
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/td/html4/strict.">
@@ -55,6 +55,7 @@ $listeT = $ticketModel->afficherTicket(1);
 					<table>
 						<thead>
 							<tr>
+								<th>id</th>
 								<th>Name</th>
 								<th>Email</th>
 								<th></th>
@@ -62,14 +63,13 @@ $listeT = $ticketModel->afficherTicket(1);
 						</thead>
 						<tbody>
 							<?php
-								foreach ($listeT as $T) :
+								foreach ($listeT as $Tick) :
 							?>
 							<tr>
-								<form>
-									<td><?php echo($T->getname());?></td>
-									<td><?php echo($T->getemail());?></td>
-									<td><input type="submit" value="submit"></td>
-								</form>
+									<td><?php echo $Tick->getid_ticket() ;?></td>
+									<td><?php echo $Tick->getname() ;?></td>
+									<td><?php echo $Tick->getemail() ;?></td>
+									<td><a href="ConsulterTicket.php?IdTicket=<?php echo $Tick->getid_ticket(); ?>">View</a></td>
 							</tr>
 							<?php
 								endforeach;

@@ -25,7 +25,7 @@ class ticket {
 		if ($ctp == 0) {
 		}
 		else{
-			$this->hydrate([0]);
+			$this->hydrate($args[0]);
 		}
 	}
 
@@ -34,7 +34,7 @@ class ticket {
 		return $this->id_ticket;
 	}
 	public function getname(){
-		return $this->nom;
+		return $this->name;
 	}
 	public function getemail(){
 		return $this->email;
@@ -53,7 +53,7 @@ class ticket {
 	}
 	public function setname($name)
 	{
-		$this->nom=$name;
+		$this->name=$name;
 	}
 	public function setemail($email)
 	{
