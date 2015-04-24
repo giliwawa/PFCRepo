@@ -127,7 +127,7 @@
 	  			<div class="row">
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
-	                <i class="mdi-action-assignment-late"></i>
+	                <a href="view/claim.php"><i class="mdi-action-assignment-late"></i></a>
 	                <p class="icone-titre">Claim</p>
 	                <p class="icone-texte">Check this page to submit your claim.</p>
 	              </div>
