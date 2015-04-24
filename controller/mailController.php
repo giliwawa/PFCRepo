@@ -1,6 +1,6 @@
 <?php
 require '../phpmailer/PHPMailerAutoload.php';
-
+$url = $_SERVER['HTTP_REFERER'];
 function sendMail($name,$maill,$message)
 {
     $mail = new PHPMailer;
@@ -15,7 +15,10 @@ function sendMail($name,$maill,$message)
     $mail->Password = 'unicorns_esprit';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
-    $mail->From = $maill;   
+    $mail->From = $maill;
+    if ($url=="http://localhost/PFCRepo/index.php") {
+           $maill="unicornsesprit@gmail.com";
+       }   
     $mail->addAddress($maill);               // Name is optional
     $mail->Subject = 'Contact form';
     $mail->Body    = $message;
@@ -33,5 +36,5 @@ if(isset($_POST['nom']) && isset($_POST['mail']) && isset($_POST['msg']))
                                 
 }
 
-$url = $_SERVER['HTTP_REFERER'];
+
 header('location:'.$url);
