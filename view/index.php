@@ -1,4 +1,4 @@
-<?php include '/view/header.php' ?>
+<?php include 'header.php' ?>
         <link rel="stylesheet" type="text/css" href="Style/Animation.css">
         <script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
@@ -12,7 +12,7 @@
 ?>
 <body>
 	
-	<?php include 'view/navbar.php' ?>
+	<?php include 'navbar.php' ?>
   	<section id="home">
   		<div id="slideshow" class="container">
   			
@@ -127,7 +127,7 @@
 	  			<div class="row">
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
-	                <a href="view/claim.php"><i class="mdi-action-assignment-late"></i></a>
+	                <a href="claim.php"><i class="mdi-action-assignment-late"></i></a>
 	                <p class="icone-titre">Claim</p>
 	                <p class="icone-texte">Check this page to submit your claim.</p>
 	              </div>
@@ -224,7 +224,7 @@
 	  	</div>
 	  	<div class="container">
 	  		<br>
-                        <form action="controller/mailController.php" method="POST">
+                        <form action="../controller/mailController.php" method="POST">
 	  			<div class="row">
 				     <div class="col s12">
 					        <div class="input-field col s4 offset-s1">
@@ -258,6 +258,6 @@
 	  	</div>
   	</section>
     <?php
-    include 'view/footer.php';
+    include 'footer.php';
     ?>
         
