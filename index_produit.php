@@ -1,4 +1,8 @@
-<?php include '/view/header.php' ?>
+<?php include '/view/header.php' ;
+require_once '/model/produitModel.php';
+$ProduitModel = new ProduitModel();
+$ListeT = $ProduitModel->afficher();
+?>
         <link rel="stylesheet" type="text/css" href="Style/Animation.css">
         <script type="text/javascript" src="js/Smooth_scroll.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
@@ -112,12 +116,18 @@ require 'phpmailer/PHPMailerAutoload.php';
         </ul>        
     </div>
     <div class="col s9 content-container">
+      <?php
+      $i = 0;
+      foreach ($$ListeT as $T) :
+        # code...
 
-        <div class="col s3">dsfgsdfgsdfg</div>
-        <div class="col s3">fgfgfgfgsdfgssssssss</div>
-        <div class="col s3">sdfgsdfg</div>
-        <div class="col s3">sdfgsdfg</div>
+      ?>
+    <div class="col s3"> <?php echo sizeof($ListeT);?></div>
 
+    <?php 
+
+      endforeach;
+    ?>
     </div>
   </div>
 </section>
