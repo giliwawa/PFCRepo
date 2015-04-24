@@ -39,6 +39,13 @@
 			$requete="INSERT INTO ticket (name, email, text, state) VALUES ('".$ticket->getname()."','".$ticket->getemail()."','".$ticket->gettext()."',1)";
 			$bdd->query($requete);
 		}
+
+		public function modifierTicket($id)
+		{
+			$bdd = new Db();
+			$query="UPDATE ticket SET state = 0 WHERE id_ticket = ".$id;
+			$bdd->query($query);
+		}
 	}
 
 ?>

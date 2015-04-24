@@ -1,5 +1,6 @@
 <?php
 require '../phpmailer/PHPMailerAutoload.php';
+require_once '../model/ticketModel.php';
 function sendMail($name,$maill,$message)
 {
     $url=$_SERVER['HTTP_REFERER'];
@@ -38,6 +39,8 @@ if((isset($_POST['sujet'])||isset($_POST['nom'])) && isset($_POST['mail']) && is
     
     if (isset($_POST['sujet'])) {
         sendMail($_POST['sujet'], $_POST['mail'], $_POST['msg']);
+        $ticketModel=new ticketModel();
+        $ticketModel->modifierTicket($_POST['id_ticket']);
     }
     else{
         sendMail($_POST['nom'], $_POST['mail'], $_POST['msg']);
