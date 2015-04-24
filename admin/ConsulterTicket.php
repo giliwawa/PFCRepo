@@ -31,9 +31,9 @@ $ticket=$ticketModel->afficherTicket($id_ticket);
 	</table>
 	<br>
 	<form action="../controller/mailController.php" method="POST">
-		<input type="text" name="nom">
+		<input type="text" name="sujet" placeholder="sujet">
 		<br>
-		<input type="text" name="mail">
+		<input type="text" name="mail" value="<?php echo $ticket->getemail();?>">
 		<br>
 		<textarea name="msg"></textarea>
 		<button type="submit" name="action">submit</button>	

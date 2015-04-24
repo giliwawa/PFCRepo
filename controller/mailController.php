@@ -1,8 +1,8 @@
 <?php
 require '../phpmailer/PHPMailerAutoload.php';
-$url = $_SERVER['HTTP_REFERER'];
 function sendMail($name,$maill,$message)
 {
+    $url=$_SERVER['HTTP_REFERER'];
     $mail = new PHPMailer;
     $msg = wordwrap($message,70);
     $mail->Debugoutput = 'html';
@@ -16,11 +16,14 @@ function sendMail($name,$maill,$message)
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
     $mail->From = $maill;
-    if ($url=="http://localhost/PFCRepo/index.php") {
+    $sujet=$name;
+    if ($url==='http://localhost/PFCrepo/index.php') {
+            echo("hi");
            $maill="unicornsesprit@gmail.com";
+           $sujet='Contact form';
        }   
     $mail->addAddress($maill);               // Name is optional
-    $mail->Subject = 'Contact form';
+    $mail->Subject = $sujet;
     $mail->Body    = $message;
     if(!$mail->send()) {
     echo 'Message could not be sent.';
@@ -30,11 +33,17 @@ function sendMail($name,$maill,$message)
     }
 }
 
-if(isset($_POST['nom']) && isset($_POST['mail']) && isset($_POST['msg']))
+if((isset($_POST['sujet'])||isset($_POST['nom'])) && isset($_POST['mail']) && isset($_POST['msg']))
 {
-    sendMail($_POST['nom'], $_POST['mail'], $_POST['msg']);
+    
+    if (isset($_POST['sujet'])) {
+        sendMail($_POST['sujet'], $_POST['mail'], $_POST['msg']);
+    }
+    else{
+        sendMail($_POST['nom'], $_POST['mail'], $_POST['msg']);
+    }
                                 
 }
 
-
+$url=$_SERVER['HTTP_REFERER'];
 header('location:'.$url);
