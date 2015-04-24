@@ -4,35 +4,33 @@
     
     class ProduitModel {
         public function __construct() {
-            $bdd = new Configuration() ;
-            $bdd->connexion();
         }
         
         public function afficher(){
+            $bdd = new Db();
             $tableau = array();
             $query = "SELECT * FROM produit";
-            $resultat = mysql_query($query) or die("Ereur ".mysql_error()) ;
-            $i = 0;
-            while($data = mysql_fetch_array($resultat))
-            {
+            $resultat = $bdd->query($query);
+           $i = 0 ;
+            while ($data = $result -> fetch_assoc()) {
                 $Pr = new produit($data);
-                $tableau[$i] = $Pr ;
-                $i++;   
+                $tableau[$i] = $Pr;
+                $i++;
             }
             return $tableau;
         }
         public function afficher_categorie($cat){
+            $bdd = new Db();
             $tableau = array();
-            $querry = "SELECT * FROM produit WHERE categorie=".$categorie;
-            $resultat = mysql_query($query) or die("erreur".mysql_error());
-            $i=0;
-            while ($data = mysql_fetch_array($resultat)) {
-                 # code...
+            $query = "SELECT * FROM produit WHERE categorie=".$categorie;
+            $resultat = $bdd->query($query);
+           $i = 0 ;
+            while ($data = $result -> fetch_assoc()) {
                 $Pr = new produit($data);
                 $tableau[$i] = $Pr;
                 $i++;
-             } 
-             return $tableau;
+            }
+            return $tableau;
         }        
         
         
