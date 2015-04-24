@@ -13,6 +13,7 @@ else{
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password']) ){
 		$_SESSION['username'] = $username;
 		$_SESSION['password'] = $password;
+                $_SESSION['id_user'] = $Us->getId();
 		$url = $_SERVER['HTTP_REFERER'];
 		header('location:'.$url);
 	}

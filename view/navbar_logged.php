@@ -1,6 +1,12 @@
 <?php session_start(); 
-  if(isset($_SESSION['username']))
+  if(isset($_SESSION['username'])){
     $username = $_SESSION['username'];
+  }
+  else
+  {
+      $username = 'empty';
+  }
+    
 ?>
 <div class="navbar-fixed">
     <nav>
@@ -15,10 +21,10 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
                     <!-- Dropdown Trigger -->
-                    <a class='dropdown-button' href='#' data-activates='dropdown1' data='user'>Drop Me!</a>
+                    <a class='dropdown-button' href='#' data-activates='dropdown1' data='user'><?php echo $username ?></a>
                     <ul id='dropdown1' class='dropdown-content navigation'>
                         <li><a href="#!">Profile</a></li>
-                        <li><a href="#!">LogOut</a></li>
+                        <li><a href="controller/LogoutController.php">LogOut</a></li>
                     </ul>
                 </li>
             </ul>
