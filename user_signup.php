@@ -82,7 +82,7 @@
   			<br>
   			<h4>Sign Up</h4>
   			<br>
-  			<form action="index.php" method="POST">
+  			<form action="controller/signupController.php" method="POST">
   				<div class="row">
   					<div class="input-field col s12">
   						<i class="mdi-action-account-circle prefix"></i>
@@ -134,14 +134,6 @@
 					</div>
   				</div>
   			</form>
-  			<?php 
-  				require 'user.php';
-
-  				if($_SERVER["REQUEST_METHOD"] == "POST" ){
-                    $etu = new user();
-                    $etu->ajouterUser();
-                }
-  			 ?>
   		</div>
   	</section>
 

@@ -10,6 +10,7 @@
         }
         
        public function ajouterUser(){
+        $db = new Db();
 
         $prenom = $_POST['prenom'];
         $nom = $_POST['nom'];
@@ -24,7 +25,7 @@
         $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, adresse, CIN, num_tel, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$adresse."','".$CIN."','".$num_tel."','".$username."','".$password."')";
         
-        $bdd->QueryExecute($sql);
+        $db-> query($sql);
     }     
 
     public function afficherUser(){
