@@ -20,11 +20,14 @@
             }
             return $tableau;
         }
-        public function afficher_categorie($cat){
+        public function afficher_categorie($categorie){
             $bdd = new Db();
             $tableau = array();
-            $query = "SELECT * FROM produit WHERE categorie=".$categorie;
+            $query = "SELECT * FROM produit WHERE categorie='".$categorie."'";
             $resultat = $bdd->query($query);
+            if (!$resultat) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+}
            $i = 0 ;
             while ($data = $resultat -> fetch_assoc()) {
                 $Pr = new produit($data);
@@ -32,7 +35,19 @@
                 $i++;
             }
             return $tableau;
-        }        
+        }      
+
+        public function Count($categorie)
+        {
+            $bdd = new Db();
+            $query = "SELECT * FROM produit WHERE categorie='".$categorie."'";
+            $resultat = $bdd->query($query);
+            $i = 0;
+            while ($data = $resultat ->fetch_assoc()) {
+                $i++;
+            }
+            return $i;
+        }  
         
         }
    

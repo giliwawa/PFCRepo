@@ -1,22 +1,13 @@
-<?php 
+<?php include 'header.php';
 require_once '../model/produitModel.php';
 $ProduitModel = new ProduitModel();
-$ListeT = $ProduitModel->afficher();
+$listeT = $ProduitModel->afficher_categorie("guitar");
+$n = $ProduitModel->Count("guitar");
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/td/html4/strict.">
 
 <html>
-<head>
-	
-	<meta charset="utf-8">
-	
-	<link rel="stylesheet" href="../css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="../Style/Style.css">
-	
-	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script src="../js/materialize.min.js"></script>
-	<script type="text/javascript" src="../js/modals.js"></script>
+
        <title>Title!</title>
         
 	
@@ -74,7 +65,7 @@ $ListeT = $ProduitModel->afficher();
         <ul class="collection ">
             <li class="collection-item avatar ">
                 <a href="#">
-                <img src="../images/guitarthion.jpg" alt="" class="circle">
+                <img src="images/guitarthion.jpg" alt="" class="circle">
                 <span class="title">String Instruments</span>
                 <p>guitars <br>
                    violins
@@ -84,7 +75,7 @@ $ListeT = $ProduitModel->afficher();
             
             <li class="collection-item avatar ">
                <a href="#">
-                <img src="../images/percuthion.jpg" alt="" class="circle">
+                <img src="images/percuthion.jpg" alt="" class="circle">
                 <span class="title">Percussions</span>
                 <p>Drums <br>
                    Bongos
@@ -94,7 +85,7 @@ $ListeT = $ProduitModel->afficher();
             
             <li class="collection-item avatar ">
                 <a href="#">
-                <img src="../images/naf5ethion.jpg" alt="" class="circle">
+                <img src="images/naf5ethion.jpg" alt="" class="circle">
                 <span class="title">Wind Instruments</span>
                 <p>Trumpets <br>
                    Saxophones
@@ -104,7 +95,7 @@ $ListeT = $ProduitModel->afficher();
             
             <li class="collection-item avatar ">
                 <a href="#">
-                <img src="../images/moogothion.png" alt="" class="circle">
+                <img src="images/moogothion.png" alt="" class="circle">
                 <span class="title">Electronic Instruments</span>
                 <p>Moogs <br>
                    Theramines
@@ -114,7 +105,7 @@ $ListeT = $ProduitModel->afficher();
             
             <li class="collection-item avatar ">
                 <a href="#">
-                <img src="../images/accesoirs.png" alt="" class="circle">
+                <img src="images/accesoirs.png" alt="" class="circle">
                 <span class="title">Acceesories</span>
                 <p>Amplifiers <br>
                    Pedals
@@ -125,17 +116,56 @@ $ListeT = $ProduitModel->afficher();
     </div>
     <div class="col s9 content-container">
       <?php
-      $i = 0;
-      foreach ($ListeT as $T) :
-        # code...
-
+      $x = 0;
+      foreach ($listeT as $pr):
+      $x++; 
       ?>
-    <div class="col s3"> <?php echo count($ListeT);?></div>
+  		<?php
+        if($x == 1):
+        ?>
+        	<div class="row">
+        	 <div class ="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        
+        <?php 
+        
+        endif
+        ?>
+
+        <?php
+        if($x == 2):
+        ?>
+        	 <div class ="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        
+        <?php 
+        
+        endif
+        ?>
+        <?php
+        if($x == 3):
+        ?>
+        	 <div class ="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        
+        <?php 
+        
+        endif
+        ?>
+
+        <?php
+        if($x == 4):
+        ?>
+        	<div class="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        	</div>
+        
+        <?php 
+        $x = 0;
+        endif
+     	 ?>
+    
 
     <?php 
-
       endforeach;
     ?>
+    
     </div>
   </div>
 </section>
