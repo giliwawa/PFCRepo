@@ -46,6 +46,18 @@
 			$query="UPDATE ticket SET state = 0 WHERE id_ticket = ".$id;
 			$bdd->query($query);
 		}
+
+		public function countRow()
+		{
+			$bdd = new Db();
+			$query="SELECT * FROM ticket WHERE state=1";
+			$result = $bdd->query($query);
+			$i = 0 ;
+			while ($data = $result -> fetch_assoc()) {
+				$i++;
+			}
+			return $i;
+		}
 	}
 
 ?>
