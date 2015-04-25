@@ -50,6 +50,11 @@
                             <label for="female">Female</label>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="#" class="pink darken-3 btn">SIGN UP</a>
+                        </div>
+                    </div>
                     
                     
                     
