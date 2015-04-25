@@ -24,3 +24,8 @@ nav .container{
 	position: absolute;
 	left : 200px;
 }
+
+#show{
+	padding-left: 300px;
+	padding-right: 100px;
+}
