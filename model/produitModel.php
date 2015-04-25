@@ -1,6 +1,6 @@
 <?php
     include_once 'produit.php';
-    require_once 'Configuration.php';
+    require_once '../Configuration.php';
     
     class ProduitModel {
         public function __construct() {

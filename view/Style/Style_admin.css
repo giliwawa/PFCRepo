@@ -1,0 +1,26 @@
+ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active{
+	background-color: rgba(0, 0, 0, 0.05);
+}
+ul.side-nav{
+	padding-top: 70px;
+	width: 200px;
+}
+
+.bold{
+	line-height: 44px;
+	font-weight: bold;
+}
+
+ul.side-nav.fixed li .collapsible-body{
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.page-title{
+	font-size: 30px;
+}
+
+nav .container{
+	position: absolute;
+	left : 200px;
+}
