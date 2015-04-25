@@ -35,12 +35,12 @@
   						<label for="icon_prefix">Pseudo</label>
   					</div>
   					<div class="input-field col s12">
-  						<i class="mdi-action-lock prefix"></i>
-  						<input id="icon_password" type="password" name="password" class="validate">
-  						<label for="icon_password">Mot de Passe</label>
-  						<center>
-  							<a class="tooltipped btn-floating btn-medium" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help"></i></a>
-  						</center>
+                                            <i class="mdi-action-lock prefix"></i>
+                                            <input id="icon_password" type="password" name="password" class="validate">
+                                            <label for="icon_password">Mot de Passe</label>
+                                            <center>
+                                                    <a class="tooltipped btn-floating btn-medium" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help"></i></a>
+                                            </center>
   					</div>
   				</div>
   				<br>
@@ -52,7 +52,7 @@
                                         <a href="#" class="btn" onclick="testCreds();">SIGN IN</a>
                                         </div>
   					<div class="col s6">
-                                            <a href="user_signup.php" class="btn btn pink darken-3">SIGN UP</a>
+                                            <a href="user_signup.php" class=" btn pink darken-3">SIGN UP</a>
   					</div>
   					</center>
   				</div>
