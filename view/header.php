@@ -8,5 +8,5 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script src="js/materialize.min.js"></script>
+	<script src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/modals.js"></script>
