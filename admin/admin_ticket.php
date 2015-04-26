@@ -3,6 +3,7 @@ require_once '../model/ticketModel.php';
 $ticketModel=new ticketModel();
 $listeT = $ticketModel->displayTicket(1);
 include_once '../view/header.php';
+$i=0;
 ?>
 <table>
 	<thead>
@@ -16,6 +17,7 @@ include_once '../view/header.php';
 	<tbody>
 <?php
 	foreach ($listeT as $Tick) :
+		$i++;
 ?>
 		<tr>
 			<td><?php echo $Tick->getid_ticket() ;?></td>
@@ -26,5 +28,6 @@ include_once '../view/header.php';
 <?php
 	endforeach;
 ?>
+		<tr id="nb_ligne"><?php echo 'Unread Tickets : '.$i;?></tr>
 	</tbody>
 </table>
