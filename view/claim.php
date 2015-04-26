@@ -1,6 +1,10 @@
 <?php
 	include 'header.php';
 	include 'navbar.php';
+	require_once '../model/ticketModel.php';
+	$ticketModel=new ticketModel();
+	$ListeT = $ticketModel->displayTicket(1);
+
 ?>
 	<title>Support</title>
 </head>
@@ -13,13 +17,13 @@
 				<input type="text" name="name" required>
 				<br>
 				<label>Email : </label>
-				<input type="email" name="email">
+				<input type="email" name="email" required>
 				<br>
 				<label>Sujet : </label>
 				<input type="text" name="sujet">
 				<br>
 				<label>Message : </label>
-				<textarea name="text" class="materialize-textarea"></textarea>
+				<textarea name="text" class="materialize-textarea" required></textarea>
 				<br>
 				<br>
 				<div class="row">
@@ -41,6 +45,32 @@
 			<br>
 			<h4>Your Tickets</h4>
 			<table>
+				<thead>
+					<tr>
+						<td>ID</td>
+						<td>Status</td>
+						<td>Action</td>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+						foreach ($ListeT as $Tick) :
+						if ($Tick->getstate()==1) {
+									$state="processing";
+						}
+						elseif ($Tick->getstate==0) {
+									$state="resolved";
+						}		
+					?>
+					<tr>
+						<td><?php echo $Tick->getid_ticket() ;?></td>
+				        <td><?php echo $state; ?></td>
+				        <td><a>delete</a></td>
+					</tr>
+					<?php
+					    endforeach;
+					?>
+				</tbody>
 			</table>
 		</div>
 	</div>
