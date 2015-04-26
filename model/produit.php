@@ -34,54 +34,54 @@ class produit {
 	}
 
 	/*getters*/
-    public function getId_produit(){
+    public function getid_produit(){
         return $this->id_produit;
     }
-    public function getNom(){
+    public function getnom(){
         return $this->nom;
     }
-    public function getReference(){
+    public function getreference(){
         return $this->reference;
     }
-    public function getCategorie(){
+    public function getcategorie(){
         return $this->categorie;
     }
-    public function getQuantite(){
+    public function getquantite(){
         return $this->quantite;
     }
-    public function getPrix(){
+    public function getprix(){
         return $this->prix;
     }
-    public function getImage(){
+    public function getimage(){
         return $this->image;
     }
-    public function getDescription(){
+    public function getdescription(){
         return $this->description;
     }
 
     /*setters*/
-    public function setId($id_produit){
+    public function setid_produit($id_produit){
         $this->id_produit = $id_produit;
     }
-    public function setNom($nom){
+    public function setnom($nom){
         $this->nom = $nom;
     }
-    public function setReference($reference){
+    public function setreference($reference){
         $this->reference = $reference;
     }
-    public function setCategorie($categorie){
+    public function setcategorie($categorie){
         $this->categorie = $categorie;
     }
-    public function setQuantite($quantite){
+    public function setquantite($quantite){
         $this->quantite = $quantite;
     }
-    public function setPrix($prix){
+    public function setprix($prix){
         $this->prix = $prix;
     }
-    public function setImage($image){
+    public function setimage($image){
         $this->image = $image;
     }
-    public function setDescription($description){
+    public function setdescription($description){
         $this->description = $description;
     }
 }
