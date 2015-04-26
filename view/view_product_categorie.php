@@ -1,6 +1,6 @@
 <?php
 require_once '../model/produitModel.php';
-$categrorie = htmlspecialchars($_GET["categorie"]);
+$categorie = htmlspecialchars($_GET["categorie"]);
 $ProduitModel = new ProduitModel();
 $listeT = $ProduitModel->afficher_categorie($categorie);
 $n = $ProduitModel->Count($categorie);
@@ -20,7 +20,7 @@ $n = $ProduitModel->Count($categorie);
                   </div>
 
                   <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?><i class="mdi-navigation-more-vert right"></i></span>
+                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p><a href="#">Buy It Now !</a></p>
                   </div>
 
