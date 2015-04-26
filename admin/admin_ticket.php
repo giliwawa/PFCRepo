@@ -6,7 +6,9 @@ $listeT = $ticketModel->displayTicket(1);
 
 if(isset($_POST['action']))
 {
-   echo count($listeT);
+   if (count($listeT)!=0) {
+   	echo "<span class='new badge'>".count($listeT)."</span>";
+   }
 }
 
 else
