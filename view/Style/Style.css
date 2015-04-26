@@ -729,3 +729,28 @@ footer ul li a{
 }
 
 /*------------------- Profil End ------------------*/
+
+/*--------------------------------------------Claim Begin----------------------------------------------*/
+
+#claim .content{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  width: 50%;
+}
+#claim h4{
+  color: #0097a7;
+  font-weight: bold;
+  margin-left: 10%;
+}
+#claim form{
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2%;
+}
+#claim .btn{
+  background-color: #0097a7;
+}
+
+/*--------------------------------------------Claim Begin----------------------------------------------*/

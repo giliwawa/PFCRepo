@@ -10,5 +10,6 @@ $text= '<b>'.$_POST['sujet'].'</b><br> ' .$_POST['text'];
 $ticket->settext($text);
 
 $ticketModel->ajouterTicket($ticket);
-header("location:../index.php");
+$url = $_SERVER['HTTP_REFERER'];
+header('location:'.$url);
 ?>
