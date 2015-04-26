@@ -1,10 +1,13 @@
 <?php 
 require '../model/UserModel.php';
-session_start();
+
 $usermodel = new UserModel();
 $username=$_POST['username'];
 $password=$_POST['password'];
-$Us = $usermodel -> getlogin($username,$password);
+session_start();
+session_destroy();
+
+$Us = new user($usermodel -> getlogin($username,$password));
 if($Us === 0){
 	//header('location:'.'http://www.google.com'); //a modifier vers url erreur login
     echo '0';
@@ -12,12 +15,12 @@ if($Us === 0){
 else{
 
 	if(!isset($_SESSION['username']) && !isset($_SESSION['password']) ){
-		$_SESSION['username'] = $username;
-		$_SESSION['password'] = $password;
-                $_SESSION['id_user'] = $Us->getId();
-		$url = $_SERVER['HTTP_REFERER'];
-		//header('location:'.$url);
-                echo '1';
+            session_start();
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
+            $_SESSION['id_user'] = $Us->getId();
+            echo '1';
 	}
+        
 }
  ?>

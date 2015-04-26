@@ -40,16 +40,16 @@ class user {
     
     /*getters*/
     public function getId(){
-        return $this->id;
+        return $this->Id;
     }
     public function getPrenom(){
-        return $this->prenom;
+        return $this->Prenom;
     }
     public function getNom(){
-        return $this->nom;
+        return $this->Nom;
     }
     public function getSexe(){
-        return $this->sexe;
+        return $this->Sexe;
     }
     public function getDate_naissance(){
         return $this->date_naissance;
@@ -76,40 +76,40 @@ class user {
         return $this->password;
     }
     /*setters*/
-    public function setId($id){
+    public function setid_user($id){
         $this->id = $id;
     }
-    public function setPrenom($prenom){
+    public function setprenom($prenom){
         $this->prenom = $prenom;
     }
-    public function setNom($nom){
+    public function setnom($nom){
         $this->nom = $nom;
     }
-    public function setSexe($sexe){
+    public function setsexe($sexe){
         $this->sexe = $sexe;
     }
-    public function setDate_naissance($email){
+    public function setdate_naissance($email){
         $this->date_naissance = $date_naissance;
     }
-    public function setAdresse($pays){
+    public function setadresse($pays){
         $this->adresse = $adresse;
     }
     public function setCIN($commentaire){
         $this->CIN = $CIN;
     }
-    public function setNum_tel($commentaire){
+    public function setnum_tel($commentaire){
         $this->num_tel = $num_tel;
     }
-    public function setNbr_point($commentaire){
+    public function setnbr_point($commentaire){
         $this->nbr_point = $nbr_point;
     }
-    public function setImage($commentaire){
+    public function setimage($commentaire){
         $this->image = $image;
     }
-    public function setUsername($commentaire){
+    public function setusername($commentaire){
         $this->username = $username;
     }
-    public function setPassword($commentaire){
+    public function setpassword($commentaire){
         $this->password = $password;
     }
 

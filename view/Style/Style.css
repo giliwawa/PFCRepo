@@ -579,8 +579,18 @@ i.mdi-communication-live-help{
      color: #0097a7;
 }
 .row .col.l2{
-   		text-align: center;
-   		margin-left: 8px;
+    text-align: center;
+    margin-left: 8px;
+}
+.error{
+    background-color: rgba(255,0,0,0.3);
+    border-bottom: 2px red solid;
+    color : black;
+}
+.valid{
+    background-color: rgba(0,255,0,0.3);
+    border-bottom: 2px green solid;
+    color: black;
 }
 
 /*-------------------------------------------------Sign in END-----------------------------------------------------------*/

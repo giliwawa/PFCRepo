@@ -45,12 +45,10 @@
         public function getlogin($username,$password){
 
         $db = new Db();
-        $query = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
         $resultat = $db->select($query) ;
         if($resultat){
-            $Us = new user($resultat);
-            $a = new user();
-            return $Us;
+            return $resultat;
             
         }
         else return 0;
