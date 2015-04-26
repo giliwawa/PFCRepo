@@ -125,7 +125,7 @@ $n = $ProduitModel->Count("guitar");
         ?>
         	<div class="row">
         	 <div class ="col s3">
-            <img src="<?php echo $pr->getImage(); ?>"  height="100" width="100"/>
+            <img src="<?php echo $pr->getImage(); ?>"/>
           </div>
         
         <?php 
@@ -135,7 +135,9 @@ $n = $ProduitModel->Count("guitar");
         <?php
         if($x == 2):
         ?>
-        	 <div class ="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        	 <div class ="col s3">
+            <img src="<?php echo $pr->getImage(); ?>"/>
+          </div>
         
         <?php 
         endif
@@ -143,7 +145,9 @@ $n = $ProduitModel->Count("guitar");
         <?php
         if($x == 3):
         ?>
-        	 <div class ="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        	 <div class ="col s3">
+            <img src="<?php echo $pr->getImage(); ?>"/>
+          </div>
         
         <?php 
         endif
@@ -152,7 +156,9 @@ $n = $ProduitModel->Count("guitar");
         <?php
         if($x == 4):
         ?>
-        	<div class="col s3"><img src="data:image/jpeg;base64,'. base64_encode($pr->getImage()) .'" height="42" width="42" /></div>
+        	<div class="col s3">
+            <img src="<?php echo $pr->getImage(); ?>"/>
+          </div>
         	</div>
         
         <?php 
