@@ -3,16 +3,15 @@ require_once '../model/ticketModel.php';
 //include_once '../view/header.php';
 $ticketModel=new ticketModel();
 $listeT = $ticketModel->displayTicket(1);
-echo count($listeT);
+
 if(isset($_POST['action']))
 {
-    
-   
+   echo count($listeT);
 }
 
 else
 {
-$i=0;
+$i = 0;
 ?>
 <table>
 	<thead>
@@ -39,6 +38,6 @@ $i=0;
     endforeach;
 }
 ?>
-    <tr id="nb_ligne"><?php echo 'Unread Tickets : '.$i;?></tr>
+    
 </tbody>
 </table>
