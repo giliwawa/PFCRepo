@@ -49,7 +49,7 @@
 		            </li>   
 		        </ul>
 		    </li>
-		    <li class="bold"><a class="waves-effect waves-teal" onclick="loadTicket();" id="tick">Tickets</a></li>
+                    <li class="bold"><a class="waves-effect waves-teal" onclick="loadTicket();" >Tickets<span id="tick" class="new badge"></span></a></li>
 		    <li class="bold"><a href="" class="waves-effect waves-teal">Statistics</a></li>
 
 		</ul>

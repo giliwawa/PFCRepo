@@ -26,13 +26,15 @@ jQuery(document).ready(function($) {
  //    xmlhttp.send();
  	
  	$.ajax({
- 		url: 'admin_ticket.php',
+ 		
  		type: 'POST',
- 		dataType: 'json',
- 		data: {action: 'nb_ticket'},
+                url: 'admin_ticket.php',
+ 		data: { action: 'nb_ticket'}
  	})
- 	.done(function() {
- 		console.log("success");
+ 	.done(function(html) {
+            console.log("success");
+            $("#tick").html(html);
+            console.log(html);
  	})
  	.fail(function() {
  		console.log("error");
