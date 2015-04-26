@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="../view/js/sidenav.js"></script>
 	<script type="text/javascript" src="../view/js/loadTicket.js"></script>
 	<script type="text/javascript" src="../view/js/loadproduit.js"></script>
+	<script type="text/javascript" src="../view/js/loadUser.js"></script>
 
 </head>
 <body>
@@ -31,7 +32,7 @@
 		            <li><a class="collapsible-header waves-effect waves-teal">Users</a>
 		              <div class="collapsible-body">
 		                <ul>
-		                  <li><a href="">Display Users</a></li>
+		                  <li><a onclick="loadUser();">Display Users</a></li>
 		                  <li><a href="">Add Users</a></li>
 		                  <li><a href="">Modify Users</a></li>
 		                  <li><a href="">Delete Users</a></li>

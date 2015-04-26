@@ -88,28 +88,28 @@ class user {
     public function setsexe($sexe){
         $this->sexe = $sexe;
     }
-    public function setdate_naissance($email){
+    public function setdate_naissance($date_naissance){
         $this->date_naissance = $date_naissance;
     }
-    public function setadresse($pays){
+    public function setadresse($adresse){
         $this->adresse = $adresse;
     }
-    public function setCIN($commentaire){
+    public function setCIN($CIN){
         $this->CIN = $CIN;
     }
-    public function setnum_tel($commentaire){
+    public function setnum_tel($num_tel){
         $this->num_tel = $num_tel;
     }
-    public function setnbr_point($commentaire){
+    public function setnbr_point($nbr_point){
         $this->nbr_point = $nbr_point;
     }
-    public function setimage($commentaire){
+    public function setimage($image){
         $this->image = $image;
     }
-    public function setusername($commentaire){
+    public function setusername($username){
         $this->username = $username;
     }
-    public function setpassword($commentaire){
+    public function setpassword($password){
         $this->password = $password;
     }
 

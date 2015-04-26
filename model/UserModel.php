@@ -26,9 +26,13 @@
     }     
 
     public function afficherUser(){
+            $bdd = new Db();
             $tableau = array();
             $query = "SELECT * FROM users";
-            $resultat = $db->query($query) ;
+            $resultat = $bdd->query($query) ;
+            if (!$resultat) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+            }
             $i = 0;
             while($data = $resultat->fetch_assoc())
             {
@@ -37,7 +41,7 @@
                 $i++;   
             }
             return $tableau;
-        }    
+        }
         
         public function getlogin($username,$password){
 
