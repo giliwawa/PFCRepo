@@ -16,14 +16,11 @@
         $nom = $_POST['nom'];
         $sexe = $_POST['sexe'];
         $date_naissance = $_POST['date_naissance'];
-        $adresse = $_POST['adresse'];
-        $CIN = $_POST['CIN'];
-        $num_tel = $_POST['num_tel'];
         $username = $_POST['username'];
         $password = $_POST['password'];
         
-        $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, adresse, CIN, num_tel, username, password ) "
-                . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$adresse."','".$CIN."','".$num_tel."','".$username."','".$password."')";
+        $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, username, password ) "
+                . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$username."','".$password."')";
         
         $db-> query($sql);
     }     

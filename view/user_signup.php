@@ -11,7 +11,7 @@
             <h4>Sign Up</h4>
             <br>
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="../controller/signupController.php" method="POST">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-perm-identity prefix"></i>
@@ -20,7 +20,7 @@
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-vpn-key prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate" name="password">
+                            <input id="icon_prefix" type="text" class="password" name="password">
                             <label for="icon_prefix">Password</label>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div class="row">
                         <div class="col s12">
-                            <a href="#" class="pink darken-3 btn">SIGN UP</a>
+                            <button class="btn waves-effect waves-light darken-3" type="submit">SIGN UP</button>
                         </div>
                     </div>
                     
