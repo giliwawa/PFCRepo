@@ -5,12 +5,7 @@ $listeT = $ProduitModel->afficher_categorie("guitar");
 $n = $ProduitModel->Count("guitar");
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/td/html4/strict.">
-
-<html>
-
-       <title>Title!</title>
-        
-	
+<title>Title!</title>
 </head>
 
 <body>
@@ -123,9 +118,30 @@ $n = $ProduitModel->Count("guitar");
   		<?php
         if($x == 1):
         ?>
+
         	<div class="row">
         	 <div class ="col s3">
-            <img src="<?php echo $pr->getImage(); ?>"/>
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="<?php echo $pr->getimage(); ?>">
+                  </div>
+
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?><i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Buy It Now !</a></p>
+                  </div>
+
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
+                    <ul>
+                      <li>Prix:<?php echo $pr->getprix(); ?></li>
+                      <li>Reference:<?php echo $pr->getreference(); ?></li>
+                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
+                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
+                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                    </ul>
+                  </div>
+              </div>
           </div>
         
         <?php 
@@ -136,7 +152,27 @@ $n = $ProduitModel->Count("guitar");
         if($x == 2):
         ?>
         	 <div class ="col s3">
-            <img src="<?php echo $pr->getImage(); ?>"/>
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="<?php echo $pr->getimage(); ?>">
+                  </div>
+
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Buy It Now !</a></p>
+                  </div>
+
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
+                    <ul>
+                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
+                      <li>Reference:<?php echo $pr->getreference(); ?></li>
+                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
+                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
+                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                    </ul>
+                  </div>
+              </div>
           </div>
         
         <?php 
@@ -146,7 +182,27 @@ $n = $ProduitModel->Count("guitar");
         if($x == 3):
         ?>
         	 <div class ="col s3">
-            <img src="<?php echo $pr->getImage(); ?>"/>
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="<?php echo $pr->getimage(); ?>">
+                  </div>
+
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Buy It Now !</a></p>
+                  </div>
+
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
+                    <ul>
+                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
+                      <li>Reference:<?php echo $pr->getreference(); ?></li>
+                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
+                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
+                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                    </ul>
+                  </div>
+              </div>
           </div>
         
         <?php 
@@ -157,7 +213,27 @@ $n = $ProduitModel->Count("guitar");
         if($x == 4):
         ?>
         	<div class="col s3">
-            <img src="<?php echo $pr->getImage(); ?>"/>
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="<?php echo $pr->getimage(); ?>">
+                  </div>
+
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
+                      <p><a href="#">Buy It Now !</a></p>
+                  </div>
+
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
+                    <ul>
+                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
+                      <li>Reference:<?php echo $pr->getreference(); ?></li>
+                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
+                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
+                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                    </ul>
+                  </div>
+              </div>
           </div>
         	</div>
         

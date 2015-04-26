@@ -12,6 +12,9 @@
             $tableau = array();
             $query = "SELECT * FROM produit";
             $resultat = $bdd->query($query);
+            if (!$resultat) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+}
            $i = 0 ;
             while ($data = $resultat -> fetch_assoc()) {
                 $Pr = new produit($data);

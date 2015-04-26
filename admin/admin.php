@@ -12,6 +12,8 @@
 	<script type="text/javascript" src="../view/js/modals.js"></script>
 	<script type="text/javascript" src="../view/js/sidenav.js"></script>
 	<script type="text/javascript" src="../view/js/loadTicket.js"></script>
+	<script type="text/javascript" src="../view/js/loadproduit.js"></script>
+
 </head>
 <body>
 	<div class="navigation_bars">
@@ -39,7 +41,7 @@
 		            <li><a class="collapsible-header waves-effect waves-teal">Products</a>
 		              <div class="collapsible-body">
 		                <ul>
-		                  <li><a href="">Display Products</a></li>
+		                  <li><a onclick="loadproduit();">Display Products</a></li>
 		                  <li><a href="">Add Products</a></li>
 		                  <li><a href="">Modify Products</a></li>
 		                  <li><a href="">Delete Products</a></li>
