@@ -19,16 +19,16 @@ $listeT = $productModel->afficher();
 	</thead>
 	<tbody>
 <?php
-    foreach ($listeT as $Tick) :
+    foreach ($listeT as $pr) :
 ?>
     <tr>
-        <td><?php echo $Tick->getid_produit() ;?></td>
-        <td><?php echo $Tick->getnom() ;?></td>
-        <td><?php echo $Tick->getreference() ;?></td>
-        <td><?php echo $Tick->getcategorie() ;?></td>
-        <td><?php echo $Tick->getquantite() ;?></td>
-        <td><?php echo $Tick->getprix() ;?></td>
-        <td><?php echo $Tick->getdescription() ;?></td>
+        <td><?php echo $pr->getid_produit() ;?></td>
+        <td><?php echo $pr->getnom() ;?></td>
+        <td><?php echo $pr->getreference() ;?></td>
+        <td><?php echo $pr->getcategorie() ;?></td>
+        <td><?php echo $pr->getquantite() ;?></td>
+        <td><?php echo $pr->getprix() ;?></td>
+        <td><?php echo $pr->getdescription() ;?></td>
     </tr>
 
 <?php
