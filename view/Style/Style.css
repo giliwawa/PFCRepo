@@ -680,3 +680,52 @@ footer ul li a{
 /*------------------------------------------------admin END------------------------------------------------------*/
 
 /*------------------------------------------------Signup Begin------------------------------------------------------*/
+
+
+/*------------------- Profil Begin ----------------*/
+
+#profil .container{
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background-color: rgba(222,222,222,1);
+  height: 24cm;
+  border-radius: 5px;
+  margin-bottom: 110px;
+  margin-top: 50px;
+  width: 80%;
+}
+
+#profil .img{
+	margin-top: 10px;
+  	border-radius: 5px;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  	height: 8cm;
+}
+
+#profil .titre{
+  	text-align: left;
+	border-bottom: 1px solid #37474f;
+  	height: 8cm;
+  	margin-top: 10px;
+  	margin-left: 1cm;
+}
+
+#profil .titre a{
+	margin-left: 400px;
+}
+
+#profil .favoris{
+	margin-top: 10px;
+  	border-radius: 5px;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  	height: 14cm;
+}
+
+#profil .suggestion{
+  	border-radius: 5px;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  	height: 14cm;
+  	margin-top: 10px;
+  	margin-left: 1cm;
+}
+
+/*------------------- Profil End ------------------*/
