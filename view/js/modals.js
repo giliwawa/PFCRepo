@@ -24,7 +24,7 @@ function testCreds(){
                 $("#error").addClass("valid");
                 $("#error").html("You are now connected");
                 $("#error").show().delay(800).fadeOut(500);
-                
+                $(location).attr('href',"index.php");  
             }
 
         }
