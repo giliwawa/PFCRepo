@@ -25,8 +25,11 @@ $i=0;
 			<td><?php echo $Tick->getemail() ;?></td>
 			<td><?php echo'<a class="waves-effect waves-teal btn" onclick="loadTicketConsulter('. $Tick->getid_ticket().' )">View</a></td>';?>
 		</tr>
+
 <?php
 	endforeach;
+	$count = array('ticket' => $i, 'tick' => $i);
+	echo json_encode($count);
 ?>
 		<tr id="nb_ligne"><?php echo 'Unread Tickets : '.$i;?></tr>
 	</tbody>

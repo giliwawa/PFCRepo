@@ -36,5 +36,5 @@ span.badge{
 	margin-left: 20px;
 }
 
-span.badge.new:after {
-    content: " Unread"; }
+/*span.badge.new:after {
+    content: " Unread"; }*/
