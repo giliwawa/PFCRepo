@@ -66,7 +66,7 @@
             </li>
             
             <li class="collection-item avatar ">
-               <a href="#">
+               <a onclick="loadproduct_cat('percussion')">
                 <img src="images/percuthion.jpg" alt="" class="circle">
                 <span class="title">Percussions</span>
                 <p>Drums <br>
@@ -76,7 +76,7 @@
             </li>
             
             <li class="collection-item avatar ">
-                <a href="#">
+                <a onclick="loadproduct_cat('wind')">
                 <img src="images/naf5ethion.jpg" alt="" class="circle">
                 <span class="title">Wind Instruments</span>
                 <p>Trumpets <br>
@@ -86,7 +86,7 @@
             </li>
             
             <li class="collection-item avatar ">
-                <a href="#">
+                <a onclick="loadproduct_cat('electronic')">
                 <img src="images/moogothion.png" alt="" class="circle">
                 <span class="title">Electronic Instruments</span>
                 <p>Moogs <br>
@@ -96,7 +96,7 @@
             </li>
             
             <li class="collection-item avatar ">
-                <a href="#">
+                <a onclick="loadproduct_cat('accesories')">
                 <img src="images/accesoirs.png" alt="" class="circle">
                 <span class="title">Acceesories</span>
                 <p>Amplifiers <br>
