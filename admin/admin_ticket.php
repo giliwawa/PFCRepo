@@ -12,9 +12,7 @@ if(isset($_POST['action']))
 
 else
 {
-    echo 'good by';
-}
-/*$i=0;
+$i=0;
 ?>
 <table>
 	<thead>
@@ -44,5 +42,3 @@ else
     <tr id="nb_ligne"><?php echo 'Unread Tickets : '.$i;?></tr>
 </tbody>
 </table>
- * 
- */

@@ -32,9 +32,7 @@ jQuery(document).ready(function($) {
  		data: { action: 'nb_ticket'}
  	})
  	.done(function(html) {
-            console.log("success");
             $("#tick").html(html);
-            console.log(html);
  	})
  	.fail(function() {
  		console.log("error");
@@ -42,5 +40,4 @@ jQuery(document).ready(function($) {
  	.always(function() {
  		console.log("complete");
  	});
- 	
 });
