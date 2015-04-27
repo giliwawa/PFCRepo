@@ -51,7 +51,19 @@
             }
             return $i;
         }  
+        public function loadcategories()
+        {
+            $bdd = new Db();
+            $categories = array();
+            $query = "SELECT categorie FROM produit GROUP BY categorie";
+            $resultat = $bdd->query($query);
+            $i = 0;
+            $data = $resultat ->fetch_assoc();
+            return $data ;
+        }
         
         }
+
+        
    
 ?>
