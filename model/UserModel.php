@@ -49,7 +49,7 @@
 
     public function rechercheuser($rech){
         $bdd = new Db();
-        $query = "SELECT * FROM users WHERE prenom like '%$rech%', nom like '%$rech%', sexe like '%$rech%', date_naissance like '%$rech%', adresse like '%$rech%', CIN like '%$rech%', num_tel like '%$rech%', nbr_point like '%$rech%', email like '%$rech%', privilege like '%$rech%', username like '%$rech%', password like '%$rech%' ";
+        $query = "SELECT * FROM users WHERE prenom like '%$rech%' or nom like '%$rech%' or sexe like '%$rech%' or date_naissance like '%$rech%' or adresse like '%$rech%' or CIN like '%$rech%' or num_tel like '%$rech%' or nbr_point like '%$rech%' or email like '%$rech%' or privilege like '%$rech%' or username like '%$rech%' or password like '%$rech%' ";
         $resultat = $bdd->query($query) ;
             if (!$resultat) {
                 throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
