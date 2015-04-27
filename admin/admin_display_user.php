@@ -28,7 +28,7 @@ $listeU = $userModel->afficherUser();
     foreach ($listeU as $user) :
 ?>
     <tr>
-        <td><?php echo $user->getId() ;?></td>
+        <td><?php echo $user->getid_user() ;?></td>
         <td><?php echo $user->getPrenom() ;?></td>
         <td><?php echo $user->getNom() ;?></td>
         <td><?php echo $user->getSexe() ;?></td>
