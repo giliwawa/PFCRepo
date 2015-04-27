@@ -5,17 +5,26 @@
  */
 
   $(document).ready(function() {
+
     $('select').material_select();
+    
+    $("body").on("change", "#action", function(){
+        console.log("testChange");
+        var act = $('select').val();
+        getStat(act);
+    });
   });
             
 function initCanvas(){
-    $('select').material_select();
-    var content = '<div class="row"><div class="input-field col s4"><select class="browser-default"><option value="" disabled selected>Filter</option><option value="qte_prod">Sells by Product</option><option value="qte_month">Sells by Month</option></select></div></div>';
+    
+    var content = '<div class="row"><div class="input-field col s4"><select id="action" class="browser-default"><option value="1" disabled selected>Filter</option><option value="qte_prod">Sells by Product</option><option value="qte_month">Sells by Month</option></select></div></div>';
     $("#show").html(content);
-    content = <div class=""
+    content = '<div class="row"><canvas id="myChart" class="col s12"></canvas></div>';
+    $("#show").append(content);
 }
 
 function testchart(labels,val){
+    
     var ctx = document.getElementById("myChart").getContext("2d");
     var data = {
     labels: labels,
@@ -36,12 +45,12 @@ new Chart(ctx).Bar(data, {
 
 }
 
-function getStat(){
+function getStat(action){
     
     $.ajax({
         type: "POST",
         url: "../controller/statController.php",
-        data: {action: "qte_prod"},
+        data: {action: action},
         cache: false,
         dataType : "json",
         success: function (html){
