@@ -4,22 +4,22 @@ $productModel = new ProduitModel();
 $listecat = $productModel->loadcategories();
 $n = count($listecat);
 ?>
-<form>
+<script type="text/javascript" src="../view/js/addproduct.js"></script>
 	<div class="row">
-    <form class="col s12">
+    <form class="col s12" method="post" enctype="multipart/form-data" id="addproduct">
       <div class="row">
         <div class="input-field col s6">
-          <input id="name" type="text" class="validate">
+          <input id="name" type="text" class="validate" name="name">
           <label for="first_name">Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="refrence" type="text" class="validate">
+          <input id="reference" type="text" class="validate" name="reference">
           <label for="reference">Reference</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-		    <select class="browser-default">
+		    <select class="browser-default" name="categorie">
 		      <option value="" disabled selected>Catégorie</option>
 		      <?php 
 		      foreach ($listecat as $cat ):
@@ -55,7 +55,7 @@ $n = count($listecat);
           <label for="description">Description</label>
         </div>
       </div>
+      <input TYPE="submit" name="upload" title="Add Product to the Database" value="Add Product" class="waves-effect waves-light btn"/>
       
     </form>
   </div>
-</form>
