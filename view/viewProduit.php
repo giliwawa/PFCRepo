@@ -96,7 +96,7 @@
             </li>
             
             <li class="collection-item avatar ">
-                <a onclick="loadproduct_cat('accesories')">
+                <a onclick="loadproduct_cat('accessory')">
                 <img src="images/accesoirs.png" alt="" class="circle">
                 <span class="title">Acceesories</span>
                 <p>Amplifiers <br>

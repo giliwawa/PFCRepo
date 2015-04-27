@@ -63,6 +63,12 @@
             }
             return $categories ;
         }
+        public function ajouterproduit($product)
+        {
+            $bdd = new Db();
+            $requete="INSERT INTO produit (nom, reference, categorie, quantite, prix, image, description) VALUES ('".$product->getnom()."','".$product->getreference()."','".$product->getcategorie()."','".$product->getquantite()."','".$product->getprix()."','".$product->getimage()."','".$product->getdescription()."')";
+            $bdd->query($requete);
+        }
         
         }
 
