@@ -3,7 +3,7 @@
 	include 'navbar.php';
 	require_once '../model/ticketModel.php';
 	$ticketModel=new ticketModel();
-	$ListeT = $ticketModel->displayTicketId_user($_SESSION['id_user']);
+	$ListeT =$ListeT = $ticketModel->displayTicketId_user($_SESSION['id_user']);
 
 ?>
 	<title>Support</title>

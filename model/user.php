@@ -4,17 +4,17 @@ class user {
 
     public function hydrate(array $data){
         $i = 0;
-        echo json_encode($data);
+        //echo json_encode($data);
 
         foreach ($data as $key => $value) {
             $method = 'set'.ucfirst($key);
             if (method_exists($this,$method)) {
                 $this->$method($value);
-                echo $key." ";
+                //echo $key." ";
             }
             else
             {
-                echo '<br>'.$key.' does not exist i= '.$i;
+                //echo '<br>'.$key.' does not exist i= '.$i;
             }
         }
     }
@@ -121,37 +121,13 @@ class user {
     public function setEmail($email){
         $this->email = $email;
     }
+    public function setPrivilege($privilege){
+        $this->privilege = $privilege;
+    }
     public function setUsername($username){
         $this->username = $username;
     }
-    public function setdate_naissance($date_naissance){
-        $this->date_naissance = $date_naissance;
-    }
-    public function setadresse($adresse){
-        $this->adresse = $adresse;
-    }
-    public function setCIN($CIN){
-        $this->CIN = $CIN;
-    }
-    public function setnum_tel($num_tel){
-        $this->num_tel = $num_tel;
-    }
-    public function setnbr_point($nbr_point){
-        $this->nbr_point = $nbr_point;
-    }
-    public function setimage($image){
-        $this->image = $image;
-    }
-    public function setemail($email){
-        $this->email = $email;
-    }
-    public function setprivilege($privilege){
-        $this->privilege = $privilege;
-    }
-    public function setusername($username){
-        $this->username = $username;
-    }
-    public function setpassword($password){
+    public function setPassword($password) {
         $this->password = $password;
     }
 }

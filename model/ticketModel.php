@@ -38,14 +38,20 @@
 			$tableau = array();
 			$query = "SELECT * FROM ticket WHERE id_user=".$id_user;
 			echo $query;
-			$result = $bdd->query($query);
+			$result = $bdd->select($query);
+                        echo json_encode($result);
 			$i = 0 ;
-			while ($data = $result -> fetch_assoc()) {
+                        if($result){
+                            while ($data = $result->fetch_assoc()) {
 				$Tc = new ticket($data);
 				$tableau[$i] = $Tc;
 				$i++;
-			}
-			return $tableau;
+                            }
+                            return $tableau;
+                        }else{
+                            return 0;
+                        }
+			
 		}
 
 		public function ajouterTicket($ticket)
