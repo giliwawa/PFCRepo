@@ -1,4 +1,5 @@
-$("form#addproduct").submit(function(event){
+jQuery(document).ready(function(){
+  $('div').on('submit',"#addproduct",function(event){
  
   //disable the default form submission
   event.preventDefault();
@@ -23,4 +24,5 @@ $("form#addproduct").submit(function(event){
   });
  
   return false;
+});
 });

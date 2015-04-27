@@ -8,7 +8,7 @@ $n = count($listecat);
 </head>
 
 	<div class="row">
-    <form class="col s12" method="post" id="addproduct">
+    <form class="col s12" method="POST" enctype="multipart/form-data" id="addproduct">
       <div class="row">
         <div class="input-field col s6">
           <input id="name" type="text" class="validate" name="name">
