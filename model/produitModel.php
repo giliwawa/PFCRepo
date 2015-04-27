@@ -58,8 +58,10 @@
             $query = "SELECT categorie FROM produit GROUP BY categorie";
             $resultat = $bdd->query($query);
             $i = 0;
-            $data = $resultat ->fetch_assoc();
-            return $data ;
+            while ($data = $resultat ->fetch_assoc()) {
+                array_push($categories, $data);
+            }
+            return $categories ;
         }
         
         }

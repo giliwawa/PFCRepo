@@ -22,15 +22,17 @@ $n = count($listecat);
 		    <select class="browser-default">
 		      <option value="" disabled selected>Catégorie</option>
 		      <?php 
-		      foreach ($listecat as $cat ):?>
-		      	<option value="1"><?php echo $cat ?></option>
+		      foreach ($listecat as $cat ):
+		      	foreach ($cat as $key => $value) { ?>
+		      	<option value="1"><?php echo $value ?></option>
 				<?php
+					}
 				endforeach;
 				 ?>
 		    </select>
   		</div>
       </div>
-      <!-- <div class="row">
+      <div class="row">
         <div class="input-field col s12">
           <input id="password" type="password" class="validate">
           <label for="password">Password</label>
@@ -41,7 +43,7 @@ $n = count($listecat);
           <input id="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
-      </div> -->
+      </div>
     </form>
   </div>
 </div>
