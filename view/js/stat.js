@@ -4,6 +4,17 @@
  * and open the template in the editor.
  */
 
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+            
+function initCanvas(){
+    $('select').material_select();
+    var content = '<div class="row"><div class="input-field col s4"><select class="browser-default"><option value="" disabled selected>Filter</option><option value="qte_prod">Sells by Product</option><option value="qte_month">Sells by Month</option></select></div></div>';
+    $("#show").html(content);
+    content = <div class=""
+}
+
 function testchart(labels,val){
     var ctx = document.getElementById("myChart").getContext("2d");
     var data = {

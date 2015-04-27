@@ -56,7 +56,7 @@
 		        </ul>
 		    </li>
                     <li class="bold"><a class="waves-effect waves-teal" onclick="loadTicket();" >Tickets<span id="tick"></span></a></li>
-                    <li class="bold"><a href="#" class="waves-effect waves-teal" onclick="getStat();">Statistics</a></li>
+                    <li class="bold"><a href="#" class="waves-effect waves-teal" onclick="initCanvas();">Statistics</a></li>
 
 		</ul>
 	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -65,7 +65,7 @@
 		<br>
 		<br>
 		<br>
-                <canvas id="myChart" width="400" height="400"></canvas>
+                
 	</div>
 
 
