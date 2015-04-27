@@ -47,6 +47,23 @@
         $db-> query($sql);
     }        
 
+    public function rechercheuser($rech){
+        $bdd = new Db();
+        $query = "SELECT * FROM users WHERE prenom like '%$rech%', nom like '%$rech%', sexe like '%$rech%', date_naissance like '%$rech%', adresse like '%$rech%', CIN like '%$rech%', num_tel like '%$rech%', nbr_point like '%$rech%', email like '%$rech%', privilege like '%$rech%', username like '%$rech%', password like '%$rech%' ";
+        $resultat = $bdd->query($query) ;
+            if (!$resultat) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+            }
+            $i = 0;
+            while($data = $resultat->fetch_assoc())
+            {
+                $Pr = new user($data);
+                $tableau[$i] = $Pr ;
+                $i++;   
+            }
+            return $tableau;
+    }
+
     public function afficherUser(){
             $bdd = new Db();
             $tableau = array();
