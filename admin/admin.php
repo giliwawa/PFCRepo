@@ -13,11 +13,10 @@
 	<script type="text/javascript" src="../view/js/sidenav.js"></script>
 	<script type="text/javascript" src="../view/js/loadTicket.js"></script>
 	<script type="text/javascript" src="../view/js/loadproduit.js"></script>
-    <script type="text/javascript" src="../view/js/Chart.min.js"></script>
-    <script type="text/javascript" src="../view/js/stat.js"></script>
+        
 	<script type="text/javascript" src="../view/js/loadUser.js"></script>
-    <script type="text/javascript" src="../view/js/Chart.min.js"></script>
-    <script type="text/javascript" src="../view/js/stat.js"></script>
+        <script type="text/javascript" src="../view/js/Chart.min.js"></script>
+        <script type="text/javascript" src="../view/js/stat.js"></script>
 
 </head>
 <body>
@@ -66,6 +65,7 @@
 		<br>
 		<br>
 		<br>
+                <canvas id="myChart" width="400" height="400"></canvas>
 	</div>
 
 
