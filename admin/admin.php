@@ -12,6 +12,8 @@
 	<script type="text/javascript" src="../view/js/modals.js"></script>
 	<script type="text/javascript" src="../view/js/sidenav.js"></script>
 	<script type="text/javascript" src="../view/js/loadTicket.js"></script>
+        <script type="text/javascript" src="../view/js/Chart.min.js"></script>
+        <script type="text/javascript" src="../view/js/stat.js"></script>
 </head>
 <body>
 	<div class="navigation_bars">
@@ -50,7 +52,7 @@
 		        </ul>
 		    </li>
                     <li class="bold"><a class="waves-effect waves-teal" onclick="loadTicket();" >Tickets<span id="tick"></span></a></li>
-		    <li class="bold"><a href="" class="waves-effect waves-teal">Statistics</a></li>
+                    <li class="bold"><a href="#" class="waves-effect waves-teal" onclick="getStat();">Statistics</a></li>
 
 		</ul>
 	  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
