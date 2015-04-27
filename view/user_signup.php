@@ -38,10 +38,12 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
+                            <i class="mdi-social-cake prefix"></i>
                             <input id="icon_prefix" type="date" class="datepicker" name="date_naissance">
                             <label for="icon_prefix"></label>
                         </div>
                         <div class="input-field col s6 Gender">
+                            <i class="mdi-action-accessibility prefix"></i>
                             <input name="sexe" type="radio" id="male" value="male"/>
                             <label for="male">Male</label>
                             <input name="sexe" type="radio" id="female" value="female"/>
