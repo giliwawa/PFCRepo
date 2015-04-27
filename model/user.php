@@ -35,6 +35,8 @@ class user {
     private $num_tel;
     private $nbr_point;
     private $image;
+    private $email;
+    private $previlege;
     private $username;
     private $password;
     
@@ -68,6 +70,12 @@ class user {
     }
     public function getImage(){
         return $this->image;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getPrivilege(){
+        return $this->privilege;
     }
     public function getUsername(){
         return $this->username;
@@ -105,6 +113,12 @@ class user {
     }
     public function setimage($image){
         $this->image = $image;
+    }
+    public function setemail($email){
+        $this->email = $email;
+    }
+    public function setprivilege($privilege){
+        $this->privilege = $privilege;
     }
     public function setusername($username){
         $this->username = $username;

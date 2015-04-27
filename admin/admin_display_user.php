@@ -17,6 +17,8 @@ $listeU = $userModel->afficherUser();
 			<th>CIN</th>
 			<th>Num° telephone</th>
 			<th>Points</th>
+			<th>Email</th>
+			<th>Privilege</th>
 			<th>Username</th>
 			<th>Password</th>
 		</tr>
@@ -35,6 +37,8 @@ $listeU = $userModel->afficherUser();
         <td><?php echo $user->getCIN() ;?></td>
         <td><?php echo $user->getNum_tel() ;?></td>
         <td><?php echo $user->getNbr_point() ;?></td>
+        <td><?php echo $user->getEmail() ;?></td>
+        <td><?php echo $user->getPrivilege() ;?></td>
         <td><?php echo $user->getUsername() ;?></td>
         <td><?php echo $user->getPassword() ;?></td>
     </tr>
