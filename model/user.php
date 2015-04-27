@@ -75,9 +75,6 @@ class user {
     public function getimage(){
         return $this->image;
     }
-    public function getemail(){
-        return $this->email;
-    }
     public function getEmail(){
         return $this->email;
     }
