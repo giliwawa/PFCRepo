@@ -49,7 +49,6 @@
 
     public function rechercheuser($rech){
         $bdd = new Db();
-        $tableau = array();
         $query = "SELECT * FROM users WHERE prenom like '%$rech%' or nom like '%$rech%' or sexe like '%$rech%' or date_naissance like '%$rech%' or adresse like '%$rech%' or CIN like '%$rech%' or num_tel like '%$rech%' or nbr_point like '%$rech%' or email like '%$rech%' or privilege like '%$rech%' or username like '%$rech%' or password like '%$rech%' ";
         $resultat = $bdd->query($query) ;
             if (!$resultat) {
@@ -58,8 +57,8 @@
             $i = 0;
             while($data = $resultat->fetch_assoc())
             {
-                //$Pr = new user($data);
-                array_push($tableau, $data);
+                $Pr = new user($data);
+                $tableau[$i] = $Pr ;
                 $i++;   
             }
             return $tableau;
