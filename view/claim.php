@@ -3,7 +3,9 @@
 	include 'navbar.php';
 	require_once '../model/ticketModel.php';
 	$ticketModel=new ticketModel();
-	$ListeT= $ticketModel->displayTicketId_user($_SESSION['id_user']);
+	if (isset($_SESSION['id_user'])) {
+		$ListeT= $ticketModel->displayTicketId_user($_SESSION['id_user']);	
+	}
 
 ?>
 	<title>Support</title>
@@ -56,6 +58,7 @@
 					</thead>
 					<tbody>
 						<?php
+						if (isset($_SESSION['id_user'])){
 							foreach ($ListeT as $Tick) :
 							if ($Tick->getstate()==1) {
 										$state="processing";
@@ -71,9 +74,13 @@
 						</tr>
 						<?php
 						    endforeach;
+						}
+						else {
 						?>
 					</tbody>
 				</table>
+				you have to be conntected.
+				<?php }?>
 			</div>
 			
 		</div>
