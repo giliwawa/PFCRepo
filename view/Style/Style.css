@@ -281,6 +281,15 @@ i.mdi-communication-live-help{
 #index_produit .collection-item.avatar a{
   cursor:pointer;
 }
+.card .card-image img{
+  height:50%;
+}
+.card .card-content span{
+  font-size:20px;
+}
+.card .card-content a{
+
+}
 
 
 

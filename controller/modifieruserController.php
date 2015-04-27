@@ -4,50 +4,76 @@ require_once '../model/UserModel.php';
 $userModel=new UserModel();
 $search = htmlspecialchars($_GET["reche"]);
 $listeU = $userModel->rechercheuser($search);
-
+echo json_encode($listeU);
 ?>
-<table>
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>Prenom</th>
-			<th>Name</th>
-			<th>Sexe</th>
-			<th>Date de naissance</th>
-			<th>Adresse</th>
-			<th>CIN</th>
-			<th>Num° telephone</th>
-			<th>Points</th>
-			<th>Email</th>
-			<th>Privilege</th>
-			<th>Username</th>
-			<th>Password</th>
-		</tr>
-	</thead>
-	<tbody>
-<?php
-    foreach ($listeU as $user) :
-?>
-    <tr>
-        <td><?php echo $user->getid_user() ;?></td>
-        <td><?php echo $user->getPrenom() ;?></td>
-        <td><?php echo $user->getNom() ;?></td>
-        <td><?php echo $user->getSexe() ;?></td>
-        <td><?php echo $user->getDate_naissance() ;?></td>
-        <td><?php echo $user->getAdresse() ;?></td>
-        <td><?php echo $user->getCIN() ;?></td>
-        <td><?php echo $user->getNum_tel() ;?></td>
-        <td><?php echo $user->getNbr_point() ;?></td>
-        <td><?php echo $user->getEmail() ;?></td>
-        <td><?php echo $user->getPrivilege() ;?></td>
-        <td><?php echo $user->getUsername() ;?></td>
-        <td><?php echo $user->getPassword() ;?></td>
-    </tr>
 
-<?php
-    endforeach;
-
-?>
-    
-</tbody>
-</table>
+<form>
+	<div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="username">
+                            <label for="icon_prefix">Username</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="password" name="password">
+                            <label for="icon_prefix">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="prenom">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="nom">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="date" class="datepicker" name="date_naissance">
+                            <label for="icon_prefix"></label>
+                        </div>
+                        <div class="input-field col s6 Gender">
+                            <input name="sexe" type="radio" id="male" value="male"/>
+                            <label for="male">Male</label>
+                            <input name="sexe" type="radio" id="female" value="female"/>
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="adresse">
+                            <label for="icon_prefix">Adresse</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="CIN">
+                            <label for="icon_prefix">CIN</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="num_tel">
+                            <label for="icon_prefix">Num° telephone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="nbr_point">
+                            <label for="icon_prefix">Points</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="email">
+                            <label for="icon_prefix">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="icon_prefix" type="text" class="validate" name="privilege">
+                            <label for="icon_prefix">Pivilege</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <button class="btn waves-effect waves-light darken-3" type="submit">UpDate</button>
+                        </div>
+                    </div>
+    	</div>
+</form>

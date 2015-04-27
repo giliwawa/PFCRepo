@@ -56,7 +56,7 @@
     <div class="col s2 sidebar-container">
         <ul class="collection ">
             <li class="collection-item avatar ">
-                <a onclick="loadproduct_cat('guitar')">
+                <a onclick="loadproduct_cat('string')">
                 <img src="images/guitarthion.jpg" alt="" class="circle">
                 <span class="title">String Instruments</span>
                 <p>guitars <br>
@@ -96,7 +96,7 @@
             </li>
             
             <li class="collection-item avatar ">
-                <a onclick="loadproduct_cat('accesories')">
+                <a onclick="loadproduct_cat('accessory')">
                 <img src="images/accesoirs.png" alt="" class="circle">
                 <span class="title">Acceesories</span>
                 <p>Amplifiers <br>

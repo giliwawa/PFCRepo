@@ -36,5 +36,5 @@ function loaddisplaymodifierUser() {
         }
     }
     xmlhttp.open("GET","modif_user.php?reche="+recherche,true);
-    xmlhttp.send();
+    xmlhttp.send(); 
 }

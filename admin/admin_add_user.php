@@ -37,7 +37,7 @@
                             <label for="icon_prefix">Adresse</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="icon_prefix" type="text" class="password" name="CIN">
+                            <input id="icon_prefix" type="text" class="validate" name="CIN">
                             <label for="icon_prefix">CIN</label>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <label for="icon_prefix">Num° telephone</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="icon_prefix" type="text" class="password" name="nbr_point">
+                            <input id="icon_prefix" type="text" class="validate" name="nbr_point">
                             <label for="icon_prefix">Points</label>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             <label for="icon_prefix">Email</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="icon_prefix" type="text" class="password" name="privilege">
+                            <input id="icon_prefix" type="text" class="validate" name="privilege">
                             <label for="icon_prefix">Pivilege</label>
                         </div>
                     </div>
