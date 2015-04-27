@@ -41,3 +41,7 @@ span.badge{
 .collapsible-body a{
 	cursor: pointer;
 }
+
+a{
+	cursor: pointer;
+}

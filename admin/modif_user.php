@@ -1,11 +1,13 @@
 <?php
 require_once '../model/UserModel.php';
 
-$userModel=new UserModel();
 $search = htmlspecialchars($_GET["reche"]);
-$listeU = $userModel->rechercheuser($search);
+$user= new user();
+$userModel = new UserModel();
+$listeU =$userModel->rechercheuser($search);
 
 ?>
+
 <table>
 	<thead>
 		<tr>
@@ -22,6 +24,7 @@ $listeU = $userModel->rechercheuser($search);
 			<th>Privilege</th>
 			<th>Username</th>
 			<th>Password</th>
+			<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -42,6 +45,7 @@ $listeU = $userModel->rechercheuser($search);
         <td><?php echo $user->getPrivilege() ;?></td>
         <td><?php echo $user->getUsername() ;?></td>
         <td><?php echo $user->getPassword() ;?></td>
+        <td><a onclick="load(<?php echo $user->getid_user() ;?>)">Modify</a></td>
     </tr>
 
 <?php

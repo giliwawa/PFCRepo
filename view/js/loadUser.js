@@ -29,11 +29,12 @@ function loadmodifierUser() {
 }
 
 function loaddisplaymodifierUser() {
-	xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
+	var recherche=$("#search").val();
+    xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        document.getElementById("show").innerHTML = xmlhttp.responseText;
+        document.getElementById("modif").innerHTML = xmlhttp.responseText;
         }
     }
-	xmlhttp.open("GET","modifieruserController.php",true);
+    xmlhttp.open("GET","modif_user.php?reche="+recherche,true);
     xmlhttp.send();
 }
