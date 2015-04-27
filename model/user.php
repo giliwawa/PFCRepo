@@ -40,7 +40,11 @@ class user {
     private $nbr_point;
     private $image;
     private $email;
+<<<<<<< HEAD
     private $privilege;
+=======
+    private $previlege;
+>>>>>>> origin/master
     private $username;
     private $password;
     
@@ -75,6 +79,7 @@ class user {
     public function getimage(){
         return $this->image;
     }
+<<<<<<< HEAD
     public function getemail(){
         return $this->email;
     }
@@ -83,6 +88,15 @@ class user {
         return $this->privilege;
     }
     public function getusername(){
+=======
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getPrivilege(){
+        return $this->privilege;
+    }
+    public function getUsername(){
+>>>>>>> origin/master
         return $this->username;
     }
     public function getpassword(){
@@ -101,6 +115,7 @@ class user {
     public function setSexe($sexe){
         $this->sexe = $sexe;
     }
+<<<<<<< HEAD
     public function setDate_naissance($date_naissance){
         $this->date_naissance = $date_naissance;
     }
@@ -126,6 +141,36 @@ class user {
         $this->username = $username;
     }
     public function setPassword($password){
+=======
+    public function setdate_naissance($date_naissance){
+        $this->date_naissance = $date_naissance;
+    }
+    public function setadresse($adresse){
+        $this->adresse = $adresse;
+    }
+    public function setCIN($CIN){
+        $this->CIN = $CIN;
+    }
+    public function setnum_tel($num_tel){
+        $this->num_tel = $num_tel;
+    }
+    public function setnbr_point($nbr_point){
+        $this->nbr_point = $nbr_point;
+    }
+    public function setimage($image){
+        $this->image = $image;
+    }
+    public function setemail($email){
+        $this->email = $email;
+    }
+    public function setprivilege($privilege){
+        $this->privilege = $privilege;
+    }
+    public function setusername($username){
+        $this->username = $username;
+    }
+    public function setpassword($password){
+>>>>>>> origin/master
         $this->password = $password;
     }
     public function setPrivilege($privilege){
