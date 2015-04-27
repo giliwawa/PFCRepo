@@ -3,7 +3,7 @@
 	include 'navbar.php';
 	require_once '../model/ticketModel.php';
 	$ticketModel=new ticketModel();
-	$ListeT =$ListeT = $ticketModel->displayTicketId_user($_SESSION['id_user']);
+	$ListeT= $ticketModel->displayTicketId_user($_SESSION['id_user']);
 
 ?>
 	<title>Support</title>
@@ -44,35 +44,38 @@
 				</div>
 			</form>
 			<br>
-			<h4>Your Tickets</h4>
-			<table>
-				<thead>
-					<tr>
-						<td>ID</td>
-						<td>Status</td>
-						<td>Action</td>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-						foreach ($ListeT as $Tick) :
-						if ($Tick->getstate()==1) {
-									$state="processing";
-						}
-						elseif ($Tick->getstate==0) {
-									$state="resolved";
-						}		
-					?>
-					<tr>
-						<td><?php echo $Tick->getid_ticket() ;?></td>
-				        <td><?php echo $state; ?></td>
-				        <td><a href="../controller/deleteTicketController.php?id=<?php echo $Tick->getid_ticket() ;?>">delete</a></td>
-					</tr>
-					<?php
-					    endforeach;
-					?>
-				</tbody>
-			</table>
+			<div class="affiTicket">
+				<h4>Your Tickets</h4>
+				<table class="bordered hoverable">
+					<thead>
+						<tr>
+							<td>ID</td>
+							<td>Status</td>
+							<td>Action</td>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+							foreach ($ListeT as $Tick) :
+							if ($Tick->getstate()==1) {
+										$state="processing";
+							}
+							elseif ($Tick->getstate==0) {
+										$state="resolved";
+							}		
+						?>
+						<tr>
+							<td><?php echo $Tick->getid_ticket() ;?></td>
+					        <td><?php echo $state; ?></td>
+					        <td><a href="../controller/deleteTicketController.php?id=<?php echo $Tick->getid_ticket() ;?>">delete</a></td>
+						</tr>
+						<?php
+						    endforeach;
+						?>
+					</tbody>
+				</table>
+			</div>
+			
 		</div>
 	</div>
 </body>

@@ -37,20 +37,19 @@
 			$bdd = new Db();
 			$tableau = array();
 			$query = "SELECT * FROM ticket WHERE id_user=".$id_user;
-			echo $query;
-			$result = $bdd->select($query);
-                        echo json_encode($result);
+			$result = $bdd->query($query);
 			$i = 0 ;
-                        if($result){
-                            while ($data = $result->fetch_assoc()) {
-				$Tc = new ticket($data);
-				$tableau[$i] = $Tc;
-				$i++;
-                            }
-                            return $tableau;
-                        }else{
-                            return 0;
-                        }
+            if($result){
+                while ($data = $result->fetch_assoc()) {
+					$Tc = new ticket($data);
+					$tableau[$i] = $Tc;
+					$i++;
+                    }
+                return $tableau;
+                }
+            else{
+                    return 0;
+                }
 			
 		}
 
