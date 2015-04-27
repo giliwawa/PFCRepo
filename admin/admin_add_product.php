@@ -4,9 +4,11 @@ $productModel = new ProduitModel();
 $listecat = $productModel->loadcategories();
 $n = count($listecat);
 ?>
-<script type="text/javascript" src="../view/js/addproduct.js"></script>
+
+</head>
+
 	<div class="row">
-    <form class="col s12" method="post" enctype="multipart/form-data" id="addproduct">
+    <form class="col s12" method="post" id="addproduct">
       <div class="row">
         <div class="input-field col s6">
           <input id="name" type="text" class="validate" name="name">
@@ -45,7 +47,7 @@ $n = count($listecat);
           <input class="file-path validate" type="text"/>
           <div class="btn">
             <span>File</span>
-            <input type="file" />
+            <input type="file"  name="file"/>
           </div>
         </div>
       </div>
@@ -55,7 +57,8 @@ $n = count($listecat);
           <label for="description">Description</label>
         </div>
       </div>
-      <input TYPE="submit" name="upload" title="Add Product to the Database" value="Add Product" class="waves-effect waves-light btn"/>
+      <input type="submit" title="Add Product to the Database" value="Add Product" class="waves-effect waves-light btn"/>
       
     </form>
   </div>
+  <script type="text/javascript" src="../view/js/addproduct.js"></script>
