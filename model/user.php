@@ -3,114 +3,133 @@
 class user {
 
     public function hydrate(array $data){
-        foreach ($data as $key => $value){
+        $i = 0;
+        echo json_encode($data);
+
+        foreach ($data as $key => $value) {
             $method = 'set'.ucfirst($key);
-            if(method_exists($this,$method))
-            {
+            if (method_exists($this,$method)) {
                 $this->$method($value);
+                echo $key." ";
+            }
+            else
+            {
+                echo '<br>'.$key.' does not exist i= '.$i;
             }
         }
     }
-    public function __construct($x) {
+    public function __construct()
+    {
         $ctp = func_num_args();
-        $args = func_get_args();
-        if($ctp == 0)
-        {
-            
+        $args= func_get_args();
+        if ($ctp == 0) {
         }
         else{
             $this->hydrate($args[0]);
         }
-        
-    }
-    
+    }    
 
-    private $Id;
-    private $Prenom;
-    private $Nom;
-    private $Sexe;
+    private $id_user;
+    private $prenom;
+    private $nom;
+    private $sexe;
     private $date_naissance;
     private $adresse;
-    private $CIN;
+    private $cin;
     private $num_tel;
     private $nbr_point;
     private $image;
+    private $email;
+    private $privilege;
     private $username;
     private $password;
     
     /*getters*/
-    public function getId(){
-        return $this->Id;
+    public function getid_user(){
+        return $this->id_user;
     }
-    public function getPrenom(){
-        return $this->Prenom;
+    public function getprenom(){
+        return $this->prenom;
     }
-    public function getNom(){
-        return $this->Nom;
+    public function getnom(){
+        return $this->nom;
     }
-    public function getSexe(){
-        return $this->Sexe;
+    public function getsexe(){
+        return $this->sexe;
     }
-    public function getDate_naissance(){
+    public function getdate_naissance(){
         return $this->date_naissance;
     }
-    public function getAdresse(){
+    public function getadresse(){
         return $this->adresse;
     }
-    public function getCIN(){
-        return $this->CIN;
+    public function getcin(){
+        return $this->cin;
     }
-    public function getNum_tel(){
+    public function getnum_tel(){
         return $this->num_tel;
     }
-    public function getNbr_point(){
+    public function getnbr_point(){
         return $this->nbr_point;
     }
-    public function getImage(){
+    public function getimage(){
         return $this->image;
     }
-    public function getUsername(){
+    public function getemail(){
+        return $this->email;
+    }
+    public function getprivilege()
+    {
+        return $this->privilege;
+    }
+    public function getusername(){
         return $this->username;
     }
-    public function getPassword(){
+    public function getpassword(){
         return $this->password;
     }
     /*setters*/
-    public function setid_user($id){
-        $this->id = $id;
+    public function setId_user($id_user){
+        $this->id_user = $id_user;
     }
-    public function setprenom($prenom){
+    public function setPrenom($prenom){
         $this->prenom = $prenom;
     }
-    public function setnom($nom){
+    public function setNom($nom){
         $this->nom = $nom;
     }
-    public function setsexe($sexe){
+    public function setSexe($sexe){
         $this->sexe = $sexe;
     }
-    public function setdate_naissance($email){
+    public function setDate_naissance($date_naissance){
         $this->date_naissance = $date_naissance;
     }
-    public function setadresse($pays){
+    public function setAdresse($adresse){
         $this->adresse = $adresse;
     }
-    public function setCIN($commentaire){
-        $this->CIN = $CIN;
+    public function setCin($cin){
+        $this->cin = $cin;
     }
-    public function setnum_tel($commentaire){
+    public function setNum_tel($num_tel){
         $this->num_tel = $num_tel;
     }
-    public function setnbr_point($commentaire){
+    public function setNbr_point($nbr_point){
         $this->nbr_point = $nbr_point;
     }
-    public function setimage($commentaire){
+    public function setImage($image){
         $this->image = $image;
     }
-    public function setusername($commentaire){
+    public function setEmail($email){
+        $this->email = $email;
+    }
+    public function setUsername($username){
         $this->username = $username;
     }
-    public function setpassword($commentaire){
+    public function setPassword($password){
         $this->password = $password;
+    }
+    public function setPrivilege($privilege){
+        $this->privilege = $privilege;
     }
 
 }

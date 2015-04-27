@@ -21,6 +21,7 @@ function testCreds(){
         success: function (html){
             if(html == '1')
             {
+              console.log(html);
                 $("#error").addClass("valid");
                 $("#error").html("You are now connected");
                 $("#error").show().delay(800).fadeOut(500);

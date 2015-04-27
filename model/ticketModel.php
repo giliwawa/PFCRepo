@@ -32,6 +32,21 @@
 			}
 			return $tableau;
 		}
+		public function displayTicketId_user($id_user)
+		{
+			$bdd = new Db();
+			$tableau = array();
+			$query = "SELECT * FROM ticket WHERE id_user=".$id_user;
+			echo $query;
+			$result = $bdd->query($query);
+			$i = 0 ;
+			while ($data = $result -> fetch_assoc()) {
+				$Tc = new ticket($data);
+				$tableau[$i] = $Tc;
+				$i++;
+			}
+			return $tableau;
+		}
 
 		public function ajouterTicket($ticket)
 		{
@@ -57,6 +72,13 @@
 				$i++;
 			}
 			return $i;
+		}
+
+		public function deleteTicket($id)
+		{
+			$bdd = new Db();
+			$query = "DELETE FROM ticket WHERE id_ticket = ".$id;
+			$result=$bdd->query($query);
 		}
 	}
 

@@ -3,6 +3,7 @@
 class ticket {
 
 	private $id_ticket;
+	private $id_user;
 	private $name;
 	private $email;
 	private $text;
@@ -33,6 +34,9 @@ class ticket {
 	public function getid_ticket(){
 		return $this->id_ticket;
 	}
+	public function getid_user(){
+		return $this->id_user;
+	}
 	public function getname(){
 		return $this->name;
 	}
@@ -50,6 +54,10 @@ class ticket {
 	public function setid_ticket($id_ticket)
 	{
 		$this->id_ticket = $id_ticket;
+	}
+	public function setid_user($id_user)
+	{
+		$this->id_user = $id_user;
 	}
 	public function setname($name)
 	{

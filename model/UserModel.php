@@ -42,16 +42,20 @@
         public function getlogin($username,$password){
 
         $db = new Db();
-        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-        $resultat = $db->select($query) ;
-        if($resultat){
-            return $resultat;
-            
-        }
-        else return 0;
+        $tableau = array();
+        $query = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
+        $resultat = $db->query($query) ;
+        $i = 0;
+        while($data = $resultat->fetch_assoc())
+            {
+                $Pr = new user($data);
+                $tableau[$i] = $Pr ;
+                $i++;   
+            }
+            return $tableau;
     }
         
-    }
+}
 
     
 

@@ -3,7 +3,7 @@
 	include 'navbar.php';
 	require_once '../model/ticketModel.php';
 	$ticketModel=new ticketModel();
-	$ListeT = $ticketModel->displayTicket(1);
+	$ListeT = $ticketModel->displayTicketId_user($_SESSION['id_user']);
 
 ?>
 	<title>Support</title>
@@ -24,6 +24,7 @@
 				<br>
 				<label>Message : </label>
 				<textarea name="text" class="materialize-textarea" required></textarea>
+				<input type="hidden" name="user_id" value="<?php echo $_SESSION['id_user'];?>">
 				<br>
 				<br>
 				<div class="row">
@@ -65,7 +66,7 @@
 					<tr>
 						<td><?php echo $Tick->getid_ticket() ;?></td>
 				        <td><?php echo $state; ?></td>
-				        <td><a>delete</a></td>
+				        <td><a href="../controller/deleteTicketController.php?id=<?php echo $Tick->getid_ticket() ;?>">delete</a></td>
 					</tr>
 					<?php
 					    endforeach;
