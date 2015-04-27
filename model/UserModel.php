@@ -41,7 +41,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         
-        $sql = "INSERT INTO users (iprenom, nom, sexe, date_naissance, adresse, CIN, num_tel, nbr_point, email, privilege, username, password ) "
+        $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, adresse, CIN, num_tel, nbr_point, email, privilege, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$adresse."','".$CIN."','".$num_tel."','".$nbr_point."','".$email."','".$privilege."','".$username."','".$password."')";
         
         $db-> query($sql);

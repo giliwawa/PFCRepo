@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="icon_prefix" type="date" class="datepicker" name="date_naissance">
-                            <label for="icon_prefix">Birth Day</label>
+                            <label for="icon_prefix"></label>
                         </div>
                         <div class="input-field col s6 Gender">
                             <input name="sexe" type="radio" id="male" value="male"/>
