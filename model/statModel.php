@@ -18,4 +18,16 @@ class StatModel
         $result = $bdd->select($query);
         echo json_encode($result);
     }
+    public function getPurchaseByMonth()
+    {
+        $bdd = new Db();
+        $query = "SELECT MONTHNAME(commande.date) as mois, SUM(ligne_commande.quantite) as quantite "
+                . "from commande "
+                . "inner join ligne_commande "
+                . "on commande.id_commande = ligne_commande.id_commande "
+                . "group by mois";
+        $resultat = $bdd->select($query);
+        echo json_encode($resultat);
+                
+    }
 }

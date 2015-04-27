@@ -3,9 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$(document).ready(function(){
-   $("#show").html('<canvas id="myChart" width="400" height="400"></canvas>'); 
-});
 
 function testchart(labels,val){
     var ctx = document.getElementById("myChart").getContext("2d");
