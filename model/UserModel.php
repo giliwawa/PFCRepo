@@ -87,6 +87,26 @@
             
         }
 
+    public function updateuser($id_user){
+        $bdd = new Db();
+
+        $prenom = $_POST['prenom'];
+        $nom = $_POST['nom'];
+        $sexe = $_POST['sexe'];
+        $date_naissance = $_POST['date_naissance'];
+        $adresse = $_POST['adresse'];
+        $CIN = $_POST['CIN'];
+        $num_tel = $_POST['num_tel'];
+        $nbr_point = $_POST['nbr_point'];
+        $email = $_POST['email'];
+        $privilege = $_POST['privilege'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        
+        $query = "UPDATE users SET prenom = '".$prenom."', nom = '".$nom."', sexe = '".$sexe."', date_naissance = '".$date_naissance."', adresse = '".$adresse."', CIN = '".$CIN."', num_tel = '".$num_tel."', nbr_point = '".$nbr_point."', email = '".$email."', privilege = '".$privilege."', username = '".$username."', password = '".$password."' WHERE id_user ='".$id_user."'";
+        $bdd -> query($query);
+    }
+
     public function afficherUser(){
             $bdd = new Db();
             $tableau = array();

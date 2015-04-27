@@ -75,7 +75,7 @@ foreach ($listeU as $user) :
                     </div>
                     <div class="row">
                         <div class="col s12">
-                            <button class="btn waves-effect waves-light darken-3" type="submit">UpDate</button>
+                             <a class="btn waves-effect waves-light darken-3" id="update" onclick="loadupdateUser();">Update</a>
                         </div>
                     </div>
     	</div>
