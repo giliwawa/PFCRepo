@@ -4,7 +4,7 @@ $productModel = new ProduitModel();
 $listecat = $productModel->loadcategories();
 $n = count($listecat);
 ?>
-<div class="form">
+<form>
 	<div class="row">
     <form class="col s12">
       <div class="row">
@@ -14,11 +14,11 @@ $n = count($listecat);
         </div>
         <div class="input-field col s6">
           <input id="refrence" type="text" class="validate">
-          <label for="last_name">reference</label>
+          <label for="reference">Reference</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
 		    <select class="browser-default">
 		      <option value="" disabled selected>Catégorie</option>
 		      <?php 
@@ -31,19 +31,31 @@ $n = count($listecat);
 				 ?>
 		    </select>
   		</div>
+      <div class="input-field col s3">
+          <input id="quantite" type="text" class="validate">
+          <label for="quantite">Quantité</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="prix" type="text" class="validate">
+          <label for="prix">Prix</label>
+        </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
+        <div class="file-field input-field">
+          <input class="file-path validate" type="text"/>
+          <div class="btn">
+            <span>File</span>
+            <input type="file" />
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          <textarea id="description" class="materialize-textarea"></textarea>
+          <label for="description">Description</label>
         </div>
       </div>
+      
     </form>
   </div>
-</div>
+</form>
