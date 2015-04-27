@@ -64,6 +64,29 @@
             return $tableau;
     }
 
+    public function recherche_user_id($id_user){
+            $bdd = new Db();
+            $tableau = array();
+            $query = "SELECT * FROM users WHERE id_user='".$id_user."'";
+            $result = $bdd->query($query);
+            if (!$result) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+            }
+            $i = 0 ;
+            if($result){
+                while ($data = $result->fetch_assoc()) {
+                    $Tc = new user($data);
+                    $tableau[$i] = $Tc;
+                    $i++;
+                    }
+                return $tableau;
+                }
+            else{
+                    return 0;
+                }
+            
+        }
+
     public function afficherUser(){
             $bdd = new Db();
             $tableau = array();

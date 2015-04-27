@@ -45,7 +45,7 @@ $listeU =$userModel->rechercheuser($search);
         <td><?php echo $user->getPrivilege() ;?></td>
         <td><?php echo $user->getUsername() ;?></td>
         <td><?php echo $user->getPassword() ;?></td>
-        <td><a onclick="load(<?php echo $user->getid_user() ;?>)">Modify</a></td>
+        <td><a onclick="loadmodify(<?php echo $user->getid_user() ;?>)">Modify</a></td>
     </tr>
 
 <?php
