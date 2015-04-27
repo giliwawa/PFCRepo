@@ -33,7 +33,7 @@
 		              <div class="collapsible-body">
 		                <ul>
 		                  <li><a onclick="loadUser();">Display Users</a></li>
-		                  <li><a href="">Add Users</a></li>
+		                  <li><a onclick="loadadminUser();">Add Users</a></li>
 		                  <li><a href="">Modify Users</a></li>
 		                  <li><a href="">Delete Users</a></li>
 		                </ul>
