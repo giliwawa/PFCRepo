@@ -31,7 +31,7 @@ $listeU =$userModel->rechercheuser($search);
 <?php
     foreach ($listeU as $user) :
 ?>
-<form action="../controller/deleteuserControler.php" methode="POST">
+
 	<tr>
         <td><?php echo $user->getid_user() ;?></td>
         <td><?php echo $user->getPrenom() ;?></td>
@@ -46,9 +46,8 @@ $listeU =$userModel->rechercheuser($search);
         <td><?php echo $user->getPrivilege() ;?></td>
         <td><?php echo $user->getUsername() ;?></td>
         <td><?php echo $user->getPassword() ;?></td>
-        <td><a class="btn waves-effect waves-light darken-3" type="submit">Delete</a></td>
+        <td><a id="delete" onclick="loadDelete(<?php echo $user->getid_user() ;?>);">Delete</a></td>
     </tr>
-</form>
     
 
 <?php

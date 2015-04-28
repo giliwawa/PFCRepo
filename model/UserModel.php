@@ -140,7 +140,7 @@
     public function deleteUser($id)
         {
             $bdd = new Db();
-            $query = "DELETE FROM users WHERE id_users = ".$id;
+            $query = "DELETE FROM users WHERE id_user = ".$id;
             $result=$bdd->query($query);
         }
         
