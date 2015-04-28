@@ -15,7 +15,7 @@ if(isset($_POST['action']))
     if($action === "qte_prod"){
         $model->getPurchaseByQuantite();
     }
-    if($action === "qte_mois")
+    if($action === "qte_month")
     {
         $model->getPurchaseByMonth();
     }
