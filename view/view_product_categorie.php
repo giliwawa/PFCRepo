@@ -21,7 +21,11 @@ $n = $ProduitModel->Count($categorie);
 
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
-                      <p><a href="#">Buy It Now !</a></p>
+                      <p>
+                        <a href="#">Buy It Now !</a>
+                        <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
+                      </p>
+
                   </div>
 
                   <div class="card-reveal">
@@ -52,7 +56,10 @@ $n = $ProduitModel->Count($categorie);
 
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
-                      <p><a href="#">Buy It Now !</a></p>
+                      <p>
+                        <a href="#">Buy It Now !</a>
+                        <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
+                      </p>
                   </div>
 
                   <div class="card-reveal">
@@ -82,7 +89,10 @@ $n = $ProduitModel->Count($categorie);
 
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
-                      <p><a href="#">Buy It Now !</a></p>
+                      <p>
+                        <a href="#">Buy It Now !</a>
+                        <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
+                      </p>
                   </div>
 
                   <div class="card-reveal">
@@ -113,7 +123,10 @@ $n = $ProduitModel->Count($categorie);
 
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
-                      <p><a href="#">Buy It Now !</a></p>
+                      <p>
+                        <a href="#">Buy It Now !</a>
+                        <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
+                      </p>
                   </div>
 
                   <div class="card-reveal">

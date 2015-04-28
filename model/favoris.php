@@ -1,6 +1,6 @@
 <?php
 
-class produit {
+class favoris {
 
         private $id_favoris;
 	private $id_produit;

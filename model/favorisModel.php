@@ -1,6 +1,6 @@
 <?php
 require_once 'favoris.php';
-require_once '../configuration.php';
+require_once '../Configuration.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,11 +13,8 @@ require_once '../configuration.php';
  * @author Giliwawaa
  */
 class favorisModel {
-    private $favoris;
     
     public function __construct() {
-        $bdd = new Configuration();
-        $bdd->connexion();
     }
     
     public function getFavoris($id)
@@ -28,7 +25,19 @@ class favorisModel {
         return $Fa;       
     }
     
-            
+    public function addFavoris($favoris)
+    {
+        $bdd = new Db();
+        $requete="INSERT INTO favoris (id_produit, id_user) VALUES (".$favoris->getid_produit().",".$favoris->getid_user().")";
+        $bdd->query($requete);
+    }
+    
+    public function deleteFavoris($favoris)
+          {
+            $bdd = new Db();
+            $query = "DELETE FROM favoris WHERE id_produit = ".$favoris->getid_produit()." AND id_user = ".$favoris->getid_user();
+            $result=$bdd->query($query);
+          }      
             
     
 }

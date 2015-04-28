@@ -70,7 +70,16 @@
             $bdd->query($requete);
         }
         
+        public function searchId($id)
+        {
+            $bdd =new Db();
+            $query="SELECT * FROM produit WHERE id_produit=".$id;
+            $resultat=$bdd->query($query);
+            $data= $resultat->fetch_assoc();
+            $Pr = new produit($data);
+            return $Pr;
         }
+    }
 
         
    
