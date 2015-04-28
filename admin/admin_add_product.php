@@ -8,7 +8,7 @@ $n = count($listecat);
 </head>
 
 	<div class="row">
-    <form class="col s12" method="POST" enctype="multipart/form-data" id="addproduct">
+    <form class="col s12" method="POST" enctype="multipart/form-data" id="addproduct" action="../controller/addproduct.php">
       <div class="row">
         <div class="input-field col s6">
           <input id="name" type="text" class="validate" name="name">
@@ -38,7 +38,7 @@ $n = count($listecat);
           <label for="quantite">Quantité</label>
         </div>
         <div class="input-field col s3">
-          <input id="prix" type="text" class="validate">
+          <input id="prix" type="text" class="validate" name="prix">
           <label for="prix">Prix</label>
         </div>
       </div>
@@ -47,7 +47,7 @@ $n = count($listecat);
           <input class="file-path validate" type="text"/>
           <div class="btn">
             <span>File</span>
-            <input type="file"  name="file"/>
+            <input type="file"  name="file" id="file-select"/>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ $n = count($listecat);
           <label for="description">Description</label>
         </div>
       </div>
-      <input type="submit" title="Add Product to the Database" value="Add Product" class="waves-effect waves-light btn"/>
+      <input type="submit" title="Add Product to the Database" value="Add Product" class="waves-effect waves-light btn submit" onclick="formsubmit()"/>
       
     </form>
   </div>
