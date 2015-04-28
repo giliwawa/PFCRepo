@@ -38,7 +38,7 @@
 		                  <li><a onclick="loadUser();">Display Users</a></li>
 		                  <li><a onclick="loadadminUser();">Add Users</a></li>
 		                  <li><a onclick="loadmodifierUser();">Modify Users</a></li>
-		                  <li><a href="">Delete Users</a></li>
+		                  <li><a onclick="loaddeleteUser();">Delete Users</a></li>
 		                </ul>
 		              </div>
 		            </li>

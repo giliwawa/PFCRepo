@@ -136,6 +136,13 @@
         $Pr = new user($data);
         return $Pr;
     }
+
+    public function deleteUser($id)
+        {
+            $bdd = new Db();
+            $query = "DELETE FROM users WHERE id_users = ".$id;
+            $result=$bdd->query($query);
+        }
         
 }
 

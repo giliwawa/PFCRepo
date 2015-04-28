@@ -49,13 +49,34 @@ function loadmodify(id) {
     xmlhttp.send();
 }
 
-function loadadminUser() {
+function loadupdateUser(id) {
+    xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        document.getElementById("modif").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","update_user.php?IdUser="+id,true);
+    xmlhttp.send();
+}
+
+function loaddeleteUser(){
     xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         document.getElementById("show").innerHTML = xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET","update_user.php",true);
+    xmlhttp.open("GET","Delete_user.php",true);
     xmlhttp.send();
+}
+
+function loaddisplaydeleteUser(){
+    var recherche=$("#search").val();
+    xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        document.getElementById("delt").innerHTML = xmlhttp.responseText;
+        }
+    }
+    xmlhttp.open("GET","display_delete.php?reche="+recherche,true);
+    xmlhttp.send(); 
 }
 
