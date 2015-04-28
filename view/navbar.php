@@ -7,7 +7,7 @@
         <div class="nav-wrapper blue-grey darken-3">
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a class="active" href="index.php#home" data="home">Home</a></li>
-                <li><a class="" href="index.php#produits" data ="produits">Produits</a></li>
+                <li><a class="" href="index.php#produits" data ="produits">Products</a></li>
                 <li><a class="" href="index.php#services" data="services">Service</a></li>
                 <li><a class="" href="index.php#about" data="about">About</a></li>
                 <li><a class="" href="index.php#contact" data="contact">Contact</a></li>

@@ -26,7 +26,7 @@ $n = count($listecat);
 		      <?php 
 		      foreach ($listecat as $cat ):
 		      	foreach ($cat as $key => $value) { ?>
-		      	<option value="1"><?php echo $value ?></option>
+		      	<option value="<?php echo $value ?>"><?php echo $value ?></option>
 				<?php
 					}
 				endforeach;

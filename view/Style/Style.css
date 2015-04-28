@@ -286,8 +286,25 @@ i.mdi-communication-live-help{
 }
 .card .card-content span{
   font-size:20px;
+
 }
 .card .card-content a{
+  padding-bottom: 100px;
+  position:absolute;
+
+}
+.card .card-content .mdi-navigation-more-vert{
+ 
+  margin-left: 10%;
+  position:absolute;
+
+
+}
+.card .card-content .mdi-action-star-rate{
+ 
+  margin-left: 60%;
+  position:absolute;
+
 
 }
 .mdi-action-star-rate{
