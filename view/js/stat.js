@@ -11,19 +11,20 @@
     $("body").on("change", "#action", function(){
         console.log("testChange");
         var act = $('select').val();
+        console.log('act = '+act);
         getStat(act);
     });
   });
             
 function initCanvas(){
     
-    var content = '<div class="row"><div class="input-field col s4"><select id="action" class="browser-default"><option value="1" disabled selected>Filter</option><option value="qte_prod">Sells by Product</option><option value="qte_month">Sells by Month</option></select></div></div>';
+    var content = '<div class="row"><div class="input-field col s4"><select id="action" class="browser-default"><option value="1" disabled selected>Filter</option><option value="qte_prod">Sales by Product</option><option value="qte_month">sales by Month</option></select></div></div>';
     $("#show").html(content);
-    content = '<div class="row"><canvas id="myChart" class="col s12"></canvas></div>';
+    content = '<div id="" class="row"><canvas id="myChart" class="col s12"></canvas></div>';
     $("#show").append(content);
 }
 
-function testchart(labels,val){
+function testchart(labels,val,action){
     
     var ctx = document.getElementById("myChart").getContext("2d");
     var data = {
@@ -38,11 +39,23 @@ function testchart(labels,val){
             data: val
         }
     ]
-};
-new Chart(ctx).Bar(data, {
-    barShowStroke: false
-});
-
+    };
+    ;
+    var chart = new Chart(ctx);
+    
+    console.log(action);
+    if(action === 'qte_prod'){
+        chart.Bar(data, {
+        barShowStroke: false
+        });   
+    }
+    
+    if(action === 'qte_month'){
+        chart.Line(data, {
+        bezierCurve: false
+        });
+    }
+    
 }
 
 function getStat(action){
@@ -56,23 +69,27 @@ function getStat(action){
         success: function (html){
             var labelArray = [];
             var valArray = [];
-            //console.log(data.produit);
+            
             $.each(html,function(index,elt){
-               //console.log(index+" "+element);
-               //console.log(elt.produit);
-               labelArray.push(elt.produit);
-               valArray.push(elt.quantite);
-               //array.push({elt.produit : elt.quantite});
+               /*labelArray.push(elt.produit);
+               valArray.push(elt.quantite);*/
+                var i=0;
+                $.each(elt,function(key,val){
+                    if(i % 2 === 0){
+                        labelArray.push(val);
+                        console.log(val);
+                        i = 1;
+                    }
+                    else{
+                        valArray.push(val);
+                        i = 0;
+                        console.log(val);
+                    }
+                });
             });
-            testchart(labelArray,valArray);
-            console.log(labelArray);
-            console.log(valArray);
-
+            testchart(labelArray,valArray,action);
         }
     });
 }
 
-function charts(){
-    
-}
 
