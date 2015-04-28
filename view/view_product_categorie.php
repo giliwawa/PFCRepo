@@ -22,20 +22,29 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Buy It Now !</a>
+                        <a onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
+                      <div class="hide">
+                          <select>
+                            <option value="">Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                          <label>Materialize Select</label>
+                        </div>
 
                   </div>
 
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
                     <ul>
-                      <li>Prix:<?php echo $pr->getprix(); ?></li>
-                      <li>Reference:<?php echo $pr->getreference(); ?></li>
-                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
-                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
-                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                      <li><span class="bold">Prix:</span> <?php echo $pr->getprix(); ?>$</li>
+                      <li><span class="bold">Reference:</span> <?php echo $pr->getreference(); ?></li>
+                      <li><span class="bold">Categorie:</span> <?php echo $pr->getcategorie(); ?></li>
+                      <li><span class="bold">Quantité:</span> <?php echo $pr->getquantite(); ?></li>
+                      <li><span class="bold">Description:</span> <?php echo $pr->getdescription(); ?></li>
                     </ul>
                   </div>
               </div>
@@ -57,7 +66,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Buy It Now !</a>
+                        <a onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
@@ -65,11 +74,11 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
                     <ul>
-                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
-                      <li>Reference:<?php echo $pr->getreference(); ?></li>
-                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
-                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
-                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                      <li><span class="bold">Prix:</span> <?php echo $pr->getprix(); ?>$</li>
+                      <li><span class="bold">Reference:</span> <?php echo $pr->getreference(); ?></li>
+                      <li><span class="bold">Categorie:</span> <?php echo $pr->getcategorie(); ?></li>
+                      <li><span class="bold">Quantité:</span> <?php echo $pr->getquantite(); ?></li>
+                      <li><span class="bold">Description:</span> <?php echo $pr->getdescription(); ?></li>
                     </ul>
                   </div>
               </div>
@@ -90,7 +99,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Buy It Now !</a>
+                        <a href="#">Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
@@ -98,11 +107,11 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
                     <ul>
-                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
-                      <li>Reference:<?php echo $pr->getreference(); ?></li>
-                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
-                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
-                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                      <li><span class="bold">Prix:</span> <?php echo $pr->getprix(); ?>$</li>
+                      <li><span class="bold">Reference:</span> <?php echo $pr->getreference(); ?></li>
+                      <li><span class="bold">Categorie:</span> <?php echo $pr->getcategorie(); ?></li>
+                      <li><span class="bold">Quantité:</span> <?php echo $pr->getquantite(); ?></li>
+                      <li><span class="bold">Description:</span> <?php echo $pr->getdescription(); ?></li>
                     </ul>
                   </div>
               </div>
@@ -124,7 +133,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Buy It Now !</a>
+                        <a href="#">Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
@@ -132,11 +141,11 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?php echo $pr->getnom(); ?><i class="mdi-navigation-close right"></i></span>
                     <ul>
-                      <li>Prix:<?php echo $pr->getprix(); ?>$</li>
-                      <li>Reference:<?php echo $pr->getreference(); ?></li>
-                      <li>Categorie:<?php echo $pr->getcategorie(); ?></li>
-                      <li>Quantité:<?php echo $pr->getquantite(); ?></li>
-                      <li>Description:<?php echo $pr->getdescription(); ?></li>
+                      <li><span class="bold">Prix:</span> <?php echo $pr->getprix(); ?>$</li>
+                      <li><span class="bold">Reference:</span> <?php echo $pr->getreference(); ?></li>
+                      <li><span class="bold">Categorie:</span> <?php echo $pr->getcategorie(); ?></li>
+                      <li><span class="bold">Quantité:</span> <?php echo $pr->getquantite(); ?></li>
+                      <li><span class="bold">Description:</span> <?php echo $pr->getdescription(); ?></li>
                     </ul>
                   </div>
               </div>

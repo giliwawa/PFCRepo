@@ -21,6 +21,9 @@
                         <li><a href="../controller/LogoutController.php">LogOut</a></li>
                     </ul>
                 </li>
+                <li>
+                  <a href="chart.php"><i class="mdi-action-shopping-cart"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
