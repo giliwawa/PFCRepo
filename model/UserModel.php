@@ -144,6 +144,14 @@
             $result=$bdd->query($query);
         }
         
+public function loadiduser($a)
+{
+    $bdd = new Db();
+    $categories = array();
+    $query = "SELECT  from  'id_user' where id_user =$d ";
+    $resultat = $bdd->query($query) ;
+    return ($resultat);
+}
 }
 
     

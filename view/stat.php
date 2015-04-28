@@ -3,8 +3,14 @@
 <?php
 require '../configuration.php';
 $bdd= new Db();
-$req="select count(*) from users where sexe='homme'";
+$req="select count(*) as homm from users where sexe='homme'";
+$req1="select count(*) as femm from users where sexe='femme'";
+
 $s=$bdd->query($req);
+$s1=$bdd->query($req1);
+
+
+
 ?>
 <html>
     
@@ -21,12 +27,12 @@ $s=$bdd->query($req);
 
             var chartData = [
                 {
-                    "country": <?php echo $s ?>,
-                    "litres": 10
+                    "country":"Male",
+                    "litres":  <?php echo $s->fetch_object()->homm ?>
                 },
                 {
-                    "country": "Ireland",
-                    "litres": 131.1
+                    "country": "Female",
+                    "litres":  <?php echo $s1->fetch_object()->femm ?>
                 },
                
             ];
