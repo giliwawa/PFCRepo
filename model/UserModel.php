@@ -142,6 +142,9 @@
             $bdd = new Db();
             $query = "DELETE FROM users WHERE id_user = ".$id;
             $result=$bdd->query($query);
+            if (!$result) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+            }
         }
         
 public function loadiduser($a)

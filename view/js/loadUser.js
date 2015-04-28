@@ -59,6 +59,7 @@ function loadupdateUser(id) {
     xmlhttp.send();
 }
 
+
 function loaddeleteUser(){
     xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
