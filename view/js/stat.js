@@ -71,8 +71,6 @@ function getStat(action){
             var valArray = [];
             
             $.each(html,function(index,elt){
-               /*labelArray.push(elt.produit);
-               valArray.push(elt.quantite);*/
                 var i=0;
                 $.each(elt,function(key,val){
                     if(i % 2 === 0){
