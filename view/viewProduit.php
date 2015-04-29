@@ -4,6 +4,7 @@
 <title>Title!</title>
 <script type="text/javascript" src="js/loadproduit.js"></script>
 <script type="text/javascript" src="js/addFav.js"></script>
+<script type="text/javascript" src="js/panier.js"></script>
 </head>
 
 <body>
