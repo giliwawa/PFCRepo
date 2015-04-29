@@ -49,7 +49,7 @@
 							    <p> Retrouvez notre selection de guitares, pianos, violons,
 							    	luth...
 							    </p>  
-							    <a href="#" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consulter</a>  
 							</div>
 						</div>
 					</div>
@@ -64,7 +64,7 @@
 							    <p> Retrouvez notre selection de Batteries, Bangos, 
 							    	Tamtams...
 							    </p>  
-							    <a href="#" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consulter</a>  
 							</div>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 							    <p> Retrouvez notre selection de Trempettes, Clarinettes, 
 							    	Saxo...
 							    </p>  
-							    <a href="#" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consulter</a>  
 							</div>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
 							    <p> Retrouvez notre selection de moogs, theramines, 
 							    	clavier...
 							    </p>  
-							    <a href="#" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consulter</a>  
 							</div>
 						</div>
 					</div>
@@ -108,7 +108,7 @@
 							    <p> Retrouvez notre selection d'Amplis, Pédales, 
 							    	Cordes...
 							    </p>  
-							    <a href="#" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consulter</a>  
 							</div>
 						</div>
 					</div>
