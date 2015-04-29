@@ -5,8 +5,8 @@
     <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper blue-grey darken-3">
-          <a href="#" class="brand-logo"></a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <a href="#" class="brand-logo left">StellarInstruments.co</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="active" href="index.php#home" data="home">Home</a></li>
                 <li><a class="" href="index.php#produits" data ="produits">Products</a></li>
                 <li><a class="" href="index.php#services" data="services">Service</a></li>
