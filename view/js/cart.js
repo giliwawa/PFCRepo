@@ -34,5 +34,14 @@ $(document).ready(function(){
         });
     });
     
-    
+   $("#submit").click(function(){
+        $.ajax({
+            url: '../controller/HotFixCommandeController.php ',
+            type : 'POST',
+            data:{qte : quantity , tot: total},
+            success : function(html){
+                console.log(html);
+            }
+        });
+   }); 
 });

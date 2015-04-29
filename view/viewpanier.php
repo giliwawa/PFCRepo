@@ -49,7 +49,7 @@ if(isset($_SESSION['id_produit'])){
         </table>
         <div class="row">
             <div class="col s6">
-                <a href="#" class="btn" id
+                <a href="#" class="btn" id="submit" >Confirm</a>
             </div>
             <div class="col s5 ">
                 <h3>Total:<span id="total"></span></h3>

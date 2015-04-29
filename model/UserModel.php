@@ -49,6 +49,7 @@
 
     public function rechercheuser($rech){
         $bdd = new Db();
+        $tableau = array();
         $query = "SELECT * FROM users WHERE prenom like '%$rech%' or nom like '%$rech%' or sexe like '%$rech%' or date_naissance like '%$rech%' or adresse like '%$rech%' or CIN like '%$rech%' or num_tel like '%$rech%' or nbr_point like '%$rech%' or email like '%$rech%' or privilege like '%$rech%' or username like '%$rech%' or password like '%$rech%' ";
         $resultat = $bdd->query($query) ;
             if (!$resultat) {
@@ -87,23 +88,10 @@
             
         }
 
-    public function updateuser($id_user){
+    public function updateuser($id_user,$form){
         $bdd = new Db();
 
-        $prenom = $_POST['prenom'];
-        $nom = $_POST['nom'];
-        $sexe = $_POST['sexe'];
-        $date_naissance = $_POST['date_naissance'];
-        $adresse = $_POST['adresse'];
-        $CIN = $_POST['CIN'];
-        $num_tel = $_POST['num_tel'];
-        $nbr_point = $_POST['nbr_point'];
-        $email = $_POST['email'];
-        $privilege = $_POST['privilege'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        
-        $query = "UPDATE users SET prenom = '".$prenom."', nom = '".$nom."', sexe = '".$sexe."', date_naissance = '".$date_naissance."', adresse = '".$adresse."', CIN = '".$CIN."', num_tel = '".$num_tel."', nbr_point = '".$nbr_point."', email = '".$email."', privilege = '".$privilege."', username = '".$username."', password = '".$password."' WHERE id_user ='".$id_user."'";
+        $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."', password = '".$form[10]."' WHERE id_user =".$id_user;
         $bdd -> query($query);
     }
 
