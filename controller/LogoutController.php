@@ -1,7 +1,7 @@
 <?php
 session_start();
 session_destroy();
-$url = $_SERVER['HTTP_REFERER'];
+$url = '../view/index.php';
 header('location:'.$url);
 /* 
  * To change this license header, choose License Headers in Project Properties.

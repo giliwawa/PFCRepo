@@ -46,75 +46,89 @@ class HotFixCommandeModel {
         $data = $result->fetch_assoc();
         return $data["id_commande"];
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function getAllDaStuff($id_user)
+    {
+        $bdd = new Db();
+        $tableau = array();
+        $inception ="SELECT commande.id_commande, commande.date, produit.nom, ligne_commande.quantite FROM commande INNER JOIN ligne_commande ON commande.id_commande= ligne_commande.id_commande INNER JOIN produit ON ligne_commande.id_produit=produit.id_produit inner join users on users.id_user = commande.id_user WHERE users.id_user =".$id_user;
+        $result = $bdd->query($inception);
+        $i=0;
+        while ($data= $result->fetch_assoc()) {
+            $tableau[$i]=$data;
+            $i++;
+        }
+        return $tableau;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

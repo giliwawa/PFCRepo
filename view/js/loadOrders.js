@@ -1,14 +1,17 @@
 jQuery(document).ready(function($) {
 	$.ajax({
-		url: 'displayOrder.php',
+		url: 'displayOrders.php',
 		type: 'GET',
 		dataType: 'JSON',
 	})
-	.done(function() {
-		console.log("success");
+	.done(function(html) {
+		$("#show").append(html.responseText);
+
 	})
-	.fail(function() {
-		console.log("error");
+	.fail(function(html) {
+		$("#show_order").append(html.responseText);
+		console.log(html.responseText);
+
 	})
 	.always(function() {
 		console.log("complete");

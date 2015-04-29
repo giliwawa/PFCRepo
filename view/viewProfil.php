@@ -4,6 +4,7 @@
 	include 'header.php';
 ?>
 	<title>Profil</title>
+	<script type="text/javascript" src="js/loadOrders.js"></script>
 </head>
 <body>
 	<?php 
@@ -14,6 +15,7 @@
 	$userModel = new UserModel();
 	$produit = new produit();
 	$user = new user();
+	if (isset($_SESSION['id_user'])) {
 	$user=$userModel->getUserId($_SESSION['id_user']);
 	$listeP = $produitModel->getFavorisById($_SESSION['id_user']);
 	?>
@@ -24,7 +26,7 @@
 					<img src="<?php echo $user->getimage();?>">
 				</div>
 				<div class="col s7 titre">
-					<center><h4><?php echo $_SESSION['username']?></h4></center>
+					<center><h4><?php echo ucfirst($_SESSION['username'])?></h4></center>
 					<br>
 					<p>Nom : <?php echo $user->getnom();?></p>
 					<p>Prenom : <?php echo $user->getprenom();?></p>
@@ -51,10 +53,14 @@
 				</div>
 				<div class="col s8 suggestion">
 					<h4>Orders</h4>
+					<br>
+					<div id="show_order">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 <?php
     include 'footer.php';
+}
 ?>
