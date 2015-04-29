@@ -48,7 +48,10 @@ if(isset($_SESSION['id_produit'])){
             </tbody>
         </table>
         <div class="row">
-            <div class="col s5 offset-s6">
+            <div class="col s6">
+                <a href="#" class="btn" onclick=""
+            </div>
+            <div class="col s5 ">
                 <h3>Total:<span id="total"></span></h3>
                 
             </div>
