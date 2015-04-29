@@ -33,4 +33,5 @@ $(document).ready(function(){
             $("#total").html(total+"DT");
         });
     });
+    
 });
