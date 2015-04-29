@@ -7,8 +7,7 @@ $n = $ProduitModel->Count($categorie);
       $x = 0;
       foreach ($listeT as $pr):
       $x++; 
-      ?>
-  		<?php
+
         if($x == 1):
         ?>
 
@@ -22,18 +21,9 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
+                        <a href="#" onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
-                      <div class="hide">
-                          <select>
-                            <option value="">Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                          </select>
-                          <label>Materialize Select</label>
-                        </div>
 
                   </div>
 
@@ -66,7 +56,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
+                        <a href="#" onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
@@ -99,7 +89,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Add to Cart !</a>
+                        <a href="#" onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
@@ -133,7 +123,7 @@ $n = $ProduitModel->Count($categorie);
                   <div class="card-content">
                       <span class="card-title activator grey-text text-darken-4"><?php echo $pr->getnom(); ?> - <?php echo $pr->getprix(); ?>$<i class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        <a href="#">Add to Cart !</a>
+                        <a href="#" onclick='addToCart(<?php echo $pr->getid_produit(); ?>)'>Add to Cart !</a>
                         <span id="<?php echo $pr->getid_produit(); ?>"><a onclick='addFav(<?php echo $pr->getid_produit(); ?>)'><i class="mdi-action-star-rate"></i></a></span>
                       </p>
                   </div>
