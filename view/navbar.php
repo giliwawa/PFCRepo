@@ -17,7 +17,7 @@
                     <!-- Dropdown Trigger -->
                     <a class='dropdown-button' href='#' data-activates='dropdown1' data='user'><?php echo $username ?></a>
                     <ul id='dropdown1' class='dropdown-content navigation'>
-                        <li><a href="">Profile</a></li>
+                        <li><a href="viewProfil.php">Profile</a></li>
                         <li><a href="../controller/LogoutController.php">LogOut</a></li>
                     </ul>
                 </li>

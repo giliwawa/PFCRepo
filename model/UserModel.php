@@ -147,14 +147,23 @@
             }
         }
         
-public function loadiduser($a)
-{
-    $bdd = new Db();
-    $categories = array();
-    $query = "SELECT  from  'id_user' where id_user =$d ";
-    $resultat = $bdd->query($query) ;
-    return ($resultat);
-}
+    public function loadiduser($a)
+    {
+            $bdd = new Db();
+            $categories = array();
+            $query = "SELECT  from  'id_user' where id_user =$d ";
+            $resultat = $bdd->query($query) ;
+            return ($resultat);
+    }
+    public function getUserId($id)
+    {
+        $bdd = new Db();
+        $query = "SELECT * FROM users WHERE id_user=".$id;
+        $result = $bdd->query($query);
+        $data = $result->fetch_assoc();
+        $us = new user($data);
+        return $us;
+    }
 }
 
     

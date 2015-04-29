@@ -14,6 +14,4 @@ function addToCart (id) {
 	.always(function() {
 		console.log("complete");
 	});
-
-
 }

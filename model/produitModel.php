@@ -79,6 +79,22 @@
             $Pr = new produit($data);
             return $Pr;
         }
+
+        public function getFavorisById($id_user)
+        {
+            $bdd = new Db();
+            $query="SELECT * FROM produit INNER JOIN favoris ON produit.id_produit=favoris.id_produit WHERE favoris.id_user=".$id_user;
+            $result=$bdd->query($query);
+            $tableau = array();
+            $i = 0 ;
+            while ($data = $result -> fetch_assoc()) {
+                $Pr = new produit($data);
+                $tableau[$i] = $Pr;
+                $i++;
+            }
+            return $tableau;
+        }
+
     }
 
         
