@@ -22,7 +22,7 @@
                     </ul>
                 </li>
                 <li>
-                  <a href="chart.php"><i class="mdi-action-shopping-cart"></i></a>
+                  <a href="viewpanier.php"><i class="mdi-action-shopping-cart"></i></a>
                 </li>
             </ul>
         </div>
