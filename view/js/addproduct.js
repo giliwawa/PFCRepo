@@ -3,7 +3,7 @@ function formsubmit(){
     e.preventDefault();
     senddata();
     return false;
-  }));
+  });
 }
 
 
@@ -17,7 +17,7 @@ function senddata(){
       processData:false,        // To send DOMDocument or non processed data file it is set to false
       success: function(data)   // A function to be called if request succeeds
       {
-      if(data == "1")
+      if(data === "1")
         {
           
         }
