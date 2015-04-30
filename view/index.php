@@ -134,7 +134,7 @@
 	            </div>
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
-	                <i class="mdi-action-question-answer"></i>
+	                <a href="../forum/index.php"><i class="mdi-action-question-answer"></i></a>
 	                <p class="icone-titre">Forum</p>
 	                <p class="icone-texte">Get in touch with other customers and share your experience.</p>
 	              </div>

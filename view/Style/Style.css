@@ -1,8 +1,7 @@
 @font-face{
-	font-family: Sixcaps;
-	src:url(../fonts/SixCaps.ttf);
+  font-family: HACKED;
+  src:url(../fonts/Jacinto-Sans.otf);
 }
-
 body{
 	background: url(../images/background.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -53,6 +52,11 @@ nav .dropdown-button{
 }
 nav .mdi-action-help{
   cursor: help;
+}
+nav .brand-logo{
+  font-family: HACKED;
+  letter-spacing: 2px;
+  box-shadow: 0 0 0 black;
 }
 /*--------------------------------------navigation bar END------------------------------------------------------*/
 
