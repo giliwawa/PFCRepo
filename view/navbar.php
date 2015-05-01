@@ -5,7 +5,7 @@
     <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper blue-grey darken-3">
-          <a href="#" class="brand-logo center">StellarInstruments.co</a>
+          <a href="#" class="brand-logo center"><img src="images/logo.png" height="100%"></a>
             <ul id="nav-mobile" class="hide-on-med-and-down">
                 <li><a class="active" href="index.php#home" data="home">Home</a></li>
                 <li><a class="" href="index.php#produits" data ="produits">Products</a></li>
@@ -36,7 +36,7 @@
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper blue-grey darken-3">
-          <a href="#" class="brand-logo center">StellarInstruments.co</a>
+          <a href="#" class="brand-logo center"><img src="images/logo.png"  height="100%"></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
           		<li><a class="active" href="index.php#home" data="home">Home</a></li>
           		<li><a class="" href="index.php#produits" data ="produits">Produits</a></li>
