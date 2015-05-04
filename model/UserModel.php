@@ -1,6 +1,6 @@
 <?php
     include_once 'user.php';
-    require_once '../configuration.php';
+    require_once '../Configuration.php';
     
     class UserModel {
         

@@ -1,6 +1,6 @@
 <?php
 	include_once 'ticket.php';
-	require '../configuration.php';
+	require '../Configuration.php';
 
 	class ticketModel{
 		public function __construct()
