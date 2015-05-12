@@ -1,0 +1,12 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			PrOrange-Black 
+	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:		sub60 ( http://forums.phpbb-fr.com/sub60-u61247/ )
+    --------------------------------------------------------------
+*/
+@import url("colours.css");
+@import url("imageset.css");
+@import url("prorange_black.css");
+

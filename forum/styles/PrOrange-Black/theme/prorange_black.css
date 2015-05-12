@@ -1,0 +1,430 @@
+/* phpbb 3.1.3 Additionnals css for PrOrange_Black 
+by sub60 ( http://zamilandtest.hostei.com/phpBB3/index.php )
+-----------------------------------------------------*/
+
+/* Menu top
+-------------------*/
+#menutop {
+    background-color: #000;
+	border: 6px double #333;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 0 1em #222;
+    height: 50px;
+    margin: -14px auto 10px;
+    max-width: 940px;
+	min-width: 290px;
+}
+
+#menutop div.inner {
+	margin: 3px auto;
+	max-width: 920px;
+	width: 80%;
+}
+
+#menu-top > li {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.3em;
+    list-style-type: none;
+    margin: 5px;
+}
+
+#menu-top a {
+    color: #ffa500;
+}
+
+#menu-top a:hover {
+    color: #ffcc00;
+	text-decoration: none;
+}
+
+#menu-top:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*Menu down
+-----------------*/
+#menudown {
+    background-color: #000;
+    border-radius: 15px;
+    box-shadow: 0 0 1em #cd7400;
+    height: auto;
+    margin: 0 auto;
+    max-width: 370px;
+	min-width: 290px;
+}
+
+.fond_mess {
+   background-color: #000;
+   padding: 7px 14px;
+   color: #FFA500;
+   border-radius: 5px;
+   box-shadow: 2px 2px 3px #333;
+   border: 1px solid #ffa500;
+}
+
+
+#topicreview .post {
+    background-color: #ffa500;
+}
+
+/* Color Link Forumtitle/Topiclist/lastsubject/navbar/ect.....
+--------------------------------------------------------------------*/
+a.forumtitle {
+     color: #000; 
+}
+
+a.forumtitle:hover {
+     color: #fff;
+	 text-decoration: none;
+	 padding-left: 20px;
+	transition: all 0.75s linear 0s;
+}
+
+a.topictitle {
+     color: #000;
+}
+
+a.topictitle:hover {
+     color: #fff;
+	 text-decoration: none;
+}
+
+a.lastsubject {
+     color: #000
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #000;
+}	
+
+.action-bar  a {
+     color: #fff;
+}
+
+.buttons  a {
+     color: #000;
+}
+
+a.subforum {
+     color: #000;
+}
+
+.profile-posts a {
+    color: #fff;
+}
+
+.postbody h3 a {
+    color: #FFF;
+}
+
+.panel h3 {
+    color: #000;
+}
+
+.back2top {
+    background-color: #ffa500;
+    border-radius: 5px 5px 0 0;
+	box-shadow: -4px -4px 8px #f2cba4;
+    clear: both;
+    float: right;
+    height: 13px;
+    overflow: hidden;
+    padding: 4px 9px;
+    position: relative;
+    text-align: right;
+    top: 5px;
+    width: 12px;
+}	
+
+/* Menu-Top link Option
+---------------------*/
+.menu-link {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  box-shadow: 0 0 10px #663b05;
+}
+.menu-link  ul {
+   list-style-type: none;
+}
+.menu-link  li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu-link a {
+  line-height: 3em;
+  padding: 10px 20px;
+  color: #cd7400;
+  font-family: Verdana,Helvetica,Arial,sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+
+.menu-link a:hover {
+  background-color: #ba5b00;
+  color: #ffa500;
+   transform: scale(1.0,1.0);
+   border-radius: 15px;
+}
+
+
+/* Notification / PM
+-----------------------*/
+.icon-notification {
+   height: 28px;
+   padding: 0 0 0 8px;
+}
+
+.icon-notification.unreads {
+   background-image: url("./images/icon_notification_unread.png");
+}  
+
+.icon-pm {
+   height: 21px;
+   padding: 0 0 0 12px;
+}  
+
+.icon-pm.unreads {
+    background-image: url("./images/icon_pm_unread.png");
+}	
+
+/* Icon / Logo Rotation
+---------------------------*/
+.imageset.site_logo {
+   transition: 1s ease-in-out; 
+}
+
+.imageset.site_logo:hover {  
+	transform: scale(1.2); 
+}
+
+dl.icon:before{
+    position: absolute;
+	content: "";
+	width: 45px;
+	height: 39px;
+	left: 10px;
+	top: 38%;
+	margin-top: -13px;
+    transition: transform 0.5s;
+}  
+ 
+dl.icon:hover:before {
+  transform:rotate(360deg);
+}  
+
+/* No-Avatar
+---------------*/
+.postprofile .avatar-container {
+	min-height: 110px;
+	position: relative;
+}
+
+.no-avatar .avatar-container {
+	background: url("./images/no_avatar.gif") 50% 2px no-repeat;
+}
+
+/* Button
+---------------*/
+.hasjs .postbody .post-buttons {
+	background-color: #ffa500;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 4px 4px 8px #f2cba4;
+    margin: -10px 0;
+    max-width: 40%;
+    padding: 5px 8px 6px 10px;
+}
+
+/* Forum header titles 
+----------------------------*/
+h2 {
+	padding: 2px 0 5px;
+	margin: 0 0 15px;
+	text-align: center;
+	background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 1em #744406;
+}
+
+a.forumtitle {
+    text-align: center;
+}	
+
+/* Main blocks
+-----------------*/
+#wrap {
+	border-radius: 10px;
+}
+
+/* Site description and logo 
+------------------------------*/
+#site-description {
+	text-align: center;
+	width: auto;
+	float: none;
+}
+
+.logo {
+ float: none;
+ width: auto;
+ padding: 0;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.navbar {
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+
+.forabg {
+	margin-bottom: 10px;
+}
+
+.forumbg {
+	margin-bottom: 10px;
+}
+
+.post {
+	border: 5px double #555;
+}
+
+/* Pagination
+------------------*/
+.pagination li a, .pagination li span {
+	line-height: 15px;
+	min-width: 15px;
+}
+
+.pagination li.page-jump a, .pagination li.next a, .pagination li.previous a {
+	height: 15px;
+	width: 11px;
+}
+
+.row .pagination li a, .row .pagination li span {
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.copyright {
+	padding: 10px;
+}
+
+.headerspace > h3 {
+   border-radius: 5px;
+   background-color: #000;
+   padding: 4px 6px;
+   box-shadow: 0 0 10px #663b05;
+}   
+
+.stat-block > h3 {
+   border-radius: 5px;
+   background-color: #000;
+   padding: 4px 6px;
+   box-shadow: 0 0 10px #663b05;
+}  
+
+ul.topiclist {
+	margin: 4px;
+}
+
+li.header dt .list-inner {
+	text-align: center;
+}
+
+li.header dd {
+	padding-left: 0;
+}
+
+li.header dl.icon dt .list-inner {
+	/* Tweak for headers alignment when folder icon used */
+	padding-left: 10px;
+	padding-right: 50px;
+}
+
+/* Forum list column styles */
+dl.icon {
+	background-position: 5px 50%;	/* Position of folder icon */
+	background-repeat: no-repeat;
+}
+
+dl.icon dt {
+	background-repeat: no-repeat;
+	background-position: 5px 95%;	/* Position of topic icon */
+}
+
+dl.icon dt .list-inner {
+	padding-left: 60px;				/* Space for folder icon */
+}
+
+dl.icon dt, dl.icon dd {
+	min-height: 51px;
+}
+
+/* Poster profile block
+-----------------------------*/
+.postprofile {
+	text-align: center;
+}
+
+.postprofile .avatar {
+	display: block;
+	float: none;
+	max-width: 100%;
+}
+.postprofile dt, .avatar img {
+    margin: auto;
+}
+
+.online, .offline {
+	background-image: none;
+	background-position: 99% 2%;
+	background-repeat: no-repeat;
+}
+
+#tabs .tab > a, #minitabs .tab > a {
+	padding: 6px 9px;
+}
+
+/* Search box (header)
+------------------------*/
+.search-header {
+	margin-top: -28px;
+}
+
+/* Links on gradient backgrounds 
+------------------------------------*/
+.forumbg .header a, .forabg .header a, th a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	text-decoration: none;
+}
+
+/*    selected text
+-----------------------*/
+::selection {
+    color: black;
+    background: #D07E05;
+}
+
+/* Code for Firefox 
+---------------------*/
+::-moz-selection { 
+    color: black;
+    background: #D07E05;
+}
