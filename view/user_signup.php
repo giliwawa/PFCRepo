@@ -15,31 +15,31 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-perm-identity prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate" name="username">
+                            <input id="icon_prefix" type="text" class="validate" name="username" required>
                             <label for="icon_prefix">Username</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-vpn-key prefix"></i>
-                            <input id="icon_prefix" type="text" class="password" name="password">
+                            <input id="icon_prefix" type="password" class="password" name="password" required>
                             <label for="icon_prefix">Password</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate" name="prenom">
+                            <input id="icon_prefix" type="text" class="validate" name="prenom" required>
                             <label for="icon_prefix">First Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix"></i>
-                            <input id="icon_prefix" type="text" class="validate" name="nom">
+                            <input id="icon_prefix" type="text" class="validate" name="nom" required>
                             <label for="icon_prefix">Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-social-cake prefix"></i>
-                            <input id="icon_prefix" type="date" class="datepicker" name="date_naissance">
+                            <input id="icon_prefix" type="date" class="datepicker" name="date_naissance" required>
                             <label for="icon_prefix"></label>
                         </div>
                         <div class="input-field col s6 Gender">

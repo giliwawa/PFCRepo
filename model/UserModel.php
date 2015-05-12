@@ -1,6 +1,7 @@
 <?php
     include_once 'user.php';
     require_once '../Configuration.php';
+    require_once '../controller/secure.php';
     
     class UserModel {
         
@@ -12,12 +13,12 @@
        public function ajouterUser(){
         $db = new Db();
 
-        $prenom = $_POST['prenom'];
-        $nom = $_POST['nom'];
+        $prenom = test_input($_POST['prenom']);
+        $nom = test_input($_POST['nom']);
         $sexe = $_POST['sexe'];
         $date_naissance = $_POST['date_naissance'];
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $username = test_input($_POST['username']);
+        $password = md5($_POST['password']);
         
         $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$username."','".$password."')";

@@ -1,9 +1,10 @@
 <?php 
 require '../model/UserModel.php';
+require_once 'secure.php';
 
 $usermodel = new UserModel();
-$username=$_POST['username'];
-$password=$_POST['password'];
+$username=test_input($_POST['username']);
+$password=md5($_POST['password']);
 session_start();
 session_destroy();
 

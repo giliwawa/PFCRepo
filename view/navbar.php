@@ -66,12 +66,12 @@
             </div>
             <div class="input-field col s12">
                     <i class="mdi-action-account-circle prefix"></i>
-                    <input id="icon_prefix" type="text" name="username" class="validate">
+                    <input id="icon_prefix" type="text" name="username" class="validate" required>
                     <label for="icon_prefix">Pseudo</label>
             </div>
             <div class="input-field col s12">
                 <i class="mdi-action-lock prefix"></i>
-                <input id="icon_password" type="password" name="password" class="validate">
+                <input id="icon_password" type="password" name="password" class="validate" required>
                 <label for="icon_password">Mot de Passe</label>
                 <center>
                         <a class="tooltipped btn-floating btn-medium" data-position="bottom" data-delay="50" data-tooltip="mot de pass oublié" href="#"><i class="mdi-action-help"></i></a>

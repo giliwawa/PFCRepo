@@ -56,7 +56,7 @@
 		public function ajouterTicket($ticket)
 		{
 			$bdd = new Db();
-			$requete="INSERT INTO ticket (name, email, text, state) VALUES ('".$ticket->getname()."','".$ticket->getemail()."','".$ticket->gettext()."',1)";
+			$requete="INSERT INTO ticket (name, id_user, email, text, state) VALUES ('".$ticket->getname()."','".$ticket->getid_user()."','".$ticket->getemail()."','".$ticket->gettext()."',1)";
 			$bdd->query($requete);
 		}
 
