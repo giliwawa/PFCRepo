@@ -28,4 +28,7 @@ if (isset($_POST['description'])) {
 	$product->setdescription($_POST['description']);
 }
 $productmodel->ajouterproduit($product);
-echo "1";
+
+	$url = "../admin/admin.php";
+	header('location:'.$url);
+
