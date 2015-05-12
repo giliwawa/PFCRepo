@@ -37,7 +37,14 @@ class favorisModel {
             $bdd = new Db();
             $query = "DELETE FROM favoris WHERE id_produit = ".$favoris->getid_produit()." AND id_user = ".$favoris->getid_user();
             $result=$bdd->query($query);
-          }      
+          }    
+
+    public function favoris_slider()
+    {
+        $bdd = new Db();
+        $query = "SELECT id_produit, count(id_produit) FROM favoris GROUP by id_produit ORDER BY count(id_produit) DESC";
+        
+    }  
             
     
 }
