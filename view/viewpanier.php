@@ -22,6 +22,7 @@ if(isset($_SESSION['id_produit'])){
                     <td>Designation</td>
                     <td>Quantity</td>
                     <td>Price/unit(DT)</td>
+                    <td>Remove</td>
                 </tr>
             </thead>
             <tbody>
@@ -34,10 +35,12 @@ if(isset($_SESSION['id_produit'])){
                 $Pr = new produit();
                 $Pr = $model->searchId($value);
                 ?>
-                <tr>
+                <tr data="<?php echo $Pr->getId_produit();?>">
                     <td><?php echo $Pr->getNom() ?></td>
                     <td><input class="qte" value="1" type="text"></td>
                     <td><?php echo $Pr->getPrix()?></td>
+                    <td><a id="rmv" onclick="removeProduit(<?php echo $Pr->getId_produit();?>)"><i class="Small mdi-action-delete"></i></a></td>
+                    
                 </tr>
                 <?php
             }

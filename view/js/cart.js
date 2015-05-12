@@ -33,10 +33,10 @@ $(document).ready(function(){
             $("#total").html(total+"DT");
         });
     });
-    
+
    $("#submit").click(function(){
         $.ajax({
-            url: '../controller/HotFixCommandeController.php ',
+            url: 'http://196.203.219.49:8181/PHPMerchantAPIGateway/creova.php',
             type : 'POST',
             data:{qte : quantity , tot: total},
             success : function(html){
@@ -45,3 +45,16 @@ $(document).ready(function(){
         });
    }); 
 });
+
+function removeProduit(id){
+    $.ajax({
+        url: '../controller/getIdProduitController.php',
+        type : 'POST',
+        data:{id_rm : id},
+        success : function(html){
+            if(html === "1"){
+                location.reload();
+            }
+        }
+    });
+}
