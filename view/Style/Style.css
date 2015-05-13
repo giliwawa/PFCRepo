@@ -872,10 +872,24 @@ footer ul li a{
 
 /*--------------------------------------------FAQ END----------------------------------------------*/
 
-<<<<<<< HEAD
 /*-------------------------------------------Password BEGIN-------------------------------------*/
 #forgot .container{
-=======
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background-color: rgba(222,222,222,1);  border-radius: 5px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  width: 80%;
+  height: 16cm;
+}
+
+#forgot form{
+  margin-top: 50px;
+}
+
+/*---------------------------------------------Password END----------------------------------------------*/
+ 
 /*--------------------------------------------UpdateUser BEGIN----------------------------------------------*/
 
 
@@ -884,31 +898,19 @@ footer ul li a{
 }
 
 #update .container{
->>>>>>> origin/master
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   background-color: rgba(222,222,222,1);  border-radius: 5px;
   margin-bottom: 60px;
   margin-top: 50px;
   padding-bottom: 20px;
-<<<<<<< HEAD
   padding-top: 30px;
   width: 80%;
   height: 14cm;
-}
-#forgot form{
-  margin-top: 50px;
-}
-/*---------------------------------------------Password END----------------------------------------------*/
-=======
-  padding-top: 10px;
-  width: 80%;
-  height: 16cm;
 }
 
 
 /*--------------------------------------------UpdateUser END----------------------------------------------*/
 
->>>>>>> origin/master
 
 /*--------------------------------------------Cart START----------------------------------------------*/
 
