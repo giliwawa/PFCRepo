@@ -54,8 +54,6 @@ if($_SESSION['privilege'] === '0' ){
 		                <ul>
 		                  <li><a onclick="loadproduit()">Display Products</a></li>
 		                  <li><a onclick="addproduit()">Add Products</a></li>
-		                  <li><a href="">Modify Products</a></li>
-		                  <li><a href="">Delete Products</a></li>
 		                  <li><a href="">Add Discount</a></li>
 		                </ul>
 		              </div>

@@ -41,9 +41,19 @@ class favorisModel {
 
     public function favoris_slider()
     {
+        $fav = array();
         $bdd = new Db();
-        $query = "SELECT id_produit, count(id_produit) FROM favoris GROUP by id_produit ORDER BY count(id_produit) DESC";
-        
+        $query = "SELECT id_produit FROM favoris GROUP by id_produit ORDER BY count(id_produit) DESC";
+        $resultat = $bdd->query($query);
+         if (!$resultat) {
+                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
+}
+           $i = 0 ;
+            while ($data = $resultat -> fetch_assoc()) {
+                $fav[$i] = $data;
+                $i++;
+            }
+            return $fav;
     }  
             
     
