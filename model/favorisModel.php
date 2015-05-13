@@ -50,8 +50,8 @@ class favorisModel {
 }
            $i = 0 ;
             while ($data = $resultat -> fetch_assoc()) {
-                $fav[$i] = $data;
-                $i++;
+                array_push($fav, $data);
+                
             }
             return $fav;
     }  
