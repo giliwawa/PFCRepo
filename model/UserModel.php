@@ -131,7 +131,7 @@ echo $quer;
         $data = $resultat->fetch_assoc();   
         $Pr = new user($data);
         return $Pr;
-    }
+        }
 
     public function deleteUser($id)
         {
@@ -160,8 +160,13 @@ echo $quer;
         $us = new user($data);
         return $us;
     }
-}
 
-    
+    public function modifyPassword($user)
+    {
+        $bdd = new Db();
+        $query = "UPDATE users SET password = '".$user->getpassword()."' WHERE email ='".$user->getEmail()."'";
+        $bdd->query($query);
+    }
+}
 
 ?>

@@ -24,7 +24,7 @@
 		<nav class="top-nav">
 	        <div class="container">
 	          <div class="nav-wrapper">
-	          	<a class="page-title">Administrator Platform</a>
+	          	<a class="page-title">Administrator Panel</a>
 	          </div>
 	        </div>
 	    </nav>
