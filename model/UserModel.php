@@ -99,7 +99,15 @@ echo $quer;
     public function updateuser($id_user,$form){
         $bdd = new Db();
 
-        $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."', password = '".$form[10]."' WHERE id_user =".$id_user;
+        if(empty($form[10]))
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."' WHERE id_user =".$id_user;
+        }
+        else
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."', password = '".md5($form[10])."' WHERE id_user =".$id_user;
+
+        }
         $bdd -> query($query);
     }
 
