@@ -4,34 +4,45 @@ $commandeModel = new HotFixCommandeModel();
 session_start();
 $listeC = $commandeModel->getAllDaStuff($_SESSION['id_user']);
 $lastid='';
+$i=0;
 ?>
-<table>
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Designation</th>
-			<th>Quantity</th>
-		</tr>
-	</thead>
+
 <?php
-	foreach ($listeC as $Inception) :
+	foreach ($listeC as $key=>$Inception) :
 		if ($lastid!=$Inception['id_commande']) {
+			if ($i!=0) {
+				echo "</table>";
+			}
+			$i++;
 ?>
 				<h5>Commande : <?php echo $Inception['id_commande']; ?></h5>
-				<tr>
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Designation</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
 <?php
 			$lastid=$Inception['id_commande'];
 		}
+		
 		foreach ($Inception as $data => $val) :
-			if ($data != 'id_commande') :			
+			if ($data != 'id_commande') {	
+				if ($data=='Date') {
+					echo "<tr>";
+				}		
 ?>
 				<td><?php echo $val ;?></td>
+
 <?php
-			endif;
+				if($data == 'quantite'){
+					echo '</tr>';
+				}
+			}
+			
 		endforeach;
-?>
-				</tr>		
-<?php
+		
 	endforeach;
 ?>
-</table>

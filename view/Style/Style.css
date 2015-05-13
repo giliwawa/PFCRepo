@@ -761,10 +761,11 @@ footer ul li a{
 #profil .container{
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   background-color: rgba(222,222,222,1);
-  height: 24cm;
+/*  height: 24cm;*/
   border-radius: 5px;
-  margin-bottom: 110px;
+  margin-bottom: 60px;
   margin-top: 50px;
+  padding-bottom: 20px;
   width: 80%;
 }
 
@@ -789,17 +790,33 @@ footer ul li a{
 
 #profil .favoris{
 	margin-top: 10px;
-  	border-radius: 5px;
-  	box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  	height: 14cm;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
 }
 
 #profil .suggestion{
   	border-radius: 5px;
   	box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  	height: 14cm;
+/*  	height: 14cm;*/
   	margin-top: 10px;
   	margin-left: 1cm;
+}
+#show_order{
+  overflow: auto;
+  height: 100%;
+}
+
+#profil .produit{
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#profil .produit img, #profil .produit a{
+  position: relative;
+  left: 5%;
 }
 
 /*------------------- Profil End ------------------*/
