@@ -28,7 +28,7 @@
             </div>
             <div class="input-field col s12">
                 <i class="mdi-action-account-circle prefix"></i>
-                <input id="pwrd" type="text" class="validate">
+                <input id="pwrd" type="password" class="validate">
                 <label for="pwrd">Password</label>
             </div>
             <div class="col s12">
