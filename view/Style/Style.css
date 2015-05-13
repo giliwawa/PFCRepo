@@ -179,6 +179,7 @@ i.mdi-communication-live-help{
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
 }
 #produits .view h2 {
 	height: 50px;
@@ -410,11 +411,11 @@ i.mdi-communication-live-help{
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 10px;
+    font-size: 16px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 40px 0 0 0;
-    line-height: 10px;
+    margin: 75px 0 0 0;
+    line-height: 20px;
 }
 #about .view p {
     font-family: Georgia, serif;

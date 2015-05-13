@@ -31,6 +31,7 @@
 					<p>Nom : <?php echo $user->getnom();?></p>
 					<p>Prenom : <?php echo $user->getprenom();?></p>
 					<p>Date de Naissance : <?php echo $user->getdate_naissance();?></p>
+					<p><b><?php echo $user->getnbr_point();?> SIpoints</b></p>
 					<a class="waves-effect waves-light btn blue-grey darken-3">
 						<i class="mdi-editor-mode-edit left"></i>Update
 					</a>

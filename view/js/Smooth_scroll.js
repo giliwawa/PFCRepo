@@ -17,7 +17,7 @@ $(document).ready(function(){
 	        $('section').each(function(i) {
 	            if ($(this).position().top <= windscroll +64) {
 	                $('nav a.active').removeClass('active');
-	                $('nav a').eq(i).addClass('active');
+	                $('nav a').eq(i+1).addClass('active');
 	            }
 	        });
 

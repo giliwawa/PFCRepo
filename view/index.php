@@ -30,11 +30,11 @@
 					<div class="center guitar blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>string instruments</h2>  
-							    <p> Retrouvez notre selection de guitares, pianos, violons,
-							    	luth...
+							    <h2>String Instruments</h2>  
+							    <p> Explore our selection of guitars, pianos, violins,
+							    	lutes...
 							    </p>  
-							    <a href="viewproduit.php" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consult</a>  
 							</div>
 						</div>
 					</div>
@@ -45,11 +45,11 @@
 					<div class="center perc blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>percussions</h2>  
-							    <p> Retrouvez notre selection de Batteries, Bangos, 
+							    <h2>Percussions</h2>  
+							    <p> Explore our selection of Drums, Bangos, 
 							    	Tamtams...
 							    </p>  
-							    <a href="viewproduit.php" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consult</a>  
 							</div>
 						</div>
 					</div>
@@ -61,11 +61,11 @@
 					<div class="center saxo blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>Wind instruments</h2>  
-							    <p> Retrouvez notre selection de Trempettes, Clarinettes, 
-							    	Saxo...
+							    <h2>Wind Instruments</h2>  
+							    <p> Explore our selection of Trumpets, Clarinets, 
+							    	Saxo's...
 							    </p>  
-							    <a href="viewproduit.php" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consult</a>  
 							</div>
 						</div>
 					</div>
@@ -76,11 +76,11 @@
 					<div class="center electronic blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>Instruments électroniques</h2>  
-							    <p> Retrouvez notre selection de moogs, theramines, 
-							    	clavier...
+							    <h2>Electronic Instruments</h2>  
+							    <p> Explore our selection of Moogs, Theremins, 
+							    	Keyboards...
 							    </p>  
-							    <a href="viewproduit.php" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consult</a>  
 							</div>
 						</div>
 					</div>
@@ -89,11 +89,11 @@
 					<div class="center accessoires blue-grey darken-3">
 						<div class="featured-image view">
 							<div class="mask">  
-							    <h2>Accessoires</h2>  
-							    <p> Retrouvez notre selection d'Amplis, Pédales, 
-							    	Cordes...
+							    <h2>Accessories</h2>  
+							    <p> Explore our selection of Amps, Pedals, 
+							    	Strings...
 							    </p>  
-							    <a href="viewproduit.php" class="info">Consulter</a>  
+							    <a href="viewproduit.php" class="info">Consult</a>  
 							</div>
 						</div>
 					</div>
@@ -148,8 +148,8 @@
 	  					<img src="images/bob.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
 	  						<h2>Mohamed El Fadhel El Hachemi</h2>  
-	  						<p>Your Text</p>  
-	  						<a href="#" class="info">Read More</a>  
+	  						<!-- <p></p>  
+	  						<a href="#" class="info">Read More</a>   -->
 	  					</div>  
 	  				</div>  
 				</div>
@@ -158,8 +158,8 @@
 	  					<img src="images/seif.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
 	  						<h2>Seif Oueslati</h2>  
-	  						<p>Your Text</p>  
-	  						<a href="#" class="info">Read More</a>  
+	  						<!-- <p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>   -->
 	  					</div>  
 	  				</div>
 	  			</div>
@@ -168,8 +168,8 @@
 	  					<img src="images/bacem.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
 	  						<h2>Bacem Ben Achour</h2>  
-	  						<p>Your Text</p>  
-	  						<a href="#" class="info">Read More</a>  
+	  						<!-- <p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>   -->
 	  					</div>  
 	  				</div>
   				</div>
@@ -178,8 +178,8 @@
 	  					<img src="images/alaa.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
 	  						<h2>Alaa Ksontini</h2>  
-	  						<p>Your Text</p>  
-	  						<a href="#" class="info">Read More</a>  
+	  						<!-- <p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>  --> 
 	  					</div>  
 	  				</div>
   				</div>
@@ -188,8 +188,8 @@
 	  					<img src="images/ilyes.png" alt="" class="circle responsive-img">  
 	  					<div class="mask circle">  
 	  						<h2>Ilyes Lefi</h2>  
-	  						<p>Your Text</p>  
-	  						<a href="#" class="info">Read More</a>  
+	  						<!-- <p>Your Text</p>  
+	  						<a href="#" class="info">Read More</a>   -->
 	  					</div>  
 	  				</div>
   				</div>
