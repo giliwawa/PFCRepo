@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var quantity = [];
     var prix = [];
-    $("input").each(function(i,elt){
+    $("input").filter('[data = shown]').each(function(i,elt){
         quantity[i] = parseFloat($(this).val());
         //console.log("init_qqte"+quantity);
     });
@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     $("#total").html(total+"DT");
     
-    $("input").each(function(i,elt){
+    $("input").filter('[data = shown]').each(function(i,elt){
         $(this).change(function(){
             total = 0;
             var tmp = parseFloat($(this).val());
@@ -31,12 +31,13 @@ $(document).ready(function(){
                 total += quantity[x] * prix[x];
             }
             $("#total").html(total+"DT");
+            $('input').filter('[name=amount]').val(total);
         });
     });
 
    $("#submit").click(function(){
         $.ajax({
-            url: 'http://196.203.219.49:8181/PHPMerchantAPIGateway/creova.php',
+            url: '../controller/HotFixCommandeController.php',
             type : 'POST',
             data:{qte : quantity , tot: total},
             success : function(html){
