@@ -16,7 +16,7 @@ $passwrd = 'alborosie123';
 $passKey = 'a2a44b899bbe91850bcb33fce1b598fb';
 $Merchant_hashed_pass = md5($passwrd.$passKey);
 $transaction_desc = 'For more Details, see your cart.';
-$Merchant_checksum = md5($login.$merchant_hashed_pass.$_POST['tot'].$trans_id.$passKey); 
+$Merchant_checksum = md5($login.$Merchant_hashed_pass.'1000'.$trans_id.$passKey); 
 
 if(isset($_SESSION['id_produit'])){
 ?>
