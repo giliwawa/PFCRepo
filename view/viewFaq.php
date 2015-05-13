@@ -17,7 +17,7 @@
 
 For our customers in Germany, Netherlands, Belgium, France, Denmark, Sweden and Norway we also offer other payment says "offline" (eg by bank transfer).
 
-If you make a payment "offline", the time taken for your web space will be ready a little longer. Regarding this subject, thank you refer to the section "How long will my web space active, if I order now?"</p>
+If you make a payment "offline", the time taken for your web space will be ready a little longer. Regarding this subject, thank you refer to the section "How long will be my web space active, if I order now?"</p>
 		<h5>-Do you offer a secure payment via your website?</h5>
 		<p>Yes, it is very secure.
 

@@ -785,7 +785,7 @@ footer ul li a{
   	margin-left: 1cm;
 }
 
-#profil .titre a{
+#profil .titre button{
 	margin-left: 400px;
 }
 
@@ -849,7 +849,7 @@ footer ul li a{
   margin-bottom: 100px;
 }
 
-/*--------------------------------------------Claim BEGIN----------------------------------------------*/
+/*--------------------------------------------FAQ BEGIN----------------------------------------------*/
 
 
 #faq{
@@ -862,19 +862,35 @@ footer ul li a{
   margin-bottom: 60px;
   margin-top: 50px;
   padding-bottom: 20px;
+  padding-top: 10px;
   width: 80%;
 }
 
+#faq .container h5{
+  color: #0097a7;
+}
 
 /*--------------------------------------------FAQ END----------------------------------------------*/
 
+<<<<<<< HEAD
 /*-------------------------------------------Password BEGIN-------------------------------------*/
 #forgot .container{
+=======
+/*--------------------------------------------UpdateUser BEGIN----------------------------------------------*/
+
+
+#update{
+  height: 23cm;
+}
+
+#update .container{
+>>>>>>> origin/master
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   background-color: rgba(222,222,222,1);  border-radius: 5px;
   margin-bottom: 60px;
   margin-top: 50px;
   padding-bottom: 20px;
+<<<<<<< HEAD
   padding-top: 30px;
   width: 80%;
   height: 14cm;
@@ -883,6 +899,16 @@ footer ul li a{
   margin-top: 50px;
 }
 /*---------------------------------------------Password END----------------------------------------------*/
+=======
+  padding-top: 10px;
+  width: 80%;
+  height: 16cm;
+}
+
+
+/*--------------------------------------------UpdateUser END----------------------------------------------*/
+
+>>>>>>> origin/master
 
 /*--------------------------------------------Cart START----------------------------------------------*/
 
