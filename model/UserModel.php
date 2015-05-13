@@ -1,6 +1,7 @@
 <?php
     include_once 'user.php';
     require_once '../Configuration.php';
+    require_once '../Configuration_forum.php';
     require_once '../controller/secure.php';
     
     class UserModel {
@@ -12,6 +13,7 @@
         
        public function ajouterUser(){
         $db = new Db();
+        $db_forum = new Db_forum();
 
         $prenom = test_input($_POST['prenom']);
         $nom = test_input($_POST['nom']);
@@ -23,7 +25,12 @@
         $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$username."','".$password."')";
         
+        $quer = "INSERT INTO forum (username, username_clean, user_password, user_birthday) "
+                . "VALUES ('".$username."','".$username."','".$password."','".$date_naissance."')";
+
+echo $quer;
         $db-> query($sql);
+        $db_forum-> query($quer);
     } 
 
     public function ajouterAdminUser(){
