@@ -47,7 +47,7 @@ echo $quer;
         $email = $_POST['email'];
         $privilege = $_POST['privilege'];
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         
         $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, adresse, CIN, num_tel, nbr_point, email, privilege, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$adresse."','".$CIN."','".$num_tel."','".$nbr_point."','".$email."','".$privilege."','".$username."','".$password."')";
@@ -99,7 +99,7 @@ echo $quer;
     public function updateuser($id_user,$form){
         $bdd = new Db();
 
-        if(empty($form[10]))
+        if($form[10]==="")
         {
             $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."' WHERE id_user =".$id_user;
         }
@@ -114,7 +114,7 @@ echo $quer;
     public function updateuser_user($id_user,$form){
         $bdd = new Db();
 
-        if(empty($form[8]))
+        if($form[8]==="")
         {
             $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", email = '".$form[6]."', username = '".$form[7]."' WHERE id_user =".$id_user;
         }
