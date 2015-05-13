@@ -862,9 +862,13 @@ footer ul li a{
   margin-bottom: 60px;
   margin-top: 50px;
   padding-bottom: 20px;
+  padding-top: 10px;
   width: 80%;
 }
 
+#faq .container h5{
+  color: #0097a7;
+}
 
 /*--------------------------------------------FAQ END----------------------------------------------*/
 
