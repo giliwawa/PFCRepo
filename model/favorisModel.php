@@ -45,10 +45,8 @@ class favorisModel {
         $bdd = new Db();
         $query = "SELECT id_produit FROM favoris GROUP by id_produit ORDER BY count(id_produit) DESC";
         $resultat = $bdd->query($query);
-         if (!$resultat) {
-                throw new Exception("Database Error [{$bdd->error()}] {$bdd->error()}");
-}
-           $i = 0 ;
+
+           
             while ($data = $resultat -> fetch_assoc()) {
                 array_push($fav, $data);
                 
