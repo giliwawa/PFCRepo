@@ -79,8 +79,7 @@ foreach ($listeU as $user) :
                     </div>
                     <div class="row">
                         <div class="col s12">
-                             <button class="btn waves-effect waves-light blue-grey darken-3" type="button" onclick="loadupdateUser_User(<?php echo $user->getid_user() ;?>);" id="update">Confirm
-						    <i class="mdi-editor-mode-edit left"></i>
+                            <a class="btn waves-effect waves-light blue-grey darken-3" id="updater" onclick="loadupdateUser_User(<?php echo $user->getid_user() ;?>);"><i class="mdi-editor-mode-edit left">Confirm</i></a>
 						</button>
                         </div>
                     </div>

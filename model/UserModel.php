@@ -125,7 +125,6 @@ echo $quer;
         }
         $bdd -> query($query);
     }
-    }
 
     public function afficherUser(){
             $bdd = new Db();
