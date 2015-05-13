@@ -111,6 +111,22 @@ echo $quer;
         $bdd -> query($query);
     }
 
+    public function updateuser_user($id_user,$form){
+        $bdd = new Db();
+
+        if(empty($form[8]))
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", email = '".$form[6]."', username = '".$form[7]."' WHERE id_user =".$id_user;
+        }
+        else
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", email = '".$form[6]."', username = '".$form[7]."', password = '".md5($form[8])."' WHERE id_user =".$id_user;
+
+        }
+        $bdd -> query($query);
+    }
+    }
+
     public function afficherUser(){
             $bdd = new Db();
             $tableau = array();

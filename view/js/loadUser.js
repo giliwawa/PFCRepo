@@ -82,6 +82,30 @@ function loadupdateUser(id) {
     });
 }
 
+function loadupdateUser_User(id) {
+    
+    var usr = $('#username').val();
+    var pwd = $('#password').val();
+    var  nom= $('#nom').val();
+    var  prenom= $('#prenom').val();
+    
+    var  date_naissance= $('#date_naissance').val();
+    var  adresse= $('#adresse').val();
+    var  num_tel= $('#num_tel').val();
+    var  cin= $('#CIN').val();
+    var  email= $('#email').val();
+    var form = [prenom,nom,date_naissance,adresse,cin,num_tel,email,usr,pwd] ;
+    console.log(form);
+    $.ajax({
+        url:'update_user_user.php',
+        type : 'POST',
+        data:{id_user:id,FORM : form},
+        success:function(html){
+            console.log(html);
+        }
+    });
+}
+
 
 function loaddeleteUser(){
     xmlhttp = new XMLHttpRequest();xmlhttp.onreadystatechange = function() {
