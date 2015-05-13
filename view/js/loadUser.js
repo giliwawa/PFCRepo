@@ -101,7 +101,7 @@ function loadupdateUser_User(id) {
         type : 'POST',
         data:{id_user:id,FORM : form},
         success:function(html){
-            console.log(html);
+            window.location='viewProfil.php'
         }
     });
 }
