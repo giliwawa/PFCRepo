@@ -11,3 +11,4 @@
 	<script src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/modals.js"></script>
 	<script type="text/javascript" src="js/Dropdown.js"></script>
+	<script type="text/javascript" src="js/loadUser.js"></script>
