@@ -22,19 +22,22 @@
 	<section id="profil">
 		<div class="container">
 			<div class="row">
-				<div class="col s4 img">
+				<form method="POST" action="view_Update_Profil.php">
+					<div class="col s4 img">
 					<img src="<?php echo $user->getimage();?>">
-				</div>
-				<div class="col s7 titre">
-					<center><h4><?php echo ucfirst($_SESSION['username'])?></h4></center>
-					<br>
-					<p>Nom : <?php echo $user->getnom();?></p>
-					<p>Prenom : <?php echo $user->getprenom();?></p>
-					<p>Date de Naissance : <?php echo $user->getdate_naissance();?></p>
-					<a class="waves-effect waves-light btn blue-grey darken-3">
-						<i class="mdi-editor-mode-edit left"></i>Update
-					</a>
-				</div>
+					</div>
+					<div class="col s7 titre">
+						<center><h4><?php echo ucfirst($_SESSION['username'])?></h4></center>
+						<br>
+						<p>Nom : <?php echo $user->getnom();?></p>
+						<p>Prenom : <?php echo $user->getprenom();?></p>
+						<p>Date de Naissance : <?php echo $user->getdate_naissance();?></p>
+						<p><b><?php echo $user->getnbr_point();?> SIpoints</b></p>
+						<button class="btn waves-effect waves-light blue-grey darken-3" type="submit" name="action">Update
+						    <i class="mdi-editor-mode-edit left"></i>
+						</button>
+					</div>
+				</form>
 			</div>
 			<div class="row">
 				<div class="col s3 produit">

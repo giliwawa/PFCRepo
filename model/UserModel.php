@@ -1,6 +1,7 @@
 <?php
     include_once 'user.php';
     require_once '../Configuration.php';
+    require_once '../Configuration_forum.php';
     require_once '../controller/secure.php';
     
     class UserModel {
@@ -12,6 +13,7 @@
         
        public function ajouterUser(){
         $db = new Db();
+        $db_forum = new Db_forum();
 
         $prenom = test_input($_POST['prenom']);
         $nom = test_input($_POST['nom']);
@@ -23,7 +25,12 @@
         $sql = "INSERT INTO users (prenom, nom, sexe, date_naissance, username, password ) "
                 . "VALUES ('".$prenom."','".$nom."','".$sexe."','".$date_naissance."','".$username."','".$password."')";
         
+        $quer = "INSERT INTO forum (username, username_clean, user_password, user_birthday) "
+                . "VALUES ('".$username."','".$username."','".$password."','".$date_naissance."')";
+
+echo $quer;
         $db-> query($sql);
+        $db_forum-> query($quer);
     } 
 
     public function ajouterAdminUser(){
@@ -92,7 +99,15 @@
     public function updateuser($id_user,$form){
         $bdd = new Db();
 
-        $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."', password = '".$form[10]."' WHERE id_user =".$id_user;
+        if(empty($form[10]))
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."' WHERE id_user =".$id_user;
+        }
+        else
+        {
+            $query = "UPDATE users SET prenom = '".$form[0]."', nom = '".$form[1]."', date_naissance = '".$form[2]."', adresse = '".$form[3]."', CIN = ".$form[4].", num_tel = ".$form[5].", nbr_point = ".$form[6].", email = '".$form[7]."', privilege = '".$form[8]."', username = '".$form[9]."', password = '".md5($form[10])."' WHERE id_user =".$id_user;
+
+        }
         $bdd -> query($query);
     }
 
@@ -124,7 +139,7 @@
         $data = $resultat->fetch_assoc();   
         $Pr = new user($data);
         return $Pr;
-    }
+        }
 
     public function deleteUser($id)
         {
@@ -153,8 +168,13 @@
         $us = new user($data);
         return $us;
     }
-}
 
-    
+    public function modifyPassword($user)
+    {
+        $bdd = new Db();
+        $query = "UPDATE users SET password = '".$user->getpassword()."' WHERE email ='".$user->getEmail()."'";
+        $bdd->query($query);
+    }
+}
 
 ?>
