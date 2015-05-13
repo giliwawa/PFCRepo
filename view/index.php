@@ -126,7 +126,7 @@
 	            </div>
 	            <div class="col s4 view">
 	              <div class="promo promo-example">
-	                <i class="mdi-communication-live-help"></i>
+	                <a href="viewFaq.php"><i class="mdi-communication-live-help"></i></a>
 	                <p class="icone-titre">FAQ</p>
 	                <p class="icone-texte">Frequently asked questions.</p>
 	              </div>
