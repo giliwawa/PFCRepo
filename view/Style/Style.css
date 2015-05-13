@@ -757,7 +757,7 @@ footer ul li a{
 /*------------------------------------------------Signup Begin------------------------------------------------------*/
 
 
-/*------------------- Profil Begin ----------------*/
+/*--------------------------------------------------- Profil Begin ------------------------------------------*/
 
 #profil .container{
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
@@ -772,9 +772,8 @@ footer ul li a{
 
 #profil .img{
 	margin-top: 10px;
-  	border-radius: 5px;
-  	box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  	height: 8cm;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 #profil .titre{

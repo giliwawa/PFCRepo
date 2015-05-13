@@ -23,10 +23,12 @@
 		<div class="container">
 			<div class="row">
 				<form method="POST" action="view_Update_Profil.php">
-					<div class="col s4 img">
+					<div class="col s3 img">
+						<center>
 					<img src="<?php echo $user->getimage();?>">
+					</center>
 					</div>
-					<div class="col s7 titre">
+					<div class="col s7 titre offset-s2">
 						<center><h4><?php echo ucfirst($_SESSION['username'])?></h4></center>
 						<br>
 						<p>Nom : <?php echo $user->getnom();?></p>
