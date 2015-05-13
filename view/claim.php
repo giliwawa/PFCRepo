@@ -22,7 +22,12 @@
 				<input type="email" name="email" required>
 				<br>
 				<label>Sujet : </label>
-				<input type="text" name="sujet">
+				<select name="sujet">
+			      <option value="" disabled selected>Choose Subject</option>
+			      <option value="1">Payement Issues</option>
+			      <option value="2">Account Issues</option>
+			      <option value="3">Shipping Issues</option>
+			    </select>
 				<br>
 				<label>Message : </label>
 				<textarea name="text" class="materialize-textarea" required></textarea>
