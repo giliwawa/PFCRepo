@@ -8,6 +8,7 @@ $listeT = $productModel->afficher();
 <table>
 	<thead>
 		<tr>
+			<th>Edit</th>
 			<th>iD</th>
 			<th>Name</th>
 			<th>Reference</th>
@@ -15,6 +16,7 @@ $listeT = $productModel->afficher();
 			<th>Qunatité</th>
 			<th>Prix</th>
 			<th>Description</th>
+			<th>Delete</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -22,6 +24,7 @@ $listeT = $productModel->afficher();
     foreach ($listeT as $pr) :
 ?>
     <tr>
+    	<th><a onclick="modifyproduct(<?php echo $pr->getid_produit() ;?>)"><i class="ion-edit 32"></a></th>
         <td><?php echo $pr->getid_produit() ;?></td>
         <td><?php echo $pr->getnom() ;?></td>
         <td><?php echo $pr->getreference() ;?></td>
@@ -29,6 +32,8 @@ $listeT = $productModel->afficher();
         <td><?php echo $pr->getquantite() ;?></td>
         <td><?php echo $pr->getprix() ;?></td>
         <td><?php echo $pr->getdescription() ;?></td>
+        <th><a onclick="deleteproduct(<?php echo $pr->getid_produit() ;?>)"><i class="ion-android-remove-circle 32"></a></th>
+        
     </tr>
 
 <?php

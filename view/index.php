@@ -14,7 +14,7 @@
 	
 	<?php include 'navbar.php' ?>
   	<section id="home">
-  		<?php include 'Favorite_Slider.php' ?>
+  	<?php include 'Favorite_Slider.php' ?>
   	</section>
 
   	<section id="produits">

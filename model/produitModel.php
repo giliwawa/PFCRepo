@@ -73,7 +73,7 @@
         public function searchId($id)
         {
             $bdd =new Db();
-            $query="SELECT * FROM produit WHERE id_produit=".$id;
+            $query="SELECT * FROM produit WHERE id_produit='".$id."'";
             $resultat=$bdd->query($query);
             $data= $resultat->fetch_assoc();
             $Pr = new produit($data);
@@ -94,6 +94,19 @@
             }
             return $tableau;
         }
+        public function modifierproduit($product)
+        {
+            $bdd = new Db();
+            $requete="UPDATE produit (nom, reference, categorie, quantite, prix, image, description) VALUES ('".$product->getnom()."','".$product->getreference()."','".$product->getcategorie()."','".$product->getquantite()."','".$product->getprix()."','".$product->getimage()."','".$product->getdescription()."')";
+            $bdd->query($requete);
+        }
+        public function deleteproduct($id_produit)
+        {
+            $bdd = new Db();
+            $requete="DELETE * From produit WHERE id_produit='".$id_produit."'";
+            $bdd->query($requete);
+        }
+
 
     }
 
