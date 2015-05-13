@@ -20,7 +20,9 @@ class HotFixCommandeModel {
         $date = date("Y-m-d");
         $qry = "INSERT INTO commande (id_user , date ,total) "
                 . "VALUES(".$_SESSION['id_user'].",'".$date."',".$total." ); ";
+        $query = "update users set nbr_point = nbr_point + ".($total/100)."where id_user = ".$_SESSION['id_user'];
         $bdd->query($qry);
+        $bdd->query($query);
         $lastId = $this->getInsertedId();
         if(!empty($_SESSION['id_produit'])){
             $panier = array();

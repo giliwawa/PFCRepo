@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['privilege'] === '0' ){
+    header('location:../view');
+}
+?>
 <html>
 <head>
 	<title>Admin Interface</title>
@@ -25,6 +31,7 @@
 	        <div class="container">
 	          <div class="nav-wrapper">
 	          	<a class="page-title">Administrator Panel</a>
+                        <a class="right" href="../controller/LogoutController.php">LogOut</a>
 	          </div>
 	        </div>
 	    </nav>

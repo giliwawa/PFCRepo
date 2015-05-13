@@ -151,10 +151,31 @@ echo $quer;
         $query = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."'";
         $resultat = $db->query($query) ;
         $i = 0;
-        $data = $resultat->fetch_assoc();   
-        $Pr = new user($data);
-        return $Pr;
+        $data = $resultat->fetch_assoc(); 
+        if($data){
+            $Pr = new user($data);
+            return $Pr;
+        }else {
+            return 0;
         }
+        
+        }
+    public function getloginAdmin($username,$password){
+
+        $db = new Db();
+        
+        $query = "SELECT * FROM users WHERE username = '".$username."' AND password = '".$password."' AND privilege = 1";
+        $resultat = $db->query($query) ;
+        
+        $data = $resultat->fetch_assoc(); 
+        if($data){
+            $Pr = new user($data);
+            return $Pr;
+        }
+        else{
+            return 0;
+        }
+    }
 
     public function deleteUser($id)
         {
