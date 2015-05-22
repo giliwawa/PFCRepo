@@ -14,7 +14,30 @@
 	
 	<?php include 'navbar.php' ?>
   	<section id="home">
-  	<?php include 'Favorite_Slider.php' ?>
+  	<?php
+  		if (isset($_SESSION['id_user'])) {
+  			include 'Favorite_Slider.php';
+  		}
+  		else{
+  	?>
+  			<div id="slideshow" class="container">
+			    <div>
+			    <img class="image_slide" src="images/space.png">
+			    </div>
+			    <div>
+			    <img class="image_slide" src="images/astro.png">
+			    </div>
+			    <div>
+			    <img class="image_slide" src="images/electric.png">
+			    </div>
+			    <div>
+			    <img class="image_slide" src="images/WoodStock.png">
+			    </div>
+			</div>
+  	<?php
+  		}
+  			 
+  	?>
   	</section>
 
   	<section id="produits">

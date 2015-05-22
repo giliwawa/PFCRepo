@@ -15,16 +15,19 @@ foreach ($listef as $key) {
  array_push($slider, $pr);
 
  }
-}?>
+}
+?>
 <div id="slideshow" class="container">
-<?php while ($i<4) { ?>
+<?php while ($i<4) 
+	{ 
+?>
     <div>
     <img class="image_slide" src="<?php echo $slider[$i]->getimage(); ?>">
     </div>
       
 
 <?php
-$i++;
-}
+	$i++;
+	}
 ?>
-</div> -->
+</div>
