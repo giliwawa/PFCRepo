@@ -14,6 +14,10 @@
 	
 	<?php include 'navbar.php' ?>
   	<section id="home">
+  		<div class="titre">
+  			<h3>Welcome to StellarInstruments</h3>
+  			<h4>Here you can buy Music Instruments</h4>
+  		</div>
   	<?php
   		if (isset($_SESSION['id_user'])) {
   			include 'Favorite_Slider.php';

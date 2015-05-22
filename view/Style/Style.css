@@ -94,7 +94,7 @@ i.mdi-communication-live-help{
 /*----------------------------------------------------home BEGIN---------------------------------------------------*/
 
 #home{
-	height: 22cm;
+	height: 25cm;
 	padding-top: 100px;
 	background-color: rgba(173, 20, 87, 0.2);
 }
@@ -126,6 +126,41 @@ i.mdi-communication-live-help{
 #home.container{
 	width:977px;
 	padding-top: 0px;
+}
+#home .titre h3{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+
+}
+#home .titre h4{
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+  opacity: 0.5;
+  font-style: bold;
+  font-size: 25px;
+
+}
+#home .title{
+  padding: 30px;
+  width:100%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+  background-color: rgba(189,189,189,0.5);
+  position: absolute;
+  bottom: 0px;
+}
+#home .price {
+  float: right;
+  font-family: calibri;
+  color: #b71c1c;
+}
+#home .name {
+  float: left;
+  font-family: calibri;
+  color: #b71c1c;
 }
 
 /*----------------------------------------------------home END---------------------------------------------------*/

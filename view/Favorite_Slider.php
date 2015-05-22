@@ -18,11 +18,15 @@ foreach ($listef as $key) {
 }
 ?>
 <div id="slideshow" class="container">
-<?php while ($i<4) 
-	{ 
+<?php
+	for ($i=0; $i <4 ; $i++) { 
 ?>
     <div>
-    <img class="image_slide" src="<?php echo $slider[$i]->getimage(); ?>">
+    	<div class="title">
+    		<span class="name"><h4><b><?php echo ucfirst($slider[$i]->getnom()); ?></b></h4></span>
+    		<span class="price"><h4><b>Price : </b><?php echo $slider[$i]->getprix(); ?> TND</h4></span>
+    	</div>
+    	<img class="image_slide" src="<?php echo $slider[$i]->getimage(); ?>">
     </div>
       
 
